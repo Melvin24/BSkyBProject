@@ -26,3 +26,27 @@ Taking next connection to: 60257
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
 Taking next connection to: 60257
+New client attempting to connect on port: 60328-60257
+  Address = /10.128.3.67:60257
+Handshake exception on socket: 60328
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 60257
+New client attempting to connect on port: 60329-60257
+  Address = /10.128.3.67:60257
+This client on port 60329 has uuid a4c31aec-8ddb-48ce-95f8-c80904409d32 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: activator-584a9270-8c9c-483a-a351-288f89dfd12e, play-fork-run-a4c31aec-8ddb-48ce-95f8-c80904409d32
+Taking next connection to: 60257
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 60257
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 60257

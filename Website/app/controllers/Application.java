@@ -17,7 +17,7 @@ public class Application extends Controller {
     }
 
     public Result product() {
-      return ok(index.render(queryThis().toString()));
+      return ok(product.render(queryThis().toString()));
     }
 
     private void connectMe(){
