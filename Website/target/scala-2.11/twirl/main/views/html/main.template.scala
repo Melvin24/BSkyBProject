@@ -35,14 +35,64 @@ Seq[Any](format.raw/*1.32*/("""
 
 <html lang="en">
     <head>
-        <title>"""),_display_(/*7.17*/title),format.raw/*7.22*/("""</title>
-        <link rel="stylesheet" media="screen" href=""""),_display_(/*8.54*/routes/*8.60*/.Assets.versioned("stylesheets/main.css")),format.raw/*8.101*/("""">
-        <link rel="shortcut icon" type="image/png" href=""""),_display_(/*9.59*/routes/*9.65*/.Assets.versioned("images/favicon.png")),format.raw/*9.104*/("""">
-        <script src=""""),_display_(/*10.23*/routes/*10.29*/.Assets.versioned("javascripts/hello.js")),format.raw/*10.70*/("""" type="text/javascript"></script>
-    </head>
-    <body>
-        """),_display_(/*13.10*/content),format.raw/*13.17*/("""
-    """),format.raw/*14.5*/("""</body>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>"""),_display_(/*9.17*/title),format.raw/*9.22*/("""</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" media="screen" href=""""),_display_(/*14.54*/routes/*14.60*/.Assets.versioned("stylesheets/bootstrap.min.css")),format.raw/*14.110*/("""">
+        <style>
+            body """),format.raw/*16.18*/("""{"""),format.raw/*16.19*/("""
+                """),format.raw/*17.17*/("""padding-top: 50px;
+                padding-bottom: 20px;
+            """),format.raw/*19.13*/("""}"""),format.raw/*19.14*/("""
+        """),format.raw/*20.9*/("""</style>
+        <link rel="stylesheet" media="screen" href=""""),_display_(/*21.54*/routes/*21.60*/.Assets.versioned("stylesheets/bootstrap-theme.min.css")),format.raw/*21.116*/("""">
+        <link rel="stylesheet" media="screen" href=""""),_display_(/*22.54*/routes/*22.60*/.Assets.versioned("stylesheets/main.css")),format.raw/*22.101*/("""">
+</head>
+<!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Project name</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <form class="navbar-form navbar-right" role="form">
+        <div class="form-group">
+          <input type="text" placeholder="Email" class="form-control">
+        </div>
+        <div class="form-group">
+          <input type="password" placeholder="Password" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-success">Sign in</button>
+      </form>
+    </div><!--/.navbar-collapse -->
+  </div>
+</nav>
+
+<!-- Content -->
+
+"""),_display_(/*55.2*/content),format.raw/*55.9*/("""
+
+"""),format.raw/*57.1*/("""<hr />
+
+<footer>
+    <p>&copy; Company 2015</p>
+</footer>
+</div>
+<script src=""""),_display_(/*63.15*/routes/*63.21*/.Assets.versioned("javascripts/bootstrap.min.js")),format.raw/*63.70*/("""" type="text/javascript"></script>
+</body>
 </html>
 """))
       }
@@ -64,11 +114,11 @@ Seq[Any](format.raw/*1.32*/("""
 object main extends main_Scope0.main
               /*
                   -- GENERATED --
-                  DATE: Wed Sep 23 10:10:21 BST 2015
-                  SOURCE: /Users/rsp04/Websites/skyblueteam/app/views/main.scala.html
-                  HASH: 1d71e5a57e6705098fc1b5447ce76b35638f9469
-                  MATRIX: 748->1|873->31|901->33|988->94|1013->99|1101->161|1115->167|1177->208|1264->269|1278->275|1338->314|1390->339|1405->345|1467->386|1561->453|1589->460|1621->465
-                  LINES: 27->1|32->1|34->3|38->7|38->7|39->8|39->8|39->8|40->9|40->9|40->9|41->10|41->10|41->10|44->13|44->13|45->14
+                  DATE: Fri Sep 25 13:55:14 BST 2015
+                  SOURCE: /Users/rsp04/Websites/BSkyBProject/Website/app/views/main.scala.html
+                  HASH: c3a1a7812aae554c7bf6ba29896ce3e7bc2708c9
+                  MATRIX: 748->1|873->31|901->33|1090->196|1115->201|1393->452|1408->458|1480->508|1544->544|1573->545|1618->562|1715->631|1744->632|1780->641|1869->703|1884->709|1962->765|2045->821|2060->827|2123->868|3428->2147|3455->2154|3484->2156|3590->2235|3605->2241|3675->2290
+                  LINES: 27->1|32->1|34->3|40->9|40->9|45->14|45->14|45->14|47->16|47->16|48->17|50->19|50->19|51->20|52->21|52->21|52->21|53->22|53->22|53->22|86->55|86->55|88->57|94->63|94->63|94->63
                   -- GENERATED --
               */
           

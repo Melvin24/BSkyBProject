@@ -1,4 +1,4 @@
-[0m[[0minfo[0m] [0mUpdating {file:/Users/rsp04/Websites/skyblueteam%20copy/}root...[0m
+[0m[[0minfo[0m] [0mUpdating {file:/Users/rsp04/Websites/BSkyBProject/Website/}root...[0m
 [0m[[0mdebug[0m] [0m:: resolving dependencies :: play-java#play-java_2.11;1.0-SNAPSHOT[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool, fork-run][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for play-java#play-java_2.11;1.0-SNAPSHOT [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.11.6 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6e764d9f[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@35df3e30[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.6[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.11.6 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m	[2.11.6] org.scala-lang#scala-library;2.11.6[0m
@@ -7882,20 +7882,20 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#control_2.11;0.13.8-M3!control_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-actor_2.11;2.3.8!akka-actor_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-testkit_2.11;2.3.8!akka-testkit_2.11.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 2860ms :: artifacts dl 74ms[0m
-[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT compile produced in /Users/rsp04/Websites/skyblueteam copy/target/resolution-cache/reports/play-java-play-java_2.11-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT runtime produced in /Users/rsp04/Websites/skyblueteam copy/target/resolution-cache/reports/play-java-play-java_2.11-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT test produced in /Users/rsp04/Websites/skyblueteam copy/target/resolution-cache/reports/play-java-play-java_2.11-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT provided produced in /Users/rsp04/Websites/skyblueteam copy/target/resolution-cache/reports/play-java-play-java_2.11-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT optional produced in /Users/rsp04/Websites/skyblueteam copy/target/resolution-cache/reports/play-java-play-java_2.11-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT compile-internal produced in /Users/rsp04/Websites/skyblueteam copy/target/resolution-cache/reports/play-java-play-java_2.11-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT runtime-internal produced in /Users/rsp04/Websites/skyblueteam copy/target/resolution-cache/reports/play-java-play-java_2.11-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT test-internal produced in /Users/rsp04/Websites/skyblueteam copy/target/resolution-cache/reports/play-java-play-java_2.11-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT plugin produced in /Users/rsp04/Websites/skyblueteam copy/target/resolution-cache/reports/play-java-play-java_2.11-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT sources produced in /Users/rsp04/Websites/skyblueteam copy/target/resolution-cache/reports/play-java-play-java_2.11-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT docs produced in /Users/rsp04/Websites/skyblueteam copy/target/resolution-cache/reports/play-java-play-java_2.11-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT pom produced in /Users/rsp04/Websites/skyblueteam copy/target/resolution-cache/reports/play-java-play-java_2.11-pom.xml[0m
-[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT scala-tool produced in /Users/rsp04/Websites/skyblueteam copy/target/resolution-cache/reports/play-java-play-java_2.11-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT fork-run produced in /Users/rsp04/Websites/skyblueteam copy/target/resolution-cache/reports/play-java-play-java_2.11-fork-run.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (2860ms resolve - 74ms download)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 2357ms :: artifacts dl 77ms[0m
+[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT compile produced in /Users/rsp04/Websites/BSkyBProject/Website/target/resolution-cache/reports/play-java-play-java_2.11-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT runtime produced in /Users/rsp04/Websites/BSkyBProject/Website/target/resolution-cache/reports/play-java-play-java_2.11-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT test produced in /Users/rsp04/Websites/BSkyBProject/Website/target/resolution-cache/reports/play-java-play-java_2.11-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT provided produced in /Users/rsp04/Websites/BSkyBProject/Website/target/resolution-cache/reports/play-java-play-java_2.11-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT optional produced in /Users/rsp04/Websites/BSkyBProject/Website/target/resolution-cache/reports/play-java-play-java_2.11-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT compile-internal produced in /Users/rsp04/Websites/BSkyBProject/Website/target/resolution-cache/reports/play-java-play-java_2.11-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT runtime-internal produced in /Users/rsp04/Websites/BSkyBProject/Website/target/resolution-cache/reports/play-java-play-java_2.11-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT test-internal produced in /Users/rsp04/Websites/BSkyBProject/Website/target/resolution-cache/reports/play-java-play-java_2.11-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT plugin produced in /Users/rsp04/Websites/BSkyBProject/Website/target/resolution-cache/reports/play-java-play-java_2.11-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT sources produced in /Users/rsp04/Websites/BSkyBProject/Website/target/resolution-cache/reports/play-java-play-java_2.11-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT docs produced in /Users/rsp04/Websites/BSkyBProject/Website/target/resolution-cache/reports/play-java-play-java_2.11-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT pom produced in /Users/rsp04/Websites/BSkyBProject/Website/target/resolution-cache/reports/play-java-play-java_2.11-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT scala-tool produced in /Users/rsp04/Websites/BSkyBProject/Website/target/resolution-cache/reports/play-java-play-java_2.11-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT fork-run produced in /Users/rsp04/Websites/BSkyBProject/Website/target/resolution-cache/reports/play-java-play-java_2.11-fork-run.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (2357ms resolve - 77ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

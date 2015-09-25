@@ -1,4 +1,4 @@
 [0m[[0mdebug[0m] [0mCopy resource mappings: [0m
-[0m[[0mdebug[0m] [0m	(/Users/rsp04/Websites/skyblueteam copy/conf/application.conf,/Users/rsp04/Websites/skyblueteam copy/target/scala-2.11/classes/application.conf)[0m
-[0m[[0mdebug[0m] [0m	(/Users/rsp04/Websites/skyblueteam copy/conf/logback.xml,/Users/rsp04/Websites/skyblueteam copy/target/scala-2.11/classes/logback.xml)[0m
-[0m[[0mdebug[0m] [0m	(/Users/rsp04/Websites/skyblueteam copy/conf/routes,/Users/rsp04/Websites/skyblueteam copy/target/scala-2.11/classes/routes)[0m
+[0m[[0mdebug[0m] [0m	(/Users/rsp04/Websites/BSkyBProject/Website/conf/application.conf,/Users/rsp04/Websites/BSkyBProject/Website/target/scala-2.11/classes/application.conf)[0m
+[0m[[0mdebug[0m] [0m	(/Users/rsp04/Websites/BSkyBProject/Website/conf/logback.xml,/Users/rsp04/Websites/BSkyBProject/Website/target/scala-2.11/classes/logback.xml)[0m
+[0m[[0mdebug[0m] [0m	(/Users/rsp04/Websites/BSkyBProject/Website/conf/routes,/Users/rsp04/Websites/BSkyBProject/Website/target/scala-2.11/classes/routes)[0m

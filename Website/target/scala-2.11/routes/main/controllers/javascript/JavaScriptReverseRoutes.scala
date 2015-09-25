@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/rsp04/Websites/skyblueteam copy/conf/routes
-// @DATE:Wed Sep 23 13:17:16 BST 2015
+// @SOURCE:/Users/rsp04/Websites/BSkyBProject/Website/conf/routes
+// @DATE:Fri Sep 25 13:51:34 BST 2015
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
