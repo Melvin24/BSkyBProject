@@ -16,8 +16,13 @@ public class Application extends Controller {
         return ok(index.render(queryThis().toString()));
     }
 
-    public Result product() {
-      return ok(product.render(queryThis().toString()));
+
+    public Result products() {
+        return ok(products.render(queryThis().toString()));
+    }
+
+    public Result item(String itemName) {
+      return ok(item.render(itemName));
     }
 
     private void connectMe(){

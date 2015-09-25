@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/rsp04/Websites/BSkyBProject/Website/conf/routes
-// @DATE:Fri Sep 25 14:35:05 BST 2015
+// @DATE:Fri Sep 25 14:47:56 BST 2015
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -15,7 +15,7 @@ import _root_.play.libs.F
 package controllers.javascript {
   import ReverseRouteContext.empty
 
-  // @LINE:10
+  // @LINE:11
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -23,7 +23,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:10
+    // @LINE:11
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """
@@ -44,11 +44,21 @@ package controllers.javascript {
 
   
     // @LINE:7
-    def product: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.Application.product",
+    def products: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.products",
       """
         function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "product"})
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "products"})
+        }
+      """
+    )
+  
+    // @LINE:8
+    def item: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.item",
+      """
+        function(id) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "products/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("id", encodeURIComponent(id))})
         }
       """
     )

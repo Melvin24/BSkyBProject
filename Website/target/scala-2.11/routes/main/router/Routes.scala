@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/rsp04/Websites/BSkyBProject/Website/conf/routes
-// @DATE:Fri Sep 25 14:35:05 BST 2015
+// @DATE:Fri Sep 25 14:47:56 BST 2015
 
 package router
 
@@ -18,7 +18,7 @@ class Routes(
   override val errorHandler: play.api.http.HttpErrorHandler, 
   // @LINE:6
   Application_1: controllers.Application,
-  // @LINE:10
+  // @LINE:11
   Assets_0: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
@@ -27,7 +27,7 @@ class Routes(
    def this(errorHandler: play.api.http.HttpErrorHandler,
     // @LINE:6
     Application_1: controllers.Application,
-    // @LINE:10
+    // @LINE:11
     Assets_0: controllers.Assets
   ) = this(errorHandler, Application_1, Assets_0, "/")
 
@@ -44,7 +44,8 @@ class Routes(
 
   def documentation = List(
     ("""GET""", this.prefix, """controllers.Application.index()"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """product""", """controllers.Application.product()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """products""", """controllers.Application.products()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """products/$id<[^/]+>""", """controllers.Application.item(id:String)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""", """controllers.Assets.versioned(path:String = "/public", file:Asset)"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
@@ -71,27 +72,44 @@ class Routes(
   )
 
   // @LINE:7
-  private[this] lazy val controllers_Application_product1_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("product")))
+  private[this] lazy val controllers_Application_products1_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("products")))
   )
-  private[this] lazy val controllers_Application_product1_invoker = createInvoker(
-    Application_1.product(),
+  private[this] lazy val controllers_Application_products1_invoker = createInvoker(
+    Application_1.products(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.Application",
-      "product",
+      "products",
       Nil,
       "GET",
       """""",
-      this.prefix + """product"""
+      this.prefix + """products"""
     )
   )
 
-  // @LINE:10
-  private[this] lazy val controllers_Assets_versioned2_route = Route("GET",
+  // @LINE:8
+  private[this] lazy val controllers_Application_item2_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("products/"), DynamicPart("id", """[^/]+""",true)))
+  )
+  private[this] lazy val controllers_Application_item2_invoker = createInvoker(
+    Application_1.item(fakeValue[String]),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.Application",
+      "item",
+      Seq(classOf[String]),
+      "GET",
+      """""",
+      this.prefix + """products/$id<[^/]+>"""
+    )
+  )
+
+  // @LINE:11
+  private[this] lazy val controllers_Assets_versioned3_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_versioned2_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_versioned3_invoker = createInvoker(
     Assets_0.versioned(fakeValue[String], fakeValue[Asset]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -114,15 +132,21 @@ class Routes(
       }
   
     // @LINE:7
-    case controllers_Application_product1_route(params) =>
+    case controllers_Application_products1_route(params) =>
       call { 
-        controllers_Application_product1_invoker.call(Application_1.product())
+        controllers_Application_products1_invoker.call(Application_1.products())
       }
   
-    // @LINE:10
-    case controllers_Assets_versioned2_route(params) =>
+    // @LINE:8
+    case controllers_Application_item2_route(params) =>
+      call(params.fromPath[String]("id", None)) { (id) =>
+        controllers_Application_item2_invoker.call(Application_1.item(id))
+      }
+  
+    // @LINE:11
+    case controllers_Assets_versioned3_route(params) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
-        controllers_Assets_versioned2_invoker.call(Assets_0.versioned(path, file))
+        controllers_Assets_versioned3_invoker.call(Assets_0.versioned(path, file))
       }
   }
 }

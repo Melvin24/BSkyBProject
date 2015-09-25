@@ -38,7 +38,7 @@ Seq[Any](format.raw/*1.20*/("""
   <div class="container">
     <h1>Hello, world!</h1>
     <p>"""),_display_(/*9.9*/products),format.raw/*9.17*/("""</p>
-    <p><a class="btn btn-primary btn-lg" href="/product" role="button">Learn more &raquo;</a></p>
+    <p><a class="btn btn-primary btn-lg" href="/products" role="button">Learn more &raquo;</a></p>
   </div>
 </div>
 
@@ -83,10 +83,10 @@ Seq[Any](format.raw/*1.20*/("""
 object index extends index_Scope0.index
               /*
                   -- GENERATED --
-                  DATE: Fri Sep 25 14:34:40 BST 2015
+                  DATE: Fri Sep 25 14:48:54 BST 2015
                   SOURCE: /Users/rsp04/Websites/BSkyBProject/Website/app/views/index.scala.html
-                  HASH: cbddf89f4c822f26e57c21ca183ba366c95bf85b
-                  MATRIX: 745->1|858->19|886->22|917->45|956->47|984->49|1181->221|1209->229|2643->1633
+                  HASH: 06cf428eb42e172ea19bb7f05285594a8489cd51
+                  MATRIX: 745->1|858->19|886->22|917->45|956->47|984->49|1181->221|1209->229|2644->1634
                   LINES: 27->1|32->1|34->3|34->3|34->3|36->5|40->9|40->9|65->34
                   -- GENERATED --
               */

@@ -65,7 +65,7 @@ Seq[Any](format.raw/*1.32*/("""
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Project name</a>
+      <a class="navbar-brand" href="/">Sky Blue Team</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <form class="navbar-form navbar-right" role="form">
@@ -114,10 +114,10 @@ Seq[Any](format.raw/*1.32*/("""
 object main extends main_Scope0.main
               /*
                   -- GENERATED --
-                  DATE: Fri Sep 25 14:26:52 BST 2015
+                  DATE: Fri Sep 25 14:49:24 BST 2015
                   SOURCE: /Users/rsp04/Websites/BSkyBProject/Website/app/views/main.scala.html
-                  HASH: c3a1a7812aae554c7bf6ba29896ce3e7bc2708c9
-                  MATRIX: 748->1|873->31|901->33|1090->196|1115->201|1393->452|1408->458|1480->508|1544->544|1573->545|1618->562|1715->631|1744->632|1780->641|1869->703|1884->709|1962->765|2045->821|2060->827|2123->868|3428->2147|3455->2154|3484->2156|3590->2235|3605->2241|3675->2290
+                  HASH: 40636100b43598c2e03d3fdfebda26383a5aed73
+                  MATRIX: 748->1|873->31|901->33|1090->196|1115->201|1393->452|1408->458|1480->508|1544->544|1573->545|1618->562|1715->631|1744->632|1780->641|1869->703|1884->709|1962->765|2045->821|2060->827|2123->868|3429->2148|3456->2155|3485->2157|3591->2236|3606->2242|3676->2291
                   LINES: 27->1|32->1|34->3|40->9|40->9|45->14|45->14|45->14|47->16|47->16|48->17|50->19|50->19|51->20|52->21|52->21|52->21|53->22|53->22|53->22|86->55|86->55|88->57|94->63|94->63|94->63
                   -- GENERATED --
               */

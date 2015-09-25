@@ -5,7 +5,7 @@ import play.twirl.api._
 import play.twirl.api.TemplateMagic._
 
 
-     object product_Scope0 {
+     object products_Scope0 {
 import models._
 import controllers._
 import play.api.i18n._
@@ -21,7 +21,7 @@ import play.data._
 import play.api.data.Field
 import play.mvc.Http.Context.Implicit._
 
-class product extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template1[String,play.twirl.api.HtmlFormat.Appendable] {
+class products extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template1[String,play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
   def apply/*1.2*/(products: String):play.twirl.api.HtmlFormat.Appendable = {
@@ -31,19 +31,19 @@ class product extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,For
 
 Seq[Any](format.raw/*1.20*/("""
 
-"""),_display_(/*3.2*/main("individual product page")/*3.33*/ {_display_(Seq[Any](format.raw/*3.35*/("""
+"""),_display_(/*3.2*/main("List of all products pages.")/*3.37*/ {_display_(Seq[Any](format.raw/*3.39*/("""
 
 """),format.raw/*5.1*/("""<!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="jumbotron headline-img">
   <div class="container">
     <h1>Hello, world!</h1>
     <p>"""),_display_(/*9.9*/products),format.raw/*9.17*/("""</p>
-    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+    <p><a class="btn btn-primary btn-lg" href="/products/iphone6" role="button">Learn more &raquo;</a></p>
   </div>
 </div>
 
 <div class="container">
-  Product pages.
+  List of all products pages.
 </div>
 
 """)))}),format.raw/*18.2*/("""
@@ -64,13 +64,13 @@ Seq[Any](format.raw/*1.20*/("""
 }
 
 /**/
-object product extends product_Scope0.product
+object products extends products_Scope0.products
               /*
                   -- GENERATED --
-                  DATE: Fri Sep 25 14:36:45 BST 2015
-                  SOURCE: /Users/rsp04/Websites/BSkyBProject/Website/app/views/product.scala.html
-                  HASH: e7b77f467b795e8ceda83c3927b6d1c210fef0c0
-                  MATRIX: 749->1|862->19|890->22|929->53|968->55|996->57|1193->229|1221->237|1414->400
+                  DATE: Fri Sep 25 14:47:56 BST 2015
+                  SOURCE: /Users/rsp04/Websites/BSkyBProject/Website/app/views/products.scala.html
+                  HASH: 020db44bd32ed1348c0a9f0ca7ca6a9ab91b4a0e
+                  MATRIX: 751->1|864->19|892->22|935->57|974->59|1002->61|1199->233|1227->241|1449->433
                   LINES: 27->1|32->1|34->3|34->3|34->3|36->5|40->9|40->9|49->18
                   -- GENERATED --
               */
