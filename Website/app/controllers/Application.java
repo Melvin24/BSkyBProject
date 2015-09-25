@@ -15,6 +15,11 @@ public class Application extends Controller {
     public Result index() {
         return ok(index.render(queryThis().toString()));
     }
+
+    public Result product() {
+      return ok(index.render(queryThis().toString()));
+    }
+
     private void connectMe(){
         try{
             this.connection = DB.getConnection();
@@ -36,7 +41,7 @@ public class Application extends Controller {
         }
     }
     private ArrayList<String> queryThis(){
-        
+
         ArrayList<String> objects =  new ArrayList<String>();
         connectMe();
         try{

@@ -34,10 +34,10 @@ Seq[Any](format.raw/*1.20*/("""
 """),_display_(/*3.2*/main("Welcome to Play")/*3.25*/ {_display_(Seq[Any](format.raw/*3.27*/("""
 
 """),format.raw/*5.1*/("""<!-- Main jumbotron for a primary marketing message or call to action -->
-<div class="jumbotron">
+<div class="jumbotron headline-img">
   <div class="container">
     <h1>Hello, world!</h1>
-    <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+    <p>"""),_display_(/*9.9*/products),format.raw/*9.17*/("""</p>
     <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
   </div>
 </div>
@@ -83,11 +83,11 @@ Seq[Any](format.raw/*1.20*/("""
 object index extends index_Scope0.index
               /*
                   -- GENERATED --
-                  DATE: Fri Sep 25 13:56:56 BST 2015
+                  DATE: Fri Sep 25 14:25:03 BST 2015
                   SOURCE: /Users/rsp04/Websites/BSkyBProject/Website/app/views/index.scala.html
-                  HASH: 02ba8616aab2ed836e1a6c3e2ac76f6ad786add5
-                  MATRIX: 745->1|858->19|886->22|917->45|956->47|984->49|2783->1818
-                  LINES: 27->1|32->1|34->3|34->3|34->3|36->5|65->34
+                  HASH: d5edcfcd444f5aa636df22282f27d775807229f1
+                  MATRIX: 745->1|858->19|886->22|917->45|956->47|984->49|1181->221|1209->229|2636->1626
+                  LINES: 27->1|32->1|34->3|34->3|34->3|36->5|40->9|40->9|65->34
                   -- GENERATED --
               */
           

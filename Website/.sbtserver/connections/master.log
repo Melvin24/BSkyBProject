@@ -1,32 +1,28 @@
-New log file opened at Fri Sep 25 13:52:14 BST 2015 by 83408@LEEML0195480
-Taking next connection to: 59677
-New client attempting to connect on port: 59678-59677
-  Address = /10.128.3.67:59677
-This client on port 59678 has uuid cdc4c35b-f482-41a8-bafd-946c53347fb8 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-cdc4c35b-f482-41a8-bafd-946c53347fb8
-Taking next connection to: 59677
-New client attempting to connect on port: 59721-59677
-  Address = /10.128.3.67:59677
-Handshake exception on socket: 59721
+New log file opened at Fri Sep 25 14:26:47 BST 2015 by 84061@LEEML0195480
+Taking next connection to: 60257
+New client attempting to connect on port: 60258-60257
+  Address = /10.128.3.67:60257
+This client on port 60258 has uuid 584a9270-8c9c-483a-a351-288f89dfd12e configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-584a9270-8c9c-483a-a351-288f89dfd12e
+Taking next connection to: 60257
+New client attempting to connect on port: 60259-60257
+  Address = /10.128.3.67:60257
+Handshake exception on socket: 60259
 sbt.impl.ipc.HandshakeException: Unable to perform handshake
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
 	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
 	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
-Caused by: java.net.SocketException: Connection reset
-	at java.net.SocketInputStream.read(SocketInputStream.java:209)
-	at java.net.SocketInputStream.read(SocketInputStream.java:141)
-	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
-	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
-	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
 	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
 	... 2 more
-Taking next connection to: 59677
-New client attempting to connect on port: 59722-59677
-  Address = /10.128.3.67:59677
-This client on port 59722 has uuid a9a17aa7-5d29-499c-b907-c6bde85d80d7 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: activator-cdc4c35b-f482-41a8-bafd-946c53347fb8, play-fork-run-a9a17aa7-5d29-499c-b907-c6bde85d80d7
-Taking next connection to: 59677
+Taking next connection to: 60257
+New client attempting to connect on port: 60260-60257
+  Address = /10.128.3.67:60257
+This client on port 60260 has uuid 551b3b25-2344-47ff-81a8-16a6d0a8e388 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-584a9270-8c9c-483a-a351-288f89dfd12e, activator-551b3b25-2344-47ff-81a8-16a6d0a8e388
+Taking next connection to: 60257
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 59677
+Taking next connection to: 60257
