@@ -34,7 +34,7 @@ Seq[Any](format.raw/*1.16*/("""
 """),_display_(/*3.2*/main("individual product page")/*3.33*/ {_display_(Seq[Any](format.raw/*3.35*/("""
 
 """),format.raw/*5.1*/("""<!-- Main jumbotron for a primary marketing message or call to action -->
-<div class="jumbotron headline-img">
+<div class="jumbotron">
   <div class="container">
     <h1>"""),_display_(/*8.10*/item),format.raw/*8.14*/("""</h1>
     <p>Short description.</p>
@@ -67,10 +67,10 @@ Seq[Any](format.raw/*1.16*/("""
 object item extends item_Scope0.item
               /*
                   -- GENERATED --
-                  DATE: Fri Sep 25 14:53:21 BST 2015
+                  DATE: Fri Sep 25 15:34:22 BST 2015
                   SOURCE: /Users/rsp04/Websites/BSkyBProject/Website/app/views/item.scala.html
-                  HASH: cad7cf498e60db186ae50490c2b009e74cc7542e
-                  MATRIX: 743->1|852->15|880->18|919->49|958->51|986->53|1158->199|1182->203|1400->391
+                  HASH: 6ef2cf6cb1e92bb4e3a27bc7ec61ed6cde8bab3c
+                  MATRIX: 743->1|852->15|880->18|919->49|958->51|986->53|1145->186|1169->190|1387->378
                   LINES: 27->1|32->1|34->3|34->3|34->3|36->5|39->8|39->8|49->18
                   -- GENERATED --
               */

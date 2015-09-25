@@ -18,7 +18,7 @@ public class Application extends Controller {
 
 
     public Result products() {
-        return ok(products.render(queryThis().toString()));
+        return ok(products.render("list of all the products"));
     }
 
     public Result item(String itemName) {
