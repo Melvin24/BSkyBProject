@@ -9,7 +9,7 @@
 		extra-scalaVersion="2.10"
 		conf="compile-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20150926151643"/>
+		date="20150927145924"/>
 	<dependencies>
 		<module organisation="com.typesafe.sbt" name="sbt-play-enhancer">
 			<revision name="1.1.0" status="release" pubdate="20150527125634" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/playframework/play-enhancer" extra-sbtVersion="0.13" extra-scalaVersion="2.10" downloaded="false" searched="false" default="false" conf="default(compile), compile" position="118">
