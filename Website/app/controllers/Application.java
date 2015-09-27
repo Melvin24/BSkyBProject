@@ -10,12 +10,11 @@ import views.html.*;
 
 public class Application extends Controller {
 
-    Connection connection;
+    DataSourceConnection databaseModelSource;
 
     public Result index() {
-        return ok(index.render(queryThis().toString()));
+        return ok(index.render("Hello World"));
     }
-
 
     public Result products() {
         return ok(products.render("list of all the products"));
@@ -25,43 +24,4 @@ public class Application extends Controller {
       return ok(item.render(itemName));
     }
 
-    private void connectMe(){
-        try{
-            this.connection = DB.getConnection();
-        }
-        catch(Exception e){
-            System.out.println(e.getMessage());
-        }
-
-    }
-    private void closeConnection(){
-        try{
-            this.connection.close();
-        }
-        catch(Exception e){
-            System.out.println(e.getMessage());
-        }
-        finally {
-            System.out.println("");
-        }
-    }
-    private ArrayList<String> queryThis(){
-
-        ArrayList<String> objects =  new ArrayList<String>();
-        connectMe();
-        try{
-            Statement st = this.connection.createStatement();
-            ResultSet rs = st.executeQuery("SELECT * FROM products");
-            while (rs.next() ){
-                objects.add(rs.getString("name"));
-            }
-        }
-        catch(Exception e){
-            System.out.println(e.getMessage());
-        }
-        finally{
-            closeConnection();
-            return objects;
-        }
-    }
 }
