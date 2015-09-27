@@ -1,7 +1,7 @@
-New log file opened at Sat Sep 26 15:16:37 BST 2015 by 18371@LEEML0195695
-Taking next connection to: 56682
-New client attempting to connect on port: 56683-56682
-  Address = /192.168.0.22:56682
-This client on port 56683 has uuid 1b77bb67-253a-4d1e-b53e-f119f67642df configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-1b77bb67-253a-4d1e-b53e-f119f67642df
-Taking next connection to: 56682
+New log file opened at Sun Sep 27 14:55:33 BST 2015 by 29243@LEEML0195695
+Taking next connection to: 62903
+New client attempting to connect on port: 62904-62903
+  Address = /192.168.0.22:62903
+This client on port 62904 has uuid 287ef728-fb37-4d09-97bc-42f8ba7d7e20 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-287ef728-fb37-4d09-97bc-42f8ba7d7e20
+Taking next connection to: 62903
