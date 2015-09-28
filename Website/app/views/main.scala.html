@@ -35,6 +35,32 @@
         <script type="text/javascript">
           $(document).ready(function () {
               $('.dropdown-toggle').dropdown();
+
+              var easterEgg = "gnomepoints",
+                	keyHistory = "",
+                	code,
+                	pageWidth = $(window).width() - 400;
+
+                $(document).keypress(function(e) {
+                 	code = e.keyCode || e.which;
+                    keyHistory += String.fromCharCode(e.which);
+                    console.log(keyHistory);
+
+                    if(keyHistory === easterEgg) {
+                    	$("#easterEggContainer").show();
+                       	$("#easterEgg").animate({left: "+=" + pageWidth}, 3000);
+                		$("#easterEgg").animate({left: "-=" + pageWidth }, 2000, function(){
+                			$("#easterEggContainer").fadeOut(1000);
+                		});
+                        keyHistory = "";
+                    }
+                    else if (keyHistory.length > 30 || code == 13) {
+                        keyHistory = "";
+                    }
+                });
+
+
+
             });
         </script>
 
@@ -48,6 +74,12 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 <body>
+  <div id="easterEggContainer">
+    <div id="easterEgg">
+      <img id="gnome" src="@routes.Assets.versioned("images/gnomeTransparent.jpg")"></img>
+    </div>
+  </div>
+
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
@@ -76,12 +108,9 @@
 </nav>
 <nav class="navbar navbar-default">
   <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="/">Home</a>
-    </div>
-
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
+        <li><a href="/">Home</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
           <ul class="dropdown-menu">
