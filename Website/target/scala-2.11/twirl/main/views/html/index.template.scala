@@ -21,30 +21,31 @@ import play.data._
 import play.api.data.Field
 import play.mvc.Http.Context.Implicit._
 
-class index extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template1[List[Customer],play.twirl.api.HtmlFormat.Appendable] {
+class index extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template2[List[Customer],List[Users],play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
-  def apply/*1.2*/(customers: List[Customer]):play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*1.2*/(customers: List[Customer], users: List[Users]):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 
 
-Seq[Any](format.raw/*1.29*/("""
+Seq[Any](format.raw/*1.49*/("""
 
 
 """),_display_(/*4.2*/main("Welcome to Play")/*4.25*/ {_display_(Seq[Any](format.raw/*4.27*/("""
 
 
 
-"""),format.raw/*8.1*/("""Size: """),_display_(/*8.8*/customers/*8.17*/.size()),format.raw/*8.24*/("""
+"""),_display_(/*8.2*/for(customer <- customers) yield /*8.28*/{_display_(Seq[Any](format.raw/*8.29*/("""
+    """),_display_(/*9.6*/customer/*9.14*/.surname),format.raw/*9.22*/("""
+    """),format.raw/*10.5*/("""<br />
+    """),_display_(/*11.6*/customer/*11.14*/.forename),format.raw/*11.23*/("""
+""")))}),format.raw/*12.2*/("""
 
-
-"""),_display_(/*11.2*/for(customer <- customers) yield /*11.28*/{_display_(Seq[Any](format.raw/*11.29*/("""
-    """),_display_(/*12.6*/customer/*12.14*/.surname),format.raw/*12.22*/("""
-    """),format.raw/*13.5*/("""<br />
-    """),_display_(/*14.6*/customer/*14.14*/.forename),format.raw/*14.23*/("""
-""")))}),format.raw/*15.2*/("""
-"""),format.raw/*16.1*/("""<!-- Main jumbotron for a primary marketing message or call to action -->
+"""),_display_(/*14.2*/for(user <- users) yield /*14.20*/{_display_(Seq[Any](format.raw/*14.21*/("""
+    """),_display_(/*15.6*/user/*15.10*/.sky_id),format.raw/*15.17*/("""
+""")))}),format.raw/*16.2*/("""
+"""),format.raw/*17.1*/("""<!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="jumbotron headline-img blue">
   <div class="container">
     <h1>Hello, world!</h1>
@@ -73,15 +74,15 @@ Seq[Any](format.raw/*1.29*/("""
     </div>
   </div>
 
-""")))}),format.raw/*45.2*/("""
+""")))}),format.raw/*46.2*/("""
 """))
       }
     }
   }
 
-  def render(customers:List[Customer]): play.twirl.api.HtmlFormat.Appendable = apply(customers)
+  def render(customers:List[Customer],users:List[Users]): play.twirl.api.HtmlFormat.Appendable = apply(customers,users)
 
-  def f:((List[Customer]) => play.twirl.api.HtmlFormat.Appendable) = (customers) => apply(customers)
+  def f:((List[Customer],List[Users]) => play.twirl.api.HtmlFormat.Appendable) = (customers,users) => apply(customers,users)
 
   def ref: this.type = this
 
@@ -94,11 +95,11 @@ Seq[Any](format.raw/*1.29*/("""
 object index extends index_Scope0.index
               /*
                   -- GENERATED --
-                  DATE: Mon Sep 28 14:26:38 BST 2015
+                  DATE: Mon Sep 28 15:18:14 BST 2015
                   SOURCE: /Users/mpe12/BSkyBProject/Website/app/views/index.scala.html
-                  HASH: 5a83e79f6befee12e0a263b4dea779d29f834f60
-                  MATRIX: 753->1|875->28|904->32|935->55|974->57|1004->61|1036->68|1053->77|1080->84|1110->88|1152->114|1191->115|1223->121|1240->129|1269->137|1301->142|1339->154|1356->162|1386->171|1418->173|1446->174|3057->1755
-                  LINES: 27->1|32->1|35->4|35->4|35->4|39->8|39->8|39->8|39->8|42->11|42->11|42->11|43->12|43->12|43->12|44->13|45->14|45->14|45->14|46->15|47->16|76->45
+                  HASH: 2046569dbb05ef4c040b07fe25437d590f61e7f0
+                  MATRIX: 765->1|907->48|936->52|967->75|1006->77|1036->82|1077->108|1115->109|1146->115|1162->123|1190->131|1222->136|1260->148|1277->156|1307->165|1339->167|1368->170|1402->188|1441->189|1473->195|1486->199|1514->206|1546->208|1574->209|3185->1790
+                  LINES: 27->1|32->1|35->4|35->4|35->4|39->8|39->8|39->8|40->9|40->9|40->9|41->10|42->11|42->11|42->11|43->12|45->14|45->14|45->14|46->15|46->15|46->15|47->16|48->17|77->46
                   -- GENERATED --
               */
           
