@@ -21,23 +21,35 @@ import play.data._
 import play.api.data.Field
 import play.mvc.Http.Context.Implicit._
 
-class index extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template1[String,play.twirl.api.HtmlFormat.Appendable] {
+class index extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template2[List[Customer],List[Users],play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
-  def apply/*1.2*/(products: String):play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*1.2*/(customers: List[Customer], users: List[Users]):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 
 
-Seq[Any](format.raw/*1.20*/("""
+Seq[Any](format.raw/*1.49*/("""
 
-"""),_display_(/*3.2*/main("Welcome to Play")/*3.25*/ {_display_(Seq[Any](format.raw/*3.27*/("""
 
-"""),format.raw/*5.1*/("""<!-- Main jumbotron for a primary marketing message or call to action -->
+"""),_display_(/*4.2*/main("Welcome to Play")/*4.25*/ {_display_(Seq[Any](format.raw/*4.27*/("""
+
+
+
+"""),_display_(/*8.2*/for(customer <- customers) yield /*8.28*/{_display_(Seq[Any](format.raw/*8.29*/("""
+    """),_display_(/*9.6*/customer/*9.14*/.surname),format.raw/*9.22*/("""
+    """),format.raw/*10.5*/("""<br />
+    """),_display_(/*11.6*/customer/*11.14*/.forename),format.raw/*11.23*/("""
+""")))}),format.raw/*12.2*/("""
+
+"""),_display_(/*14.2*/for(user <- users) yield /*14.20*/{_display_(Seq[Any](format.raw/*14.21*/("""
+    """),_display_(/*15.6*/user/*15.10*/.sky_id),format.raw/*15.17*/("""
+""")))}),format.raw/*16.2*/("""
+"""),format.raw/*17.1*/("""<!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="jumbotron headline-img blue">
   <div class="container">
     <h1>Hello, world!</h1>
-    <p>"""),_display_(/*9.9*/products),format.raw/*9.17*/("""</p>
+    <p></p>
     <p><a class="btn btn-primary btn-lg" href="/products" role="button">Learn more &raquo;</a></p>
   </div>
 </div>
@@ -62,15 +74,15 @@ Seq[Any](format.raw/*1.20*/("""
     </div>
   </div>
 
-""")))}),format.raw/*34.2*/("""
+""")))}),format.raw/*46.2*/("""
 """))
       }
     }
   }
 
-  def render(products:String): play.twirl.api.HtmlFormat.Appendable = apply(products)
+  def render(customers:List[Customer],users:List[Users]): play.twirl.api.HtmlFormat.Appendable = apply(customers,users)
 
-  def f:((String) => play.twirl.api.HtmlFormat.Appendable) = (products) => apply(products)
+  def f:((List[Customer],List[Users]) => play.twirl.api.HtmlFormat.Appendable) = (customers,users) => apply(customers,users)
 
   def ref: this.type = this
 
@@ -83,11 +95,11 @@ Seq[Any](format.raw/*1.20*/("""
 object index extends index_Scope0.index
               /*
                   -- GENERATED --
-                  DATE: Fri Sep 25 15:34:22 BST 2015
-                  SOURCE: /Users/rsp04/Websites/BSkyBProject/Website/app/views/index.scala.html
-                  HASH: 38802c7fd16467f6fdd8cfedf3466f7ce9e70867
-                  MATRIX: 745->1|858->19|886->22|917->45|956->47|984->49|1186->226|1214->234|2649->1639
-                  LINES: 27->1|32->1|34->3|34->3|34->3|36->5|40->9|40->9|65->34
+                  DATE: Mon Sep 28 15:18:14 BST 2015
+                  SOURCE: /Users/mpe12/BSkyBProject/Website/app/views/index.scala.html
+                  HASH: 2046569dbb05ef4c040b07fe25437d590f61e7f0
+                  MATRIX: 765->1|907->48|936->52|967->75|1006->77|1036->82|1077->108|1115->109|1146->115|1162->123|1190->131|1222->136|1260->148|1277->156|1307->165|1339->167|1368->170|1402->188|1441->189|1473->195|1486->199|1514->206|1546->208|1574->209|3185->1790
+                  LINES: 27->1|32->1|35->4|35->4|35->4|39->8|39->8|39->8|40->9|40->9|40->9|41->10|42->11|42->11|42->11|43->12|45->14|45->14|45->14|46->15|46->15|46->15|47->16|48->17|77->46
                   -- GENERATED --
               */
           

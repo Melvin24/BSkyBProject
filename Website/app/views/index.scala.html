@@ -1,12 +1,24 @@
-@(products: String)
+@(customers: List[Customer], users: List[Users])
+
 
 @main("Welcome to Play") {
 
+
+
+@for(customer <- customers){
+    @customer.surname
+    <br />
+    @customer.forename
+}
+
+@for(user <- users){
+    @user.sky_id
+}
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="jumbotron headline-img blue">
   <div class="container">
     <h1>Hello, world!</h1>
-    <p>@products</p>
+    <p></p>
     <p><a class="btn btn-primary btn-lg" href="/products" role="button">Learn more &raquo;</a></p>
   </div>
 </div>

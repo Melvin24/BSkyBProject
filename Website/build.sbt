@@ -13,10 +13,17 @@ libraryDependencies ++= Seq(
 )
 
 libraryDependencies += "mysql" % "mysql-connector-java" % "5.1.18"
+playEbeanModels in Compile := Seq("models.*")
+playEbeanDebugLevel := 4
+playEbeanAgentArgs += ("detect" -> "false")
+inConfig(Test)(PlayEbean.scopedSettings)
+
+playEbeanModels in Test := Seq("models.*")
 
 // Play provides two styles of routers, one expects its actions to be injected, the
 // other, legacy style, accesses its actions statically.
 routesGenerator := InjectedRoutesGenerator
 
+lazy val myProject = (project in file(".")).enablePlugins(PlayJava,PlayEbean)
 
 fork in run := true

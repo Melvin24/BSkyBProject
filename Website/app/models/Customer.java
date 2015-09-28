@@ -4,6 +4,7 @@ import play.*;
 import play.mvc.*;
 import play.db.*;
 
+import com.avaje.ebean.Model;
 import play.db.ebean.*;
 import play.data.format.*;
 import play.data.validation.*;
@@ -14,10 +15,16 @@ import javax.persistence.*;
 
 @Entity
 public class Customer extends Model {
+  
   @Id
-  public int customerID;
-  public int addressID;
-  public int skyCustomerID;
+  public Long customerID;
+  public Long addressID;
+  public Long skyCustomerID;
   public String surname;
   public String forename;
+  
+    
+  public static Finder<Integer,Customer> find = new Finder<Integer,Customer>(
+    Integer.class, Customer.class
+  ); 
 }
