@@ -1,13 +1,13 @@
-New log file opened at Mon Sep 28 17:28:47 BST 2015 by 49221@LEEML0195695
-Taking next connection to: 55064
-New client attempting to connect on port: 55065-55064
-  Address = /10.128.3.80:55064
-This client on port 55065 has uuid 8651dd33-0612-410a-8cd9-48c0092e1d40 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-8651dd33-0612-410a-8cd9-48c0092e1d40
-Taking next connection to: 55064
-New client attempting to connect on port: 55072-55064
-  Address = /10.128.3.80:55064
-Handshake exception on socket: 55072
+New log file opened at Mon Sep 28 17:36:50 BST 2015 by 49459@LEEML0195695
+Taking next connection to: 55237
+New client attempting to connect on port: 55238-55237
+  Address = /10.128.3.80:55237
+This client on port 55238 has uuid 4291deb0-9c43-4bf7-a38c-9bb4b82de037 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-4291deb0-9c43-4bf7-a38c-9bb4b82de037
+Taking next connection to: 55237
+New client attempting to connect on port: 55239-55237
+  Address = /10.128.3.80:55237
+Handshake exception on socket: 55239
 sbt.impl.ipc.HandshakeException: Unable to perform handshake
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
 	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
@@ -17,9 +17,27 @@ Caused by: java.io.EOFException
 	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
 	... 2 more
-Taking next connection to: 55064
-New client attempting to connect on port: 55073-55064
-  Address = /10.128.3.80:55064
-This client on port 55073 has uuid ddfe2417-9d25-4e16-8d32-47f43b350029 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: activator-8651dd33-0612-410a-8cd9-48c0092e1d40, play-fork-run-ddfe2417-9d25-4e16-8d32-47f43b350029
-Taking next connection to: 55064
+Taking next connection to: 55237
+New client attempting to connect on port: 55240-55237
+  Address = /10.128.3.80:55237
+This client on port 55240 has uuid 5cdd74a7-6040-4080-8efa-c2fb953c3cbf configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-4291deb0-9c43-4bf7-a38c-9bb4b82de037, activator-5cdd74a7-6040-4080-8efa-c2fb953c3cbf
+Taking next connection to: 55237
+New client attempting to connect on port: 55241-55237
+  Address = /10.128.3.80:55237
+Handshake exception on socket: 55241
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 55237
+New client attempting to connect on port: 55242-55237
+  Address = /10.128.3.80:55237
+This client on port 55242 has uuid 1914bd63-9885-44df-b067-1fa7c7cd5012 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: activator-4291deb0-9c43-4bf7-a38c-9bb4b82de037, play-fork-run-1914bd63-9885-44df-b067-1fa7c7cd5012
+Taking next connection to: 55237

@@ -21,6 +21,15 @@ create table customer (
   constraint pk_customer primary key (customer_id))
 ;
 
+create table orders (
+  order_id                  bigint auto_increment not null,
+  customer_id               bigint,
+  date                      varchar(255),
+  price                     bigint,
+  order_status_id           bigint,
+  constraint pk_orders primary key (order_id))
+;
+
 create table users (
   sky_id                    bigint auto_increment not null,
   constraint pk_users primary key (sky_id))
@@ -36,6 +45,8 @@ SET FOREIGN_KEY_CHECKS=0;
 drop table address;
 
 drop table customer;
+
+drop table orders;
 
 drop table users;
 
