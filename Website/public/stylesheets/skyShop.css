@@ -1,0 +1,51 @@
+#loginButton{
+	position: relative;
+   	margin-right: 50px;
+   	float:right;
+
+}
+
+#easterEggContainer{
+	position:relative;
+	display:none;
+}
+
+#easterEgg{
+	position:absolute;
+	z-index:700;
+}
+
+#Content{
+	position:relative;
+	padding-left:1%;
+	width:98%;
+}
+
+.menu{
+	width:100%;
+}
+
+.bx-wrapper{
+	width:99%;
+}
+
+.carouselImage{
+	width:550px ;
+	height:250px;
+}
+
+#productThumbnails{
+	text-align:center;
+
+}
+#mainThumbnail {
+		padding-left: 10%;
+    margin:auto;
+}
+.productCaption{
+	background-color: transparent !important;
+	border:none !important;
+	text-align: center;
+	display:block !important;
+
+}

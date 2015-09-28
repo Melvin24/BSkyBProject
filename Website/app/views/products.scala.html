@@ -2,17 +2,58 @@
 
 @main("List of all products pages.") {
 
-<!-- Main jumbotron for a primary marketing message or call to action -->
+
+  <div id ="carouselSlides">
+    <ul class="slideshow">
+      <li>
+        <h3>Sky Accessories Shop</h3>
+        <p>Welcome to the Sky Accessories Shop</p>
+        </br>
+        <p>Collect as Many Gnomes as possible to win more prizes.</p>
+
+      </li>
+
+
+			<li><img class="carouselImage" src="@routes.Assets.versioned("images/skyAccessories.png")"/></li>
+			<li><img class="carouselImage" src="@routes.Assets.versioned("images/gnomeBanner2.jpg")"/></li>
+			<li><img class="carouselImage" src="@routes.Assets.versioned("images/remote.jpg")"/></li>
+    </ul>
+  </div>
+
+
+<!-- Main jumbotron for a primary marketing message or call to action
 <div class="jumbotron headline-img">
   <div class="container">
-    <h1>Hello, world!</h1>
     <p>@products</p>
     <p><a class="btn btn-primary btn-lg" href="/products/iphone6" role="button">Learn more &raquo;</a></p>
   </div>
-</div>
+</div>-->
 
-<div class="container">
-  List of all products pages.
+<div class="row" id ="mainThumbnail">
+  <div class="col-sm-4 col-md-3">
+    <div class="thumbnail">
+      <img src="@routes.Assets.versioned("images/mensTshirt.png")"/>
+      <div class="caption productCaption">
+        <p><a href="/products/iphone6" class="btn btn-primary" role="button">Shop T-Shirts</a> </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4 col-md-3">
+    <div class="thumbnail">
+      <img src="@routes.Assets.versioned("images/skyPhone5.png")"/>
+      <div class="caption productCaption">
+        <p><a href="/products/iphone5" class="btn btn-primary" role="button">Shop Phones</a> </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4 col-md-3">
+    <div class="thumbnail">
+      <img src="@routes.Assets.versioned("images/gnome.png")"/>
+      <div class="caption productCaption">
+        <p><a href="/products/iphone6" class="btn btn-primary" role="button">Shop Gnomes</a> </p>
+      </div>
+    </div>
+  </div>
 </div>
 
 }
