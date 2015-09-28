@@ -15,7 +15,8 @@ public class Application extends Controller {
 
     public Result index() {
         List<Customer> c = Customer.find.all();
-        return ok(index.render(c));
+        List<Users> u = Users.find.all();
+        return ok(index.render(c,u));
     }
 
     public Result products() {

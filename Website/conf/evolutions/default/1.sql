@@ -12,6 +12,11 @@ create table customer (
   constraint pk_customer primary key (customer_id))
 ;
 
+create table users (
+  sky_id                    bigint auto_increment not null,
+  constraint pk_users primary key (sky_id))
+;
+
 
 
 
@@ -20,6 +25,8 @@ create table customer (
 SET FOREIGN_KEY_CHECKS=0;
 
 drop table customer;
+
+drop table users;
 
 SET FOREIGN_KEY_CHECKS=1;
 
