@@ -21,4 +21,5 @@ public class Users extends Model {
     public static Finder<Integer,Users> find = new Finder<Integer,Users>(
         Integer.class, Users.class
     ); 
+    
 }

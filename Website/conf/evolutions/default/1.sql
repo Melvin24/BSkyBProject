@@ -3,6 +3,15 @@
 
 # --- !Ups
 
+create table address (
+  address_id                bigint auto_increment not null,
+  address_line1             varchar(255),
+  address_line2             varchar(255),
+  postcode                  varchar(255),
+  city                      varchar(255),
+  constraint pk_address primary key (address_id))
+;
+
 create table customer (
   customer_id               bigint auto_increment not null,
   address_id                bigint,
@@ -23,6 +32,8 @@ create table users (
 # --- !Downs
 
 SET FOREIGN_KEY_CHECKS=0;
+
+drop table address;
 
 drop table customer;
 
