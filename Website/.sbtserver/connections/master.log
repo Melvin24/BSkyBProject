@@ -1,25 +1,25 @@
-New log file opened at Sun Sep 27 14:58:27 BST 2015 by 29495@LEEML0195695
-Taking next connection to: 62969
-New client attempting to connect on port: 62970-62969
-  Address = /192.168.0.22:62969
-This client on port 62970 has uuid 40ac91b9-17c3-48ce-b589-b1ae4d3797b7 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-40ac91b9-17c3-48ce-b589-b1ae4d3797b7
-Taking next connection to: 62969
-New client attempting to connect on port: 62973-62969
-  Address = /192.168.0.22:62969
-Handshake exception on socket: 62973
+New log file opened at Mon Sep 28 14:31:32 BST 2015 by 44776@LEEML0195695
+Taking next connection to: 53263
+New client attempting to connect on port: 53264-53263
+  Address = /10.128.3.80:53263
+This client on port 53264 has uuid b2681720-c93c-499f-802f-cf860663992b configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-b2681720-c93c-499f-802f-cf860663992b
+Taking next connection to: 53263
+New client attempting to connect on port: 53267-53263
+  Address = /10.128.3.80:53263
+Handshake exception on socket: 53267
 sbt.impl.ipc.HandshakeException: Unable to perform handshake
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
 	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
 	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
 Caused by: java.io.EOFException
-	at java.io.DataInputStream.readInt(DataInputStream.java:375)
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
 	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
 	... 2 more
-Taking next connection to: 62969
-New client attempting to connect on port: 62974-62969
-  Address = /192.168.0.22:62969
-This client on port 62974 has uuid 684df8be-63f3-405e-b071-3738d0608429 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-40ac91b9-17c3-48ce-b589-b1ae4d3797b7, activator-684df8be-63f3-405e-b071-3738d0608429
-Taking next connection to: 62969
+Taking next connection to: 53263
+New client attempting to connect on port: 53268-53263
+  Address = /10.128.3.80:53263
+This client on port 53268 has uuid 4188691e-01b8-4b0d-9a8b-2e56efd1e176 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: activator-b2681720-c93c-499f-802f-cf860663992b, play-fork-run-4188691e-01b8-4b0d-9a8b-2e56efd1e176
+Taking next connection to: 53263

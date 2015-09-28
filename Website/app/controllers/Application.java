@@ -1,19 +1,21 @@
 package controllers;
 
+import com.avaje.ebean.Model;
 import play.*;
 import play.mvc.*;
 import play.db.*;
 import java.sql.*;
 import java.util.*;
+import java.lang.*;
 
 import views.html.*;
+import models.*;
 
 public class Application extends Controller {
 
-    DataSourceConnection databaseModelSource;
-
     public Result index() {
-        return ok(index.render("Hello World"));
+        List<Customer> c = Customer.find.all();
+        return ok(index.render(c));
     }
 
     public Result products() {
@@ -23,5 +25,6 @@ public class Application extends Controller {
     public Result item(String itemName) {
       return ok(item.render(itemName));
     }
+
 
 }
