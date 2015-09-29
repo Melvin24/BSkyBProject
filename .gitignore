@@ -15,4 +15,7 @@ server.pid
 *.eml
 /dist/
 .cache
-RUNNING_PID
+
+Website/.sbtserver/connections/master.log
+
+*.log

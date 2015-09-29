@@ -16,6 +16,8 @@ libraryDependencies += "mysql" % "mysql-connector-java" % "5.1.18"
 playEbeanModels in Compile := Seq("models.*")
 playEbeanDebugLevel := 4
 playEbeanAgentArgs += ("detect" -> "false")
+
+
 inConfig(Test)(PlayEbean.scopedSettings)
 
 playEbeanModels in Test := Seq("models.*")

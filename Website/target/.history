@@ -1,0 +1,6 @@
+play
+playRun
+q
+play
+sbt clean compile stage
+exit

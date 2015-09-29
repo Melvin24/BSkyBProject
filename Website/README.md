@@ -6,3 +6,7 @@ Order and Inventory Management System
 - Loyalty
 - Stock
 - Android Application
+
+
+
+#Interaction With Model
