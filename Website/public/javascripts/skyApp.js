@@ -1,13 +1,21 @@
+
+var shoppingCart,
+    numberShoppingCartItems;
+    
 $(document).ready(function () {
     $('.dropdown-toggle').dropdown();
     $('.carousel').carousel();
+
+    shoppingCart = [];
+    numberShoppingCartItems = 0;
 
     var easterEgg = "gnomepoints",
         keyHistory = "",
         code,
         pageWidth = $(window).width() - 400;
 
-      $(document).keypress(function(e) {
+
+    $(document).keypress(function(e) {
         code = e.keyCode || e.which;
           keyHistory += String.fromCharCode(e.which);
           console.log(keyHistory);
@@ -43,15 +51,25 @@ $(document).ready(function () {
                   quantityToAdd = $('#quantityItem' + itemNumber).val();
 
               if(quantityToAdd > 0){
-                $('#shoppingCartBadge').text(parseInt(currentBadgeCount) + parseInt(quantityToAdd));
+                  shoppingCart.push({  "type" : $(this).attr("itemType"),
+                                        "qty" : quantityToAdd,
+                                        "itemNumber" : itemNumber
+                                  });
+                numberShoppingCartItems += parseInt(quantityToAdd);
+                $('#shoppingCartBadge').text(numberShoppingCartItems);
                 $('#quantityItem' + itemNumber).val(0);
                 maketoast(event);
               }
           });
+
+
+      $('#shoppingCart').click(function(){
+         //$('#link').click();
+         if(numberShoppingCartItems > 0)
+            location.href=('/shoppingBag');
+
       });
-
-
-
+});
 
       function maketoast (evt)
       {

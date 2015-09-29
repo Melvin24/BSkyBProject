@@ -15,7 +15,7 @@ GET     /gnomes                     controllers.Application.gnomes()
 
 
 GET     /faq                        controllers.Application.faq()
-
+GET     /shoppingBag                controllers.Application.shoppingBag()
 
 
 # Map static resources from the /public folder to the /assets URL path

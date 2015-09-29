@@ -44,7 +44,7 @@ public class Application extends Controller {
         return ok(products.render(stock));
 
     }
-    
+
     public Result item(Long id) {
       Stock stock = Stock.find.byId(id);
       return ok(item.render(stock));
@@ -54,5 +54,8 @@ public class Application extends Controller {
       return ok(faq.render("FAQ page"));
     }
 
+    public Result shoppingBag() {
+      return ok(shoppingBag.render("shopping Bag page"));
+    }
 
 }

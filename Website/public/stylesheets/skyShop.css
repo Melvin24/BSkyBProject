@@ -21,6 +21,12 @@
 	width:98%;
 }
 
+.container{
+	width:100%;
+	margin-left:0!important;
+	margin-right:0!important;
+}
+
 .menu{
 	width:100%;
 }
@@ -29,6 +35,9 @@
 	width:99%;
 }
 
+.navBarCustom{
+	height:110px;
+}
 
 
 #productThumbnails{
@@ -46,7 +55,9 @@
 	display:block !important;
 
 }
-
+li {
+	font-size: large;
+}
 
 /* -------------- Products page ------------------- */
 #filterDiv{
