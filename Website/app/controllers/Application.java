@@ -1,27 +1,28 @@
 package controllers;
 
-import com.avaje.ebean.Model;
+import models.*;
 import play.*;
 import play.mvc.*;
-import play.db.*;
+import play.db.ebean.Model;
 import java.sql.*;
 import java.util.*;
 import java.lang.*;
 
+import static play.libs.Json.toJson;
+
 import views.html.*;
-import models.*;
+
 
 public class Application extends Controller {
 
     public Result index() {
-        List<Customer> c = Customer.find.all();
-        List<Users> u = Users.find.all();
-        return ok(index.render(c,u));
+        return ok(index.render("Hello"));
     }
-
     public Result products() {
-        return ok(products.render("list of all the products"));
+        List<Stock> stock = new Model.Finder(Long.class,Stock.class).all();
+        return ok(products.render(stock));
     }
+    
 
     public Result item(String itemName) {
       return ok(item.render(itemName));
