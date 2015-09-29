@@ -1,7 +1,8 @@
 package models;
 
-import play.db.ebean.Model;
+import play.db.ebean.*;
 import javax.persistence.*;
+import play.data.validation.*;
 
 @Entity
 public class Customer extends Model {

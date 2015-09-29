@@ -36,8 +36,9 @@ Seq[Any](format.raw/*1.15*/("""
 """),format.raw/*5.1*/("""<!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="jumbotron">
   <div class="container">
-    <h1>"""),_display_(/*8.10*/item/*8.14*/.name),format.raw/*8.19*/("""</h1>
-    <p>Short description.</p>
+    <h1>Item Name: """),_display_(/*8.21*/item/*8.25*/.name),format.raw/*8.30*/("""</h1>
+    <h3>Total Left: """),_display_(/*9.22*/item/*9.26*/.total_stock),format.raw/*9.38*/("""</h3>
+    <h3>Price: """),_display_(/*10.17*/item/*10.21*/.unit_price),format.raw/*10.32*/("""</h3>
     <p><a class="btn btn-primary btn-lg" href="/" role="button">Home!</a></p>
   </div>
 </div>
@@ -46,7 +47,7 @@ Seq[Any](format.raw/*1.15*/("""
   Individual item page.
 </div>
 
-""")))}),format.raw/*18.2*/("""
+""")))}),format.raw/*19.2*/("""
 """))
       }
     }
@@ -67,11 +68,11 @@ Seq[Any](format.raw/*1.15*/("""
 object item extends item_Scope0.item
               /*
                   -- GENERATED --
-                  DATE: Tue Sep 29 15:43:27 BST 2015
+                  DATE: Tue Sep 29 17:50:21 BST 2015
                   SOURCE: /Users/mpe12/BSkyBProject/Website/app/views/item.scala.html
-                  HASH: 5aedae0d6257c4f49b9418fb80865ac0dc6fb81a
-                  MATRIX: 742->1|850->14|878->17|917->48|956->50|984->52|1143->185|1155->189|1180->194|1398->382
-                  LINES: 27->1|32->1|34->3|34->3|34->3|36->5|39->8|39->8|39->8|49->18
+                  HASH: d536c6455d1829a369e07831f46e7ff1435b416e
+                  MATRIX: 742->1|850->14|878->17|917->48|956->50|984->52|1154->196|1166->200|1191->205|1244->232|1256->236|1288->248|1337->270|1350->274|1382->285|1570->443
+                  LINES: 27->1|32->1|34->3|34->3|34->3|36->5|39->8|39->8|39->8|40->9|40->9|40->9|41->10|41->10|41->10|50->19
                   -- GENERATED --
               */
           
