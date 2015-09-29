@@ -1,19 +1,10 @@
-@(customers: List[Customer], users: List[Users])
+@(hello : String)
 
 
 @main("Welcome to Play") {
 
 
 
-@for(customer <- customers){
-    @customer.surname
-    <br />
-    @customer.forename
-}
-
-@for(user <- users){
-    @user.sky_id
-}
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="jumbotron headline-img blue">
   <div class="container">

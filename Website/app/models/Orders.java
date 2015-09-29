@@ -1,17 +1,8 @@
 package models;
 
-import play.*;
-import play.mvc.*;
-import play.db.*;
-
-import com.avaje.ebean.Model;
-import play.db.ebean.*;
-import play.data.format.*;
-import play.data.validation.*;
-
-import java.sql.*;
-import java.util.*;
+import play.db.ebean.Model;
 import javax.persistence.*;
+
 
 @Entity
 public class Orders extends Model {
@@ -22,8 +13,5 @@ public class Orders extends Model {
   public String date;
   public Long price;
   public Long order_status_id;
-    
-  public static Finder<Integer,Orders> find = new Finder<Integer,Orders>(
-    Integer.class, Orders.class
-  ); 
+ 
 }

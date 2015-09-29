@@ -3,13 +3,5 @@
 [0m[[0mdebug[0m] [0m	(/Users/mpe12/BSkyBProject/Website/conf/evolutions,/Users/mpe12/BSkyBProject/Website/target/scala-2.11/classes/evolutions)[0m
 [0m[[0mdebug[0m] [0m	(/Users/mpe12/BSkyBProject/Website/conf/logback.xml,/Users/mpe12/BSkyBProject/Website/target/scala-2.11/classes/logback.xml)[0m
 [0m[[0mdebug[0m] [0m	(/Users/mpe12/BSkyBProject/Website/conf/routes,/Users/mpe12/BSkyBProject/Website/target/scala-2.11/classes/routes)[0m
-[0m[[0mdebug[0m] [0m	(/Users/mpe12/BSkyBProject/Website/conf/evolutions/address,/Users/mpe12/BSkyBProject/Website/target/scala-2.11/classes/evolutions/address)[0m
-[0m[[0mdebug[0m] [0m	(/Users/mpe12/BSkyBProject/Website/conf/evolutions/customer,/Users/mpe12/BSkyBProject/Website/target/scala-2.11/classes/evolutions/customer)[0m
 [0m[[0mdebug[0m] [0m	(/Users/mpe12/BSkyBProject/Website/conf/evolutions/default,/Users/mpe12/BSkyBProject/Website/target/scala-2.11/classes/evolutions/default)[0m
-[0m[[0mdebug[0m] [0m	(/Users/mpe12/BSkyBProject/Website/conf/evolutions/orders,/Users/mpe12/BSkyBProject/Website/target/scala-2.11/classes/evolutions/orders)[0m
-[0m[[0mdebug[0m] [0m	(/Users/mpe12/BSkyBProject/Website/conf/evolutions/users,/Users/mpe12/BSkyBProject/Website/target/scala-2.11/classes/evolutions/users)[0m
-[0m[[0mdebug[0m] [0m	(/Users/mpe12/BSkyBProject/Website/conf/evolutions/address/1.sql,/Users/mpe12/BSkyBProject/Website/target/scala-2.11/classes/evolutions/address/1.sql)[0m
-[0m[[0mdebug[0m] [0m	(/Users/mpe12/BSkyBProject/Website/conf/evolutions/customer/1.sql,/Users/mpe12/BSkyBProject/Website/target/scala-2.11/classes/evolutions/customer/1.sql)[0m
 [0m[[0mdebug[0m] [0m	(/Users/mpe12/BSkyBProject/Website/conf/evolutions/default/1.sql,/Users/mpe12/BSkyBProject/Website/target/scala-2.11/classes/evolutions/default/1.sql)[0m
-[0m[[0mdebug[0m] [0m	(/Users/mpe12/BSkyBProject/Website/conf/evolutions/orders/1.sql,/Users/mpe12/BSkyBProject/Website/target/scala-2.11/classes/evolutions/orders/1.sql)[0m
-[0m[[0mdebug[0m] [0m	(/Users/mpe12/BSkyBProject/Website/conf/evolutions/users/1.sql,/Users/mpe12/BSkyBProject/Website/target/scala-2.11/classes/evolutions/users/1.sql)[0m

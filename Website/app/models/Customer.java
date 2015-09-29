@@ -1,16 +1,6 @@
 package models;
 
-import play.*;
-import play.mvc.*;
-import play.db.*;
-
-import com.avaje.ebean.Model;
-import play.db.ebean.*;
-import play.data.format.*;
-import play.data.validation.*;
-
-import java.sql.*;
-import java.util.*;
+import play.db.ebean.Model;
 import javax.persistence.*;
 
 @Entity
@@ -23,8 +13,4 @@ public class Customer extends Model {
   public String surname;
   public String forename;
   
-    
-  public static Finder<Integer,Customer> find = new Finder<Integer,Customer>(
-    Integer.class, Customer.class
-  ); 
 }

@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/mpe12/BSkyBProject/Website/conf/routes
-// @DATE:Mon Sep 28 17:25:56 BST 2015
+// @DATE:Tue Sep 29 10:45:45 BST 2015
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -15,7 +15,7 @@ import _root_.play.libs.F
 package controllers.javascript {
   import ReverseRouteContext.empty
 
-  // @LINE:11
+  // @LINE:12
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -23,7 +23,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:11
+    // @LINE:12
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """
@@ -44,6 +44,16 @@ package controllers.javascript {
 
   
     // @LINE:7
+    def customers: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.customers",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "customers"})
+        }
+      """
+    )
+  
+    // @LINE:8
     def products: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.products",
       """
@@ -53,7 +63,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:8
+    // @LINE:9
     def item: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.item",
       """

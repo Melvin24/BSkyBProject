@@ -4,6 +4,7 @@
 
 # Home page
 GET     /                           controllers.Application.index()
+GET    /customers                  controllers.Application.customers()
 GET     /products                   controllers.Application.products()
 GET     /products/:id               controllers.Application.item(id: String)
 

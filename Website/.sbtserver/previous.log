@@ -1,5 +1,5 @@
-New log file opened at Mon Sep 28 17:36:09 BST 2015 by 49410@LEEML0195695
-jvm 49410@LEEML0195695
+New log file opened at Tue Sep 29 10:49:49 BST 2015 by 9310@LEEML0195695
+jvm 9310@LEEML0195695
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.60-b23
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -14,6 +14,38 @@ Command engine initial remaining commands List(--initialize, onFailure load-fail
 > onFailure load-failed
 > boot
 > reload
+[Loading] Scanning directory /Users/mpe12/BSkyBProject/Website/project/project
+[Loading] Found non-root projects 
+[Loading] Done in /Users/mpe12/BSkyBProject/Website/project/project, returning: ()
+deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))))
+  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.JUnitXmlReportPlugin)
+sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin) not found List(sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin) not found List(sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin) not found List(sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin) not found List()
+  :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+[Loading] Done in /Users/mpe12/BSkyBProject/Website/project/project, returning: (website-build-build)
+Loading project definition from /Users/mpe12/BSkyBProject/Website/project/project
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@493ec1bf, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	
 [Loading] Scanning directory /Users/mpe12/BSkyBProject/Website/project
 [Loading] Found non-root projects 
 [Loading] Done in /Users/mpe12/BSkyBProject/Website/project, returning: ()
@@ -27,7 +59,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in /Users/mpe12/BSkyBProject/Website/project, returning: (website-build)
 Loading project definition from /Users/mpe12/BSkyBProject/Website/project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@22bd1f4e, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@493ec1bf, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -69,7 +101,7 @@ Set current project to play-java (in build file:/Users/mpe12/BSkyBProject/Websit
 > server-handle-next-server-request
 > {file:/Users/mpe12/BSkyBProject/Website/}myProject/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@495496e7, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@61b63172, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -88,46 +120,43 @@ All initially invalidated sources: Set()
 
 ebean-enhance> transform> pkg: models
 ebean-enhance> cls: models/Address  msg: no detection so enhancing entity
+ebean-enhance> cls: play/db/ebean/Model  msg: read ClassMeta
 ebean-enhance> cls: com/avaje/ebean/Model  msg: read ClassMeta
-ebean-enhance> cls: models/Address  msg: Skip intercepting static field find
 ebean-enhance> cls: models/Address  msg: Found ebean marker field _EBEAN_MARKER models.Address
 ebean-enhance> cls: models/Address  msg: Skip intercepting static field _ebean_props
 ebean-enhance> cls: models/Address  msg: ... ignore field _ebean_intercept
 ebean-enhance> cls: models/Address  msg: Skip intercepting transient field _ebean_identity
 ebean-enhance> cls: models/Address  msg: skipping... no enhancement required
 ebean-enhance> cls: models/Customer  msg: no detection so enhancing entity
-ebean-enhance> cls: models/Customer  msg: Skip intercepting static field find
 ebean-enhance> cls: models/Customer  msg: Found ebean marker field _EBEAN_MARKER models.Customer
 ebean-enhance> cls: models/Customer  msg: Skip intercepting static field _ebean_props
 ebean-enhance> cls: models/Customer  msg: ... ignore field _ebean_intercept
 ebean-enhance> cls: models/Customer  msg: Skip intercepting transient field _ebean_identity
 ebean-enhance> cls: models/Customer  msg: skipping... no enhancement required
 ebean-enhance> cls: models/Orders  msg: no detection so enhancing entity
-ebean-enhance> cls: models/Orders  msg: Skip intercepting static field find
 ebean-enhance> cls: models/Orders  msg: Found ebean marker field _EBEAN_MARKER models.Orders
 ebean-enhance> cls: models/Orders  msg: Skip intercepting static field _ebean_props
 ebean-enhance> cls: models/Orders  msg: ... ignore field _ebean_intercept
 ebean-enhance> cls: models/Orders  msg: Skip intercepting transient field _ebean_identity
 ebean-enhance> cls: models/Orders  msg: skipping... no enhancement required
 ebean-enhance> cls: models/Users  msg: no detection so enhancing entity
-ebean-enhance> cls: models/Users  msg: Skip intercepting static field find
 ebean-enhance> cls: models/Users  msg: Found ebean marker field _EBEAN_MARKER models.Users
 ebean-enhance> cls: models/Users  msg: Skip intercepting static field _ebean_props
 ebean-enhance> cls: models/Users  msg: ... ignore field _ebean_intercept
 ebean-enhance> cls: models/Users  msg: Skip intercepting transient field _ebean_identity
 ebean-enhance> cls: models/Users  msg: skipping... no enhancement required
-Total time: 1 s, completed Sep 28, 2015 5:36:13 PM
+Total time: 1 s, completed Sep 29, 2015 10:49:54 AM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/mpe12/BSkyBProject/Website/}myProject/compile:mainClass
 Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@33952afa, check cycles: false
-Total time: 0 s, completed Sep 28, 2015 5:36:13 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@2bd32d57, check cycles: false
+Total time: 0 s, completed Sep 29, 2015 10:49:54 AM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/mpe12/BSkyBProject/Website/}myProject/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@452f9b56, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@9438408, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -146,99 +175,273 @@ All initially invalidated sources: Set()
 
 ebean-enhance> transform> pkg: models
 ebean-enhance> cls: models/Address  msg: no detection so enhancing entity
+ebean-enhance> cls: play/db/ebean/Model  msg: read ClassMeta
 ebean-enhance> cls: com/avaje/ebean/Model  msg: read ClassMeta
-ebean-enhance> cls: models/Address  msg: Skip intercepting static field find
 ebean-enhance> cls: models/Address  msg: Found ebean marker field _EBEAN_MARKER models.Address
 ebean-enhance> cls: models/Address  msg: Skip intercepting static field _ebean_props
 ebean-enhance> cls: models/Address  msg: ... ignore field _ebean_intercept
 ebean-enhance> cls: models/Address  msg: Skip intercepting transient field _ebean_identity
 ebean-enhance> cls: models/Address  msg: skipping... no enhancement required
 ebean-enhance> cls: models/Customer  msg: no detection so enhancing entity
-ebean-enhance> cls: models/Customer  msg: Skip intercepting static field find
 ebean-enhance> cls: models/Customer  msg: Found ebean marker field _EBEAN_MARKER models.Customer
 ebean-enhance> cls: models/Customer  msg: Skip intercepting static field _ebean_props
 ebean-enhance> cls: models/Customer  msg: ... ignore field _ebean_intercept
 ebean-enhance> cls: models/Customer  msg: Skip intercepting transient field _ebean_identity
 ebean-enhance> cls: models/Customer  msg: skipping... no enhancement required
 ebean-enhance> cls: models/Orders  msg: no detection so enhancing entity
-ebean-enhance> cls: models/Orders  msg: Skip intercepting static field find
 ebean-enhance> cls: models/Orders  msg: Found ebean marker field _EBEAN_MARKER models.Orders
 ebean-enhance> cls: models/Orders  msg: Skip intercepting static field _ebean_props
 ebean-enhance> cls: models/Orders  msg: ... ignore field _ebean_intercept
 ebean-enhance> cls: models/Orders  msg: Skip intercepting transient field _ebean_identity
 ebean-enhance> cls: models/Orders  msg: skipping... no enhancement required
 ebean-enhance> cls: models/Users  msg: no detection so enhancing entity
-ebean-enhance> cls: models/Users  msg: Skip intercepting static field find
 ebean-enhance> cls: models/Users  msg: Found ebean marker field _EBEAN_MARKER models.Users
 ebean-enhance> cls: models/Users  msg: Skip intercepting static field _ebean_props
 ebean-enhance> cls: models/Users  msg: ... ignore field _ebean_intercept
 ebean-enhance> cls: models/Users  msg: Skip intercepting transient field _ebean_identity
 ebean-enhance> cls: models/Users  msg: skipping... no enhancement required
-Total time: 0 s, completed Sep 28, 2015 5:36:13 PM
+Total time: 0 s, completed Sep 29, 2015 10:49:54 AM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/mpe12/BSkyBProject/Website/}myProject/compile:mainClass
 Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@65c3c713, check cycles: false
-Total time: 0 s, completed Sep 28, 2015 5:36:13 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@63c16723, check cycles: false
+Total time: 0 s, completed Sep 29, 2015 10:49:54 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@2695e527, check cycles: false
+Total time: 0 s, completed Sep 29, 2015 10:51:08 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/mpe12/BSkyBProject/Website/}myProject/*:playForkConfig
+Evaluating tasks: *:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@7cd07529, check cycles: false
+Total time: 0 s, completed Sep 29, 2015 10:51:10 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> myProject/playForkNotifyStart http://localhost:9000
+Evaluating tasks: *:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@17c76ba9, check cycles: false
+Total time: 0 s, completed Sep 29, 2015 10:51:11 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/mpe12/BSkyBProject/Website/}myProject/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@3599b52b, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+ebean-enhance> transform> pkg: models
+ebean-enhance> cls: models/Address  msg: no detection so enhancing entity
+ebean-enhance> cls: play/db/ebean/Model  msg: read ClassMeta
+ebean-enhance> cls: com/avaje/ebean/Model  msg: read ClassMeta
+ebean-enhance> cls: models/Address  msg: Found ebean marker field _EBEAN_MARKER models.Address
+ebean-enhance> cls: models/Address  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/Address  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/Address  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/Address  msg: skipping... no enhancement required
+ebean-enhance> cls: models/Customer  msg: no detection so enhancing entity
+ebean-enhance> cls: models/Customer  msg: Found ebean marker field _EBEAN_MARKER models.Customer
+ebean-enhance> cls: models/Customer  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/Customer  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/Customer  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/Customer  msg: skipping... no enhancement required
+ebean-enhance> cls: models/Orders  msg: no detection so enhancing entity
+ebean-enhance> cls: models/Orders  msg: Found ebean marker field _EBEAN_MARKER models.Orders
+ebean-enhance> cls: models/Orders  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/Orders  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/Orders  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/Orders  msg: skipping... no enhancement required
+ebean-enhance> cls: models/Users  msg: no detection so enhancing entity
+ebean-enhance> cls: models/Users  msg: Found ebean marker field _EBEAN_MARKER models.Users
+ebean-enhance> cls: models/Users  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/Users  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/Users  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/Users  msg: skipping... no enhancement required
+Copy resource mappings: 
+	(/Users/mpe12/BSkyBProject/Website/conf/application.conf,/Users/mpe12/BSkyBProject/Website/target/scala-2.11/classes/application.conf)
+	(/Users/mpe12/BSkyBProject/Website/conf/evolutions,/Users/mpe12/BSkyBProject/Website/target/scala-2.11/classes/evolutions)
+	(/Users/mpe12/BSkyBProject/Website/conf/logback.xml,/Users/mpe12/BSkyBProject/Website/target/scala-2.11/classes/logback.xml)
+	(/Users/mpe12/BSkyBProject/Website/conf/routes,/Users/mpe12/BSkyBProject/Website/target/scala-2.11/classes/routes)
+	(/Users/mpe12/BSkyBProject/Website/conf/evolutions/default,/Users/mpe12/BSkyBProject/Website/target/scala-2.11/classes/evolutions/default)
+	(/Users/mpe12/BSkyBProject/Website/conf/evolutions/default/1.sql,/Users/mpe12/BSkyBProject/Website/target/scala-2.11/classes/evolutions/default/1.sql)
+Warning: node.js detection failed, sbt will use the Rhino based Trireme JavaScript engine instead to run JavaScript assets compilation, which in some cases may be orders of magnitude slower than using node.js.
+Total time: 1 s, completed Sep 29, 2015 10:51:20 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/mpe12/BSkyBProject/Website/}myProject/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@3d0ad7f2, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/mpe12/BSkyBProject/Website/app/controllers/Application.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/mpe12/BSkyBProject/Website/app/controllers/Application.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/mpe12/BSkyBProject/Website/app/controllers/Application.java)
+
+Read from stdout: Compiling 1 Java source to /Users/mpe12/BSkyBProject/Website/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/mpe12/BSkyBProject/Website/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@325a1365 directly...
+Read from stdout: /Users/mpe12/BSkyBProject/Website/app/controllers/Application.java: /Users/mpe12/BSkyBProject/Website/app/controllers/Application.java uses or overrides a deprecated API.
+/Users/mpe12/BSkyBProject/Website/app/controllers/Application.java: /Users/mpe12/BSkyBProject/Website/app/controllers/Application.java uses or overrides a deprecated API.
+Read from stdout: /Users/mpe12/BSkyBProject/Website/app/controllers/Application.java: Recompile with -Xlint:deprecation for details.
+/Users/mpe12/BSkyBProject/Website/app/controllers/Application.java: Recompile with -Xlint:deprecation for details.
+Read from stdout: /Users/mpe12/BSkyBProject/Website/app/controllers/Application.java: /Users/mpe12/BSkyBProject/Website/app/controllers/Application.java uses unchecked or unsafe operations.
+/Users/mpe12/BSkyBProject/Website/app/controllers/Application.java: /Users/mpe12/BSkyBProject/Website/app/controllers/Application.java uses unchecked or unsafe operations.
+Read from stdout: /Users/mpe12/BSkyBProject/Website/app/controllers/Application.java: Recompile with -Xlint:unchecked for details.
+/Users/mpe12/BSkyBProject/Website/app/controllers/Application.java: Recompile with -Xlint:unchecked for details.
+Java compilation took 0.526688665 s
+Java analysis took 0.309816655 s
+Java compile + analysis took 0.84375933 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+ebean-enhance> transform> pkg: models
+ebean-enhance> cls: models/Address  msg: no detection so enhancing entity
+ebean-enhance> cls: play/db/ebean/Model  msg: read ClassMeta
+ebean-enhance> cls: com/avaje/ebean/Model  msg: read ClassMeta
+ebean-enhance> cls: models/Address  msg: Found ebean marker field _EBEAN_MARKER models.Address
+ebean-enhance> cls: models/Address  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/Address  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/Address  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/Address  msg: skipping... no enhancement required
+ebean-enhance> cls: models/Customer  msg: no detection so enhancing entity
+ebean-enhance> cls: models/Customer  msg: Found ebean marker field _EBEAN_MARKER models.Customer
+ebean-enhance> cls: models/Customer  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/Customer  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/Customer  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/Customer  msg: skipping... no enhancement required
+ebean-enhance> cls: models/Orders  msg: no detection so enhancing entity
+ebean-enhance> cls: models/Orders  msg: Found ebean marker field _EBEAN_MARKER models.Orders
+ebean-enhance> cls: models/Orders  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/Orders  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/Orders  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/Orders  msg: skipping... no enhancement required
+ebean-enhance> cls: models/Users  msg: no detection so enhancing entity
+ebean-enhance> cls: models/Users  msg: Found ebean marker field _EBEAN_MARKER models.Users
+ebean-enhance> cls: models/Users  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/Users  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/Users  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/Users  msg: skipping... no enhancement required
+Copy resource mappings: 
+	(/Users/mpe12/BSkyBProject/Website/conf/application.conf,/Users/mpe12/BSkyBProject/Website/target/scala-2.11/classes/application.conf)
+	(/Users/mpe12/BSkyBProject/Website/conf/evolutions,/Users/mpe12/BSkyBProject/Website/target/scala-2.11/classes/evolutions)
+	(/Users/mpe12/BSkyBProject/Website/conf/logback.xml,/Users/mpe12/BSkyBProject/Website/target/scala-2.11/classes/logback.xml)
+	(/Users/mpe12/BSkyBProject/Website/conf/routes,/Users/mpe12/BSkyBProject/Website/target/scala-2.11/classes/routes)
+	(/Users/mpe12/BSkyBProject/Website/conf/evolutions/default,/Users/mpe12/BSkyBProject/Website/target/scala-2.11/classes/evolutions/default)
+	(/Users/mpe12/BSkyBProject/Website/conf/evolutions/default/1.sql,/Users/mpe12/BSkyBProject/Website/target/scala-2.11/classes/evolutions/default/1.sql)
+Total time: 1 s, completed Sep 29, 2015 10:51:54 AM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/mpe12/BSkyBProject/Website/}myProject/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@163bafa9, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@2d1fb50b, check cycles: false
 
 Initial source changes: 
 	removed:Set()
 	added: Set()
-	modified: Set()
+	modified: Set(/Users/mpe12/BSkyBProject/Website/app/controllers/Application.java)
 Removed products: Set()
 External API changes: API Changes: Set()
 Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
+Initial directly invalidated sources: Set(/Users/mpe12/BSkyBProject/Website/app/controllers/Application.java)
 
 Sources indirectly invalidated by:
 	product: Set()
 	binary dep: Set()
 	external source: Set()
-All initially invalidated sources: Set()
+All initially invalidated sources: Set(/Users/mpe12/BSkyBProject/Website/app/controllers/Application.java)
 
+Read from stdout: Compiling 1 Java source to /Users/mpe12/BSkyBProject/Website/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/mpe12/BSkyBProject/Website/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@6aac7ef1 directly...
+Read from stdout: /Users/mpe12/BSkyBProject/Website/app/controllers/Application.java: /Users/mpe12/BSkyBProject/Website/app/controllers/Application.java uses or overrides a deprecated API.
+/Users/mpe12/BSkyBProject/Website/app/controllers/Application.java: /Users/mpe12/BSkyBProject/Website/app/controllers/Application.java uses or overrides a deprecated API.
+Read from stdout: /Users/mpe12/BSkyBProject/Website/app/controllers/Application.java: Recompile with -Xlint:deprecation for details.
+/Users/mpe12/BSkyBProject/Website/app/controllers/Application.java: Recompile with -Xlint:deprecation for details.
+Read from stdout: /Users/mpe12/BSkyBProject/Website/app/controllers/Application.java: /Users/mpe12/BSkyBProject/Website/app/controllers/Application.java uses unchecked or unsafe operations.
+/Users/mpe12/BSkyBProject/Website/app/controllers/Application.java: /Users/mpe12/BSkyBProject/Website/app/controllers/Application.java uses unchecked or unsafe operations.
+Read from stdout: /Users/mpe12/BSkyBProject/Website/app/controllers/Application.java: Recompile with -Xlint:unchecked for details.
+/Users/mpe12/BSkyBProject/Website/app/controllers/Application.java: Recompile with -Xlint:unchecked for details.
+Java compilation took 0.080338181 s
+Java analysis took 0.049667994 s
+Java compile + analysis took 0.13338741 s
+Invalidating /Users/mpe12/BSkyBProject/Website/app/controllers/Application.java...
+Invalidating (transitively) by inheritance from /Users/mpe12/BSkyBProject/Website/app/controllers/Application.java...
+Initial set of included nodes: Set(/Users/mpe12/BSkyBProject/Website/app/controllers/Application.java)
+Invalidated by transitive inheritance dependency: Set(/Users/mpe12/BSkyBProject/Website/app/controllers/Application.java)
+The /Users/mpe12/BSkyBProject/Website/app/controllers/Application.java source file has the following regular definitions changed:
+	orders, addresses.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: /Users/mpe12/BSkyBProject/Website/app/controllers/Application.java
+None of the modified names appears in /Users/mpe12/BSkyBProject/Website/target/scala-2.11/routes/main/router/Routes.scala. This dependency is not being considered for invalidation.
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
 ebean-enhance> transform> pkg: models
 ebean-enhance> cls: models/Address  msg: no detection so enhancing entity
+ebean-enhance> cls: play/db/ebean/Model  msg: read ClassMeta
 ebean-enhance> cls: com/avaje/ebean/Model  msg: read ClassMeta
-ebean-enhance> cls: models/Address  msg: Skip intercepting static field find
 ebean-enhance> cls: models/Address  msg: Found ebean marker field _EBEAN_MARKER models.Address
 ebean-enhance> cls: models/Address  msg: Skip intercepting static field _ebean_props
 ebean-enhance> cls: models/Address  msg: ... ignore field _ebean_intercept
 ebean-enhance> cls: models/Address  msg: Skip intercepting transient field _ebean_identity
 ebean-enhance> cls: models/Address  msg: skipping... no enhancement required
 ebean-enhance> cls: models/Customer  msg: no detection so enhancing entity
-ebean-enhance> cls: models/Customer  msg: Skip intercepting static field find
 ebean-enhance> cls: models/Customer  msg: Found ebean marker field _EBEAN_MARKER models.Customer
 ebean-enhance> cls: models/Customer  msg: Skip intercepting static field _ebean_props
 ebean-enhance> cls: models/Customer  msg: ... ignore field _ebean_intercept
 ebean-enhance> cls: models/Customer  msg: Skip intercepting transient field _ebean_identity
 ebean-enhance> cls: models/Customer  msg: skipping... no enhancement required
 ebean-enhance> cls: models/Orders  msg: no detection so enhancing entity
-ebean-enhance> cls: models/Orders  msg: Skip intercepting static field find
 ebean-enhance> cls: models/Orders  msg: Found ebean marker field _EBEAN_MARKER models.Orders
 ebean-enhance> cls: models/Orders  msg: Skip intercepting static field _ebean_props
 ebean-enhance> cls: models/Orders  msg: ... ignore field _ebean_intercept
 ebean-enhance> cls: models/Orders  msg: Skip intercepting transient field _ebean_identity
 ebean-enhance> cls: models/Orders  msg: skipping... no enhancement required
 ebean-enhance> cls: models/Users  msg: no detection so enhancing entity
-ebean-enhance> cls: models/Users  msg: Skip intercepting static field find
 ebean-enhance> cls: models/Users  msg: Found ebean marker field _EBEAN_MARKER models.Users
 ebean-enhance> cls: models/Users  msg: Skip intercepting static field _ebean_props
 ebean-enhance> cls: models/Users  msg: ... ignore field _ebean_intercept
 ebean-enhance> cls: models/Users  msg: Skip intercepting transient field _ebean_identity
 ebean-enhance> cls: models/Users  msg: skipping... no enhancement required
-Total time: 0 s, completed Sep 28, 2015 5:36:42 PM
+Total time: 0 s, completed Sep 29, 2015 10:52:34 AM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/mpe12/BSkyBProject/Website/}myProject/compile:mainClass
 Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@2337ffc3, check cycles: false
-Total time: 0 s, completed Sep 28, 2015 5:36:42 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@40dc1bca, check cycles: false
+Total time: 0 s, completed Sep 29, 2015 10:52:34 AM
 > server-post-command-cleanup
 > server-handle-next-server-request
 Done executing sbt server engine, result Right(Exit(0))
@@ -247,4 +450,4 @@ Waiting for socket thread
 Waiting for request processor thread
 Waiting for command engine result
 Returning control to sbt launcher with result Exit(0)
-Closing the 49410@LEEML0195695 logs at Mon Sep 28 17:36:44 BST 2015, goodbye.
+Closing the 9310@LEEML0195695 logs at Tue Sep 29 10:52:36 BST 2015, goodbye.
