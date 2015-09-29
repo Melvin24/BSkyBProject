@@ -3,7 +3,7 @@
 @main("List of all products pages.") {
   <ol class="breadcrumb">
     <li><a href="/">Home</a></li>
-    <li><a href="/products">Products</a></li>
+    <li><a href="/products">TShirts</a></li>
   </ol>
 
 
@@ -30,24 +30,32 @@ glyphicon glyphicon-plus-sign
       <img src="@routes.Assets.versioned("images/mensTshirt.png")"/>
       <p class="centerText">Mens T-Shirt</p>
       <div class="caption productCaption">
-        <button type="button" class="btn removeItem" id="dec-1"><span class="glyphicon glyphicon-minus-sign red"></span></button>
-        <input type="text" class="quantityWidth" id="quantityItem1" value ="0">
-        <button type="button" class="btn addItem" id = "inc-1"><span class="glyphicon glyphicon-plus-sign green"></span></button>
+        <button type="button" class="btn decItem" id="dec1" itemNumber="1"><span class="glyphicon glyphicon-minus-sign red"></span></button>
+        <input type="text" class="quantityWidth centerText" id="quantityItem1" value ="0">
+        <button type="button" class="btn incItem" id = "inc1" itemNumber="1"><span class="glyphicon glyphicon-plus-sign green"></span></button>
       </div>
+      <div>
+        <button type="button" class="btn btn-success addToBasketButton" id = "addToBasket1" itemNumber="1">Add To Basket</button>
     </div>
   </div>
+</div>
 
-  <div class="col-sm-4 col-md-3">
-    <div class="thumbnail">
-      <img src="@routes.Assets.versioned("images/womensTshirt.png")"/>
-      <p class="centerText">Womans T-Shirt</p>
-      <div class="caption productCaption">
-        <button type="button" class="btn removeItem" id="dec-2"><span class="glyphicon glyphicon-minus-sign red"></span></button>
-        <input type="text" class="quantityWidth" id="quantityItem2" value ="0">
-        <button type="button" class="btn addItem" id = "inc-2"><span class="glyphicon glyphicon-plus-sign green"></span></button>
-      </div>
+<div class="col-sm-4 col-md-3">
+  <div class="thumbnail">
+    <img src="@routes.Assets.versioned("images/womensTshirt.png")"/>
+    <p class="centerText">Ladies T-Shirt</p>
+    <div class="caption productCaption">
+      <button type="button" class="btn decItem" id="dec2" itemNumber="2"><span class="glyphicon glyphicon-minus-sign red"></span></button>
+      <input type="text" class="quantityWidth centerText" id="quantityItem2" value ="0">
+      <button type="button" class="btn incItem" id = "inc2" itemNumber="2"><span class="glyphicon glyphicon-plus-sign green"></span></button>
     </div>
+    <div>
+      <button type="button" class="btn btn-success addToBasketButton" id = "addToBasket2" itemNumber="2">Add To Basket</button>
   </div>
+</div>
+</div>
+
+
 </div>
 
 }
