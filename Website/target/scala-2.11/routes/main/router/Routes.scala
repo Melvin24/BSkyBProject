@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/mpe12/BSkyBProject/Website/conf/routes
-// @DATE:Tue Sep 29 14:01:45 BST 2015
+// @DATE:Tue Sep 29 15:42:53 BST 2015
 
 package router
 
@@ -45,7 +45,7 @@ class Routes(
   def documentation = List(
     ("""GET""", this.prefix, """controllers.Application.index()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """products""", """controllers.Application.products()"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """products/$id<[^/]+>""", """controllers.Application.item(id:String)"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """products/$id<[^/]+>""", """controllers.Application.item(id:Long)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""", """controllers.Assets.versioned(path:String = "/public", file:Asset)"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
@@ -93,12 +93,12 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("products/"), DynamicPart("id", """[^/]+""",true)))
   )
   private[this] lazy val controllers_Application_item2_invoker = createInvoker(
-    Application_1.item(fakeValue[String]),
+    Application_1.item(fakeValue[Long]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.Application",
       "item",
-      Seq(classOf[String]),
+      Seq(classOf[Long]),
       "GET",
       """""",
       this.prefix + """products/$id<[^/]+>"""
@@ -139,7 +139,7 @@ class Routes(
   
     // @LINE:8
     case controllers_Application_item2_route(params) =>
-      call(params.fromPath[String]("id", None)) { (id) =>
+      call(params.fromPath[Long]("id", None)) { (id) =>
         controllers_Application_item2_invoker.call(Application_1.item(id))
       }
   

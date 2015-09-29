@@ -3,6 +3,8 @@ package models;
 import play.db.ebean.Model;
 import javax.persistence.*;
 
+import com.avaje.ebean.*;
+
 
 @Entity
 public class Stock extends Model {
@@ -13,5 +15,7 @@ public class Stock extends Model {
   public String name;
   public Long total_stock;
   public Long unit_price;
+  
+  public static Finder<Long,Stock> find = new Finder<Long,Stock>(Long.class,Stock.class);
  
 }

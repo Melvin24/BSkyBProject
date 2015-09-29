@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/mpe12/BSkyBProject/Website/conf/routes
-// @DATE:Tue Sep 29 14:01:45 BST 2015
+// @DATE:Tue Sep 29 15:42:53 BST 2015
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -58,7 +58,7 @@ package controllers.javascript {
       "controllers.Application.item",
       """
         function(id) {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "products/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("id", encodeURIComponent(id))})
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "products/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("id", id)})
         }
       """
     )
