@@ -1,14 +1,11 @@
 @(products: String)
 
 @main("List of all products pages.") {
+  <ol class="breadcrumb">
+    <li><a href="/">Home</a></li>
+    <li><a href="/products">Products</a></li>
+  </ol>
 
-
-  <div id ="carouselSlides">
-    <ul class="slideshow">
-      <li><img class="carouselImage" src="@routes.Assets.versioned("images/skyAccessories.png")"/></li>
-			<li><img class="carouselImage" src="@routes.Assets.versioned("images/remote.jpg")"/></li>
-    </ul>
-  </div>
 
 
 <!-- Main jumbotron for a primary marketing message or call to action
@@ -17,30 +14,37 @@
     <p>@products</p>
     <p><a class="btn btn-primary btn-lg" href="/products/iphone6" role="button">Learn more &raquo;</a></p>
   </div>
+<div id = "productsContainer">
+  <div id = "filterDiv">
+
+  </div>
+glyphicon glyphicon-plus-sign
 </div>-->
+</div>
+  <h1 class="centerText"> T-Shirts</h1>
+
 
 <div class="row" id ="mainThumbnail">
   <div class="col-sm-4 col-md-3">
     <div class="thumbnail">
       <img src="@routes.Assets.versioned("images/mensTshirt.png")"/>
+      <p class="centerText">Mens T-Shirt</p>
       <div class="caption productCaption">
-        <p><a href="/products/iphone6" class="btn btn-primary" role="button">Shop T-Shirts</a> </p>
+        <button type="button" class="btn removeItem" id="dec-1"><span class="glyphicon glyphicon-minus-sign red"></span></button>
+        <input type="text" class="quantityWidth" id="quantityItem1" value ="0">
+        <button type="button" class="btn addItem" id = "inc-1"><span class="glyphicon glyphicon-plus-sign green"></span></button>
       </div>
     </div>
   </div>
+
   <div class="col-sm-4 col-md-3">
     <div class="thumbnail">
-      <img src="@routes.Assets.versioned("images/skyPhone5.png")"/>
+      <img src="@routes.Assets.versioned("images/womensTshirt.png")"/>
+      <p class="centerText">Womans T-Shirt</p>
       <div class="caption productCaption">
-        <p><a href="/products/iphone5" class="btn btn-primary" role="button">Shop Phones</a> </p>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-4 col-md-3">
-    <div class="thumbnail">
-      <img src="@routes.Assets.versioned("images/gnome.png")"/>
-      <div class="caption productCaption">
-        <p><a href="/products/iphone6" class="btn btn-primary" role="button">Shop Gnomes</a> </p>
+        <button type="button" class="btn removeItem" id="dec-2"><span class="glyphicon glyphicon-minus-sign red"></span></button>
+        <input type="text" class="quantityWidth" id="quantityItem2" value ="0">
+        <button type="button" class="btn addItem" id = "inc-2"><span class="glyphicon glyphicon-plus-sign green"></span></button>
       </div>
     </div>
   </div>

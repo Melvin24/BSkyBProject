@@ -59,13 +59,18 @@
                     }
                 });
 
+                $("#dec-1").click(function() {
+                    if($("#quantityItem1").val() > 0){
+                      $("#quantityItem1").val($("#quantityItem1").val() - 1);
+                    }
+                });
 
+                $("#inc-1").click(function() {
+                  $("#quantityItem1").val(parseInt($("#quantityItem1").val()) + 1);
+                });
 
             });
         </script>
-
-
-
         <!-- Start of skyblueteam Zendesk Widget script -->
         <script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("//assets.zendesk.com/embeddable_framework/main.js","skyblueteam.zendesk.com");/*]]>*/</script>
         <!-- End of skyblueteam Zendesk Widget script -->
@@ -114,19 +119,18 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">All Products</a></li>
+            <li><a href="/products">All Products</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">T-Shirts</a></li>
-            <li><a href="#">Phones</a></li>
-            <li><a href="#">Gnomes</a></li>
+            <li><a href="/products">T-Shirts</a></li>
+            <li><a href="/products">Phones</a></li>
+            <li><a href="/products">Gnomes</a></li>
           </ul>
         </li>
-        <li><a href="#">Help/FAQ's</a></li>
+        <li><a href="/faq">Help/FAQ's</a></li>
       </ul>
     </div>
   </div>
 </nav>
-
 @content
 
 <hr />
