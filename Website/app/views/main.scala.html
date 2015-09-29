@@ -12,6 +12,7 @@
         <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/bootstrap.min.css")">
         <script type="text/javascript" src="@routes.Assets.versioned("javascripts/jquery-1.11.0.min.js")"></script>
         <script type="text/javascript" src="@routes.Assets.versioned("javascripts/bootstrap.min.js")"></script>
+        <script type="text/javascript" src="@routes.Assets.versioned("javascripts/skyApp.js")"></script>
         <script type="text/javascript" src="@routes.Assets.versioned("javascripts/jquery.toaster.js")"></script>
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/bootstrap-theme.min.css")">
@@ -25,114 +26,7 @@
                 padding-top: 50px;
                 padding-bottom: 20px;
             }
-
-
-
         </style>
-
-
-        <script type="text/javascript">
-          $(document).ready(function () {
-              $('.dropdown-toggle').dropdown();
-              $('.carousel').carousel();
-
-              var easterEgg = "gnomepoints",
-                	keyHistory = "",
-                	code,
-                	pageWidth = $(window).width() - 400;
-
-                $(document).keypress(function(e) {
-                 	code = e.keyCode || e.which;
-                    keyHistory += String.fromCharCode(e.which);
-                    console.log(keyHistory);
-
-                    if(keyHistory === easterEgg) {
-                    	$("#easterEggContainer").show();
-                       	$("#easterEgg").animate({left: "+=" + pageWidth}, 3000);
-                		$("#easterEgg").animate({left: "-=" + pageWidth }, 2000, function(){
-                			$("#easterEggContainer").fadeOut(1000);
-                		});
-                        keyHistory = "";
-                    }
-                    else if (keyHistory.length > 30 || code == 13) {
-                        keyHistory = "";
-                    }
-                });
-
-                $(".decItem").click(function() {
-                    var itemNumber = $(this).attr("itemNumber");
-                    if($("#quantityItem" + itemNumber).val() > 0){
-                      $("#quantityItem" + itemNumber).val($("#quantityItem" + itemNumber).val() - 1);
-                    }
-                });
-
-                $(".incItem").click(function() {
-                    var itemNumber = $(this).attr("itemNumber");
-                  $("#quantityItem" + itemNumber).val(parseInt($("#quantityItem" + itemNumber).val()) + 1);
-                });
-
-                $(".addToBasketButton").click(function(event) {
-                        var itemNumber = $(this).attr("itemNumber"),
-                            currentBadgeCount = $('#shoppingCartBadge').text();
-                            quantityToAdd = $('#quantityItem' + itemNumber).val();
-
-                        if(quantityToAdd > 0){
-                          $('#shoppingCartBadge').text(parseInt(currentBadgeCount) + parseInt(quantityToAdd));
-                          $('#quantityItem' + itemNumber).val(0);
-                          maketoast(event);
-                        }
-                    });
-                });
-
-
-
-
-                function maketoast (evt)
-          			{
-
-                  var codetmpl = "<code>%codeobj%</code><br><code>%codestr%</code>";
-          				evt.preventDefault();
-
-          				var options =
-          				{
-          					priority : 'success',
-          					title    : 'Success',
-          					message  : 'Added to Basket'
-          				};
-
-
-          				var codeobj = [];
-          				var codestr = [];
-
-          				var labels = ['message', 'title', 'priority'];
-          				for (var i = 0, l = labels.length; i < l; i += 1)
-          				{
-          					if (options[labels[i]] !== null)
-          					{
-          						codeobj.push([labels[i], "'" + options[labels[i]] + "'"].join(' : '));
-          					}
-
-          					codestr.push((options[labels[i]] !== null) ? "'" + options[labels[i]] + "'" : 'null');
-          				}
-
-          				if (codestr[2] === 'null')
-          				{
-          					codestr.pop();
-          					if (codestr[1] === 'null')
-          					{
-          						codestr.pop();
-          					}
-          				}
-
-          				codeobj = "$.toaster({ " + codeobj.join(", ") + " });"
-          				codestr = "$.toaster(" + codestr.join(", ") + ");"
-
-          				$('#toastCode').html(codetmpl.replace('%codeobj%', codeobj).replace('%codestr%', codestr));
-          				$.toaster(options);
-          			}
-
-
-        </script>
         <!-- Start of skyblueteam Zendesk Widget script -->
         <script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("//assets.zendesk.com/embeddable_framework/main.js","skyblueteam.zendesk.com");/*]]>*/</script>
         <!-- End of skyblueteam Zendesk Widget script -->
@@ -174,19 +68,12 @@
         </li>
         <li><a href="/faq">Help/FAQ's</a></li>
       </ul>
-
-
-
       <form class="navbar-form navbar-right" role="form">
-
-
         <button class="btn btn-sm btn-default like-btn active" type="button" id="shoppingCart">
              <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
              <span class="text">&#32;</span>
              <span id="shoppingCartBadge" class="badge">0</span>
         </button>
-
-
         <div class="form-group">
           <input type="text" placeholder="Email" class="form-control">
         </div>

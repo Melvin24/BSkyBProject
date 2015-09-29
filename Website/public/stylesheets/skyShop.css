@@ -29,10 +29,7 @@
 	width:99%;
 }
 
-.carouselImage{
-	width:550px ;
-	height:400px;
-}
+
 
 #productThumbnails{
 	text-align:center;
@@ -129,7 +126,9 @@
         z-index: 2;
     }
 }
-
+.carouselImage{
+	width:100%;
+}
 
 
 .carousel-inner{
