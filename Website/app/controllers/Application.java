@@ -24,8 +24,16 @@ public class Application extends Controller {
          return ok(home.render("Advertisments and shop"));
     }
 
-    public Result products() {
-        return ok(products.render("list of all the products"));
+    public Result tshirts() {
+        return ok(tshirts.render("list of all the tshirts"));
+    }
+
+    public Result phones() {
+        return ok(phones.render("list of all the phones"));
+    }
+
+    public Result gnomes() {
+        return ok(gnomes.render("list of all the gnomes"));
     }
 
     public Result item(String itemName) {

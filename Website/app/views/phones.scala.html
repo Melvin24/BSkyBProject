@@ -1,0 +1,61 @@
+@(products: String)
+
+@main("List of all products pages.") {
+  <ol class="breadcrumb">
+    <li><a href="/">Home</a></li>
+    <li><a href="/phones">Phones</a></li>
+  </ol>
+
+
+
+<!-- Main jumbotron for a primary marketing message or call to action
+<div class="jumbotron headline-img">
+  <div class="container">
+    <p>@products</p>
+    <p><a class="btn btn-primary btn-lg" href="/products/iphone6" role="button">Learn more &raquo;</a></p>
+  </div>
+<div id = "productsContainer">
+  <div id = "filterDiv">
+
+  </div>
+glyphicon glyphicon-plus-sign
+</div>-->
+</div>
+  <h1 class="centerText">Phones</h1>
+
+
+<div class="row" id ="mainThumbnail">
+  <div class="col-sm-4 col-md-3">
+    <div class="thumbnail">
+      <img src="@routes.Assets.versioned("images/skyPhone6.png")"/>
+      <p class="centerText">Sky Phone 6</p>
+      <div class="caption productCaption">
+        <button type="button" class="btn decItem" id="dec1" itemNumber="1"><span class="glyphicon glyphicon-minus-sign red"></span></button>
+        <input type="text" class="quantityWidth centerText" id="quantityItem1" value ="0">
+        <button type="button" class="btn incItem" id = "inc1" itemNumber="1"><span class="glyphicon glyphicon-plus-sign green"></span></button>
+      </div>
+      <div>
+        <button type="button" class="btn btn-success addToBasketButton" id = "addToBasket1" itemNumber="1">Add To Basket</button>
+    </div>
+  </div>
+</div>
+
+<div class="col-sm-4 col-md-3">
+  <div class="thumbnail">
+    <img src="@routes.Assets.versioned("images/skyPhone5.png")"/>
+    <p class="centerText">Sky Phone 5</p>
+    <div class="caption productCaption">
+      <button type="button" class="btn decItem" id="dec2" itemNumber="2"><span class="glyphicon glyphicon-minus-sign red"></span></button>
+      <input type="text" class="quantityWidth centerText" id="quantityItem2" value ="0">
+      <button type="button" class="btn incItem" id = "inc2" itemNumber="2"><span class="glyphicon glyphicon-plus-sign green"></span></button>
+    </div>
+    <div>
+      <button type="button" class="btn btn-success addToBasketButton" id = "addToBasket2" itemNumber="2">Add To Basket</button>
+  </div>
+</div>
+</div>
+
+
+</div>
+
+}

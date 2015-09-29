@@ -31,7 +31,7 @@
 
 .carouselImage{
 	width:550px ;
-	height:250px;
+	height:400px;
 }
 
 #productThumbnails{
@@ -39,7 +39,7 @@
 
 }
 #mainThumbnail {
-		padding-left: 10%;
+		padding-left: 20%;
     margin:auto;
 }
 .productCaption{
@@ -48,4 +48,102 @@
 	text-align: center;
 	display:block !important;
 
+}
+
+
+/* -------------- Products page ------------------- */
+#filterDiv{
+	border: solid;
+	height: 200px;
+	width: 300px;
+}
+
+.green {
+	color:green !important;
+}
+
+.red{
+	color:red !important;
+}
+
+.quantityContolButtons{
+	background-color: transparent;
+	border:none;
+}
+.glyphicon.glyphicon-minus-sign {
+    font-size: 30px;
+}
+.glyphicon.glyphicon-plus-sign {
+    font-size: 30px;
+}
+
+.quantityWidth{
+	width:50px;
+}
+
+.centerText{
+	text-align: center;
+}
+
+.decItem, .incItem{
+	background-color: transparent !important;
+	border:none !important;
+	text-align: center;
+
+}
+
+.addToBasketButton{
+	margin-left:25%;
+}
+
+
+/* -------- carousel ------------- */
+.carousel-fade {
+    .carousel-inner {
+        .item {
+            transition-property: opacity;
+        }
+
+        .item,
+        .active.left,
+        .active.right {
+            opacity: 0;
+        }
+
+        .active,
+        .next.left,
+        .prev.right {
+            opacity: 1;
+        }
+
+        .next,
+        .prev,
+        .active.left,
+        .active.right {
+            left: 0;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .carousel-control {
+        z-index: 2;
+    }
+}
+
+
+
+.carousel-inner{
+	height:350px;
+}
+.carousel-inner .item {
+    height: 350px;
+}
+
+
+.carousel,{
+	height:450px;
+}
+
+li.active{
+	background-color: black;
 }

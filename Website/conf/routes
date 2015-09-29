@@ -6,8 +6,12 @@
 GET     /                           controllers.Application.index()
 GET     /home                       controllers.Application.index()
 
-GET     /products                   controllers.Application.products()
-GET     /products/:id               controllers.Application.item(id: String)
+GET     /tshirts                   controllers.Application.tshirts()
+GET     /tshirts/:id               controllers.Application.item(id: String)
+
+GET     /phones                     controllers.Application.phones()
+GET     /gnomes                     controllers.Application.gnomes()
+
 
 GET     /faq                        controllers.Application.faq()
 
