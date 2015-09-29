@@ -2,10 +2,6 @@
 
 @main("List of all products pages.") {
 
-
-@for(product <- products){
-    @product.stock_id
-}
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="jumbotron headline-img">
   <div class="container">
@@ -15,7 +11,26 @@
 </div>
 
 <div class="container">
-  List of all products pages.
+  <table class="table table-condensed">
+    <tr>
+        <th>Stock ID</th>
+        <th>Category ID</th>
+        <th>Name</th>
+        <th>Total Stock</th>
+        <th>Unit Price</th>
+    </tr>
+@for(product <- products){
+    <tr>
+        <td>@product.stock_id</td>
+        <td>@product.category_id</td>
+        <td>@product.name</td>
+        <td>@product.total_stock</td>
+        <td>@product.unit_price</td>
+    </tr>
+}
+</table>
+
+<form action=""
 </div>
 
 }

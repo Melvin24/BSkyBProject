@@ -17,3 +17,5 @@ server.pid
 .cache
 
 Website/.sbtserver/connections/master.log
+
+*.log

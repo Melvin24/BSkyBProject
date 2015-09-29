@@ -33,11 +33,7 @@ Seq[Any](format.raw/*1.25*/("""
 
 """),_display_(/*3.2*/main("List of all products pages.")/*3.37*/ {_display_(Seq[Any](format.raw/*3.39*/("""
 
-
-"""),_display_(/*6.2*/for(product <- products) yield /*6.26*/{_display_(Seq[Any](format.raw/*6.27*/("""
-    """),_display_(/*7.6*/product/*7.13*/.stock_id),format.raw/*7.22*/("""
-""")))}),format.raw/*8.2*/("""
-"""),format.raw/*9.1*/("""<!-- Main jumbotron for a primary marketing message or call to action -->
+"""),format.raw/*5.1*/("""<!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="jumbotron headline-img">
   <div class="container">
     <h1>Hello, world!</h1>
@@ -46,10 +42,29 @@ Seq[Any](format.raw/*1.25*/("""
 </div>
 
 <div class="container">
-  List of all products pages.
+  <table class="table table-condensed">
+    <tr>
+        <th>Stock ID</th>
+        <th>Category ID</th>
+        <th>Name</th>
+        <th>Total Stock</th>
+        <th>Unit Price</th>
+    </tr>
+"""),_display_(/*22.2*/for(product <- products) yield /*22.26*/{_display_(Seq[Any](format.raw/*22.27*/("""
+    """),format.raw/*23.5*/("""<tr>
+        <td>"""),_display_(/*24.14*/product/*24.21*/.stock_id),format.raw/*24.30*/("""</td>
+        <td>"""),_display_(/*25.14*/product/*25.21*/.category_id),format.raw/*25.33*/("""</td>
+        <td>"""),_display_(/*26.14*/product/*26.21*/.name),format.raw/*26.26*/("""</td>
+        <td>"""),_display_(/*27.14*/product/*27.21*/.total_stock),format.raw/*27.33*/("""</td>
+        <td>"""),_display_(/*28.14*/product/*28.21*/.unit_price),format.raw/*28.32*/("""</td>
+    </tr>
+""")))}),format.raw/*30.2*/("""
+"""),format.raw/*31.1*/("""</table>
+
+<form action=""
 </div>
 
-""")))}),format.raw/*21.2*/("""
+""")))}),format.raw/*36.2*/("""
 """))
       }
     }
@@ -70,11 +85,11 @@ Seq[Any](format.raw/*1.25*/("""
 object products extends products_Scope0.products
               /*
                   -- GENERATED --
-                  DATE: Tue Sep 29 11:51:50 BST 2015
+                  DATE: Tue Sep 29 14:01:45 BST 2015
                   SOURCE: /Users/mpe12/BSkyBProject/Website/app/views/products.scala.html
-                  HASH: dcd79448eccd49c0d823c66a9d54dfd5606f90e8
-                  MATRIX: 756->1|874->24|902->27|945->62|984->64|1013->68|1052->92|1090->93|1121->99|1136->106|1165->115|1196->117|1223->118|1604->469
-                  LINES: 27->1|32->1|34->3|34->3|34->3|37->6|37->6|37->6|38->7|38->7|38->7|39->8|40->9|52->21
+                  HASH: ca53c1ea620f93f61da9334037a5cfc43d0eadd8
+                  MATRIX: 756->1|874->24|902->27|945->62|984->64|1012->66|1544->572|1584->596|1623->597|1655->602|1700->620|1716->627|1746->636|1792->655|1808->662|1841->674|1887->693|1903->700|1929->705|1975->724|1991->731|2024->743|2070->762|2086->769|2118->780|2165->797|2193->798|2258->833
+                  LINES: 27->1|32->1|34->3|34->3|34->3|36->5|53->22|53->22|53->22|54->23|55->24|55->24|55->24|56->25|56->25|56->25|57->26|57->26|57->26|58->27|58->27|58->27|59->28|59->28|59->28|61->30|62->31|67->36
                   -- GENERATED --
               */
           
