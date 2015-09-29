@@ -1,10 +1,11 @@
 package models;
 
-import play.db.ebean.Model;
+import java.util.*;
 import javax.persistence.*;
 
-import com.avaje.ebean.*;
-
+import play.db.ebean.*;
+import play.data.format.*;
+import play.data.validation.*;
 
 @Entity
 public class Stock extends Model {
