@@ -10,7 +10,7 @@ public class Stock extends Model {
   @Id
   public Long stock_id;
   public Long category_id;
-  public Long name;
+  public String name;
   public Long total_stock;
   public Long unit_price;
  
