@@ -49,6 +49,25 @@ $(document).ready(function () {
         $("#quantityItem" + itemNumber).val(parseInt($("#quantityItem" + itemNumber).val()) + 1);
       });
 
+      $(".removeItem").click(function() {
+          var numberShoppingCartItems = parseInt($.session.get("numberShoppingCartItems"));
+              image = $(this).closest('tr').find('td.basketImage')[0].innerHTML,
+              quantity = $(this).closest('tr').find('td.basketQuantity').text(),
+              unitPrice = $(this).closest('tr').find('td.basketUnitPrice').text();
+
+
+
+
+          numberShoppingCartItems -= parseInt($(this).closest('tr').find('td.basketQuantity').text());
+          $.session.set("numberShoppingCartItems",parseInt(numberShoppingCartItems));
+          $('#shoppingCartBadge').text(numberShoppingCartItems);
+          removeFromShoppingBasketJSON(image, quantity, unitPrice);
+          $(this).closest('tr').remove();
+
+      });
+
+
+
       $("#resetSession").click(function() {
         $.session.set("numberShoppingCartItems","");
         $.session.set("shoppingCart", "");
@@ -79,6 +98,8 @@ $(document).ready(function () {
           });
 
 
+
+
         function addToShoppingBasketJSON(itemType, quantity, itemNumber, unitPrice, imagePath){
           var temp  = sessionStorage.getItem('shoppingCart');
           if(temp != "")
@@ -94,6 +115,32 @@ $(document).ready(function () {
 
           $.session.set("shoppingCart", JSON.stringify(shoppingCart));
         }
+
+
+        function removeFromShoppingBasketJSON(image, quantity, unitPrice) {
+          var temp  = sessionStorage.getItem('shoppingCart');
+          if(temp != "")
+            shoppingCart = $.parseJSON(temp);
+          if(shoppingCart == null)
+            shoppingCart = [];
+
+
+
+            var price = unitPrice.replace("£", "");
+            var imagePath = image.replace("<img src=\"", "")
+            var imagePathNew = imagePath.replace("\">","")
+
+          for(var i = 0; i < shoppingCart.length; i++){
+            if(shoppingCart[i].imagePath == imagePathNew && shoppingCart[i].qty == quantity && shoppingCart[i].unitPrice == price){
+              shoppingCart.splice($.inArray(i,shoppingCart), 1);
+              $.session.set("shoppingCart", JSON.stringify(shoppingCart));
+              return;
+            }
+          }
+
+
+        }
+
 
       $('#shoppingCart').click(function(){
         var numberShoppingCartItems = parseInt($.session.get("numberShoppingCartItems"));
@@ -119,7 +166,7 @@ function onSuccessClientCustomerData() {
 
     if(temp != "")
       shoppingCart = $.parseJSON(temp);
-
+    if(shoppingCart !== null) {
     for (var i = 0; i < shoppingCart.length; i++) {
         stringBuild = "";
         var itemDetails = shoppingCart[i];
@@ -147,9 +194,10 @@ function onSuccessClientCustomerData() {
               }
           }
         }
-        stringBuild = '<td><img src="' + imagePath + '"/></td><td>' + quantity + '</td><td> £' + unitPrice + '</td><td><button type ="button" class="btn removeItem" itemNumber="2"><span class="glyphicon glyphicon-remove-circle red"></span></button></td>';
+        stringBuild = '<td class="basketImage"><img src="' + imagePath + '"/></td><td class="basketQuantity">' + quantity + '</td><td class="basketUnitPrice">£' + unitPrice + '</td><td class="basketRemove"><button type ="button" class="btn removeItem" itemNumber="2"><span class="glyphicon glyphicon-remove-circle red"></span></button></td>';
         $('#orderList').find('tbody:last').append('<tr>' + stringBuild + '</tr>');
     }
+  }
 }
 
 
