@@ -40,5 +40,14 @@ public class Application extends Controller {
       return ok(item.render(stock));
     }
 
+    // Cart
+
+    public Result showCart() {
+      return TODO;
+    }
+
+    public Result saveCart() {
+      return TODO;
+    }
 
 }

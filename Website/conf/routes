@@ -4,10 +4,21 @@
 
 # Home page
 GET     /                             controllers.Application.index()
+
+# Display products - shop front
+
 GET     /products                     controllers.Application.products()
 GET     /products/:id                 controllers.Application.item(id: Long)
+
+# Manage products - back end of shop front
+
 GET     /stock/new                    controllers.Application.createItem()
 POST    /stock                        controllers.Application.save()
+
+# View cart, edit cart
+
+GET     /cart                         controllers.Application.showCart()
+POST    /cart                         controllers.Application.saveCart()
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
