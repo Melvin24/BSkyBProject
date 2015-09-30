@@ -1,0 +1,37 @@
+@(checkout: Form[Customer])
+
+@import helper._
+
+@main("Checkout from the Sky Store.") {
+
+<h1>Checkout</h1>
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+  <div class="container">
+        @helper.form(action = routes.Application.save() ){
+            <div class="row">
+            @helper.inputText(checkout("forename"))
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                @helper.inputText(checkout("surname"))
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                @helper.inputText(checkout("sky_id"))
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                 <input type="submit" value="SHIP" class="btn primary">
+                </div>
+            </div>
+        }
+        </div>
+    </div>
+<div class="container">
+
+</div>
+
+}

@@ -21,27 +21,24 @@ import play.data._
 import play.api.data.Field
 import play.mvc.Http.Context.Implicit._
 
-class index extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template1[String,play.twirl.api.HtmlFormat.Appendable] {
+class index extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template0[play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
-  def apply/*1.2*/(hello : String):play.twirl.api.HtmlFormat.Appendable = {
+  def apply():play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 
 
-Seq[Any](format.raw/*1.18*/("""
-
-
-"""),_display_(/*4.2*/main("Welcome to Play")/*4.25*/ {_display_(Seq[Any](format.raw/*4.27*/("""
+Seq[Any](_display_(/*1.2*/main("Welcome to the Sky Store.")/*1.35*/ {_display_(Seq[Any](format.raw/*1.37*/("""
 
 
 
-"""),format.raw/*8.1*/("""<!-- Main jumbotron for a primary marketing message or call to action -->
+"""),format.raw/*5.1*/("""<!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="jumbotron headline-img blue">
   <div class="container">
-    <h1>Hello, world!</h1>
+    <h1>Welcome!</h1>
     <p></p>
-    <p><a class="btn btn-primary btn-lg" href="/products" role="button">Learn more &raquo;</a></p>
+    <p><a class="btn btn-primary btn-lg" href="/products" role="button">View Products &raquo;</a></p>
   </div>
 </div>
 
@@ -65,15 +62,15 @@ Seq[Any](format.raw/*1.18*/("""
     </div>
   </div>
 
-""")))}),format.raw/*37.2*/("""
+""")))}),format.raw/*34.2*/("""
 """))
       }
     }
   }
 
-  def render(hello:String): play.twirl.api.HtmlFormat.Appendable = apply(hello)
+  def render(): play.twirl.api.HtmlFormat.Appendable = apply()
 
-  def f:((String) => play.twirl.api.HtmlFormat.Appendable) = (hello) => apply(hello)
+  def f:(() => play.twirl.api.HtmlFormat.Appendable) = () => apply()
 
   def ref: this.type = this
 
@@ -86,11 +83,11 @@ Seq[Any](format.raw/*1.18*/("""
 object index extends index_Scope0.index
               /*
                   -- GENERATED --
-                  DATE: Wed Sep 30 14:30:35 BST 2015
+                  DATE: Wed Sep 30 15:24:53 BST 2015
                   SOURCE: /Users/rsp04/Websites/Wednesday/BSkyBProject/Website/app/views/index.scala.html
-                  HASH: 21d4e94d0807f96e99613abefd8136fa3d37a03e
-                  MATRIX: 745->1|856->17|885->21|916->44|955->46|985->50|2596->1631
-                  LINES: 27->1|32->1|35->4|35->4|35->4|39->8|68->37
+                  HASH: e5cf8ae5c2922a6e90091d860af5a7e7b8ac6ac2
+                  MATRIX: 827->1|868->34|907->36|937->40|2546->1619
+                  LINES: 32->1|32->1|32->1|36->5|65->34
                   -- GENERATED --
               */
           

@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/conf/routes
-// @DATE:Wed Sep 30 14:52:39 BST 2015
+// @DATE:Wed Sep 30 15:07:03 BST 2015
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -42,16 +42,6 @@ package controllers.javascript {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
-  
-    // @LINE:21
-    def checkOutCart: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.Application.checkOutCart",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "checkout"})
-        }
-      """
-    )
   
     // @LINE:10
     def products: JavaScriptReverseRoute = JavaScriptReverseRoute(
@@ -99,6 +89,16 @@ package controllers.javascript {
       """
         function(id) {
           return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "products/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("id", id)})
+        }
+      """
+    )
+  
+    // @LINE:21
+    def checkout: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.checkout",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "checkout"})
         }
       """
     )

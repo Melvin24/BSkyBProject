@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/conf/routes
-// @DATE:Wed Sep 30 14:52:39 BST 2015
+// @DATE:Wed Sep 30 15:07:03 BST 2015
 
 package router
 
@@ -49,7 +49,7 @@ class Routes(
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """stock/new""", """controllers.Application.createItem()"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """stock""", """controllers.Application.save()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """orders""", """controllers.Application.getActiveOrders()"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """checkout""", """controllers.Application.checkOutCart()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """checkout""", """controllers.Application.checkout()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""", """controllers.Assets.versioned(path:String = "/public", file:Asset)"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
@@ -161,15 +161,15 @@ class Routes(
   )
 
   // @LINE:21
-  private[this] lazy val controllers_Application_checkOutCart6_route = Route("GET",
+  private[this] lazy val controllers_Application_checkout6_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("checkout")))
   )
-  private[this] lazy val controllers_Application_checkOutCart6_invoker = createInvoker(
-    Application_1.checkOutCart(),
+  private[this] lazy val controllers_Application_checkout6_invoker = createInvoker(
+    Application_1.checkout(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.Application",
-      "checkOutCart",
+      "checkout",
       Nil,
       "GET",
       """""",
@@ -234,9 +234,9 @@ class Routes(
       }
   
     // @LINE:21
-    case controllers_Application_checkOutCart6_route(params) =>
+    case controllers_Application_checkout6_route(params) =>
       call { 
-        controllers_Application_checkOutCart6_invoker.call(Application_1.checkOutCart())
+        controllers_Application_checkout6_invoker.call(Application_1.checkout())
       }
   
     // @LINE:25
