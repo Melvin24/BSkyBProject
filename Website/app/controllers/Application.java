@@ -16,7 +16,7 @@ import views.html.*;
 public class Application extends Controller {
 
     public Result index() {
-        return ok(index.render("Hello"));
+        return ok(index.render());
     }
     public Result products() {
         List<Stock> stock = Stock.find.all();
@@ -54,21 +54,18 @@ public class Application extends Controller {
       return ok(item.render(stock));
     }
 
-    // Cart
+    // Checkout
 
-    public Result showCart(Long id) {
-    
-        Orders orders = Orders.find.byId(id);
+    public Result checkout() {
         
-        if(orders == null){
-          return redirect(routes.Application.index());
-        }
-            
-        return ok(show_cart.render(orders));
-    }
-
-    public Result checkOutCart() {
-      return TODO;
+        // Check customer is signed in.
+        // if not...
+        // ask for details (guest?)
+        
+        Form<Customer> customerForm = form(Customer.class);
+        return ok(
+            checkout.render(customerForm)
+        );
     }
 
 }

@@ -18,7 +18,7 @@ GET     /orders                       controllers.Application.getActiveOrders()
 
 # View cart, edit cart
 
-GET     /checkout                     controllers.Application.checkOutCart()
+GET     /checkout                     controllers.Application.checkout()
 #POST    /checkout                     controllers.Application.checkOutCart()
 
 # Map static resources from the /public folder to the /assets URL path
