@@ -2,34 +2,31 @@
 
 @import helper._
 
-@main("test") {
+@main("Create a new product for the catalogue.") {
 
-<h1>Add a product</h1>
+
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="jumbotron">
   <div class="container">
-        @helper.form(action = routes.Application.save() ){
-            <div class="row">
-            @helper.inputText(create_item("stock_id"))
-            </div>
+      <h1>Add a product.</h1>
+      <p>Blah blah blah.</p>
+  </div>
+</div>
+<div class="container">
+@helper.form(action = routes.Application.save() ){
             <div class="row">
                 <div class="col-xs-12">
-                @helper.inputText(create_item("category_id"))
+                @helper.inputText(create_item("name"), '_label -> "Product Title:")
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-12">
-                @helper.inputText(create_item("name"))
+                @helper.inputText(create_item("category_id"), '_label -> "Category ID:")
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-12">
-                @helper.inputText(create_item("total_stock"))
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                @helper.inputText(create_item("unit_price"))
+                @helper.inputText(create_item("unit_price"), '_label -> "Price:")
                 </div>
             </div>
             <div class="row">
@@ -38,10 +35,6 @@
                 </div>
             </div>
         }
-        </div>
-    </div>
-<div class="container">
-
 </div>
 
 }

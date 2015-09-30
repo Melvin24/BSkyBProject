@@ -35,15 +35,11 @@ public class Application extends Controller {
         );
     }
     
-    /*public Result addItem() {
-        
-    }*/
-    
     public Result deleteItem(Long id) {
         Stock.find.ref(id).delete();
         flash("success", "Stock has been deleted from the catalogue.");
         
-        return ok(index.render());
+        return redirect(routes.Application.allstock());
     }
     
     public Result save() {
@@ -86,6 +82,14 @@ public class Application extends Controller {
     
     public Result backofhouse() {
         return ok(backofhouse.render());
+    }
+    
+    public Result addItem() {
+        //stock = Stock.class.bindFromRequest();
+       // stock.update(id)
+       
+        flash("success", "Stock has been ordered!");
+        return redirect(routes.Application.allstock());
     }
     
     public Result allstock() {

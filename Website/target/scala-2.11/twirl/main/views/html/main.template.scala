@@ -62,6 +62,7 @@ Seq[Any](format.raw/*1.32*/("""
 <body>
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <div class="container">
+    <a class="navbar-brand" href="/">Sky Blue Team Store</a>
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
         <span class="sr-only">Toggle navigation</span>
@@ -69,7 +70,6 @@ Seq[Any](format.raw/*1.32*/("""
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/">Sky Blue Team</a>
     </div>
     <!--<div id="navbar" class="navbar-collapse collapse">
       <form class="navbar-form navbar-right" role="form">
@@ -90,12 +90,13 @@ Seq[Any](format.raw/*1.32*/("""
 """),_display_(/*59.2*/content),format.raw/*59.9*/("""
 
 """),format.raw/*61.1*/("""<hr />
-
-<footer>
-    <p>&copy; Sky Blue Team 2015</p>
-</footer>
+<div class="container">
+    <footer>
+        <p>Sky Blue Team 2015</p>
+    </footer>
 </div>
-<script src=""""),_display_(/*67.15*/routes/*67.21*/.Assets.versioned("javascripts/bootstrap.min.js")),format.raw/*67.70*/("""" type="text/javascript"></script>
+<script src=""""),_display_(/*67.15*/routes/*67.21*/.Assets.versioned("javascripts/jquery.js")),format.raw/*67.63*/("""" type="text/javascript"></script>
+<script src=""""),_display_(/*68.15*/routes/*68.21*/.Assets.versioned("javascripts/bootstrap.min.js")),format.raw/*68.70*/("""" type="text/javascript"></script>
 </body>
 </html>
 """))
@@ -118,11 +119,11 @@ Seq[Any](format.raw/*1.32*/("""
 object main extends main_Scope0.main
               /*
                   -- GENERATED --
-                  DATE: Wed Sep 30 17:07:56 BST 2015
+                  DATE: Wed Sep 30 21:48:14 BST 2015
                   SOURCE: /Users/rsp04/Websites/Wednesday/BSkyBProject/Website/app/views/main.scala.html
-                  HASH: 4b6ae76e28b76ca751431387f09eadf3239da3f1
-                  MATRIX: 748->1|873->31|901->33|1090->196|1115->201|1393->452|1408->458|1480->508|1544->544|1573->545|1618->562|1715->631|1744->632|1780->641|1869->703|1884->709|1962->765|2045->821|2060->827|2123->868|2280->997|2309->998|2416->1076|2446->1077|2492->1094|2522->1095|2818->1362|2848->1363|2880->1366|2910->1367|2947->1375|2977->1376|3094->1464|3124->1465|3175->1487|3205->1488|3394->1648|3424->1649|3505->1701|3535->1702|4992->3133|5019->3140|5048->3142|5160->3227|5175->3233|5245->3282
-                  LINES: 27->1|32->1|34->3|40->9|40->9|45->14|45->14|45->14|47->16|47->16|48->17|50->19|50->19|51->20|52->21|52->21|52->21|53->22|53->22|53->22|56->25|56->25|56->25|56->25|56->25|56->25|56->25|56->25|56->25|56->25|56->25|56->25|56->25|56->25|56->25|56->25|56->25|56->25|56->25|56->25|90->59|90->59|92->61|98->67|98->67|98->67
+                  HASH: 95442cc92aef40d4a3d4778ccc03f7519f1cc2d4
+                  MATRIX: 748->1|873->31|901->33|1090->196|1115->201|1393->452|1408->458|1480->508|1544->544|1573->545|1618->562|1715->631|1744->632|1780->641|1869->703|1884->709|1962->765|2045->821|2060->827|2123->868|2280->997|2309->998|2416->1076|2446->1077|2492->1094|2522->1095|2818->1362|2848->1363|2880->1366|2910->1367|2947->1375|2977->1376|3094->1464|3124->1465|3175->1487|3205->1488|3394->1648|3424->1649|3505->1701|3535->1702|4996->3137|5023->3144|5052->3146|5192->3259|5207->3265|5270->3307|5346->3356|5361->3362|5431->3411
+                  LINES: 27->1|32->1|34->3|40->9|40->9|45->14|45->14|45->14|47->16|47->16|48->17|50->19|50->19|51->20|52->21|52->21|52->21|53->22|53->22|53->22|56->25|56->25|56->25|56->25|56->25|56->25|56->25|56->25|56->25|56->25|56->25|56->25|56->25|56->25|56->25|56->25|56->25|56->25|56->25|56->25|90->59|90->59|92->61|98->67|98->67|98->67|99->68|99->68|99->68
                   -- GENERATED --
               */
           

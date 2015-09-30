@@ -36,19 +36,16 @@ Seq[Any](format.raw/*1.4*/("""
 <div class="jumbotron">
   <div class="container">
     <h1>Manage the Sky Store!</h1>
-    <p>Blah blah blah</p>
+    <p>Make changes to the product line and view order statuses.</p>
   </div>
 </div>
 
 <div class="container">
-    <ol>
-        <li><a href="/stock">Stock Control</a></li>
-        <li><a href="">View Customers</a></li>
-        <li><a href="">View Orders/Order Statuses</a></li>
-    </ol>
+    <h1>- <a href="/stock">Stock Control</a></h1>
+    <h1>- <a href="">View Orders/Order Statuses</a></h1>
 </div>
 
-""")))}),format.raw/*20.2*/("""
+""")))}),format.raw/*17.2*/("""
 """))
       }
     }
@@ -69,11 +66,11 @@ Seq[Any](format.raw/*1.4*/("""
 object backofhouse extends backofhouse_Scope0.backofhouse
               /*
                   -- GENERATED --
-                  DATE: Wed Sep 30 17:33:00 BST 2015
+                  DATE: Wed Sep 30 21:25:04 BST 2015
                   SOURCE: /Users/rsp04/Websites/Wednesday/BSkyBProject/Website/app/views/backofhouse.scala.html
-                  HASH: 39fb6e1f618b70e303900ba812b8601cf5832f49
-                  MATRIX: 750->1|846->3|874->6|911->35|950->37|977->38|1419->450
-                  LINES: 27->1|32->1|34->3|34->3|34->3|35->4|51->20
+                  HASH: 3565bdad614d4222f77036b31bae8c6272960c95
+                  MATRIX: 750->1|846->3|874->6|911->35|950->37|977->38|1392->423
+                  LINES: 27->1|32->1|34->3|34->3|34->3|35->4|48->17
                   -- GENERATED --
               */
           

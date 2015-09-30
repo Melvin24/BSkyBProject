@@ -31,13 +31,13 @@ class allstock extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Fo
 
 Seq[Any](format.raw/*1.25*/("""
 
-"""),_display_(/*3.2*/main("Stock page!")/*3.21*/ {_display_(Seq[Any](format.raw/*3.23*/("""
+"""),_display_(/*3.2*/main("Stock page")/*3.20*/ {_display_(Seq[Any](format.raw/*3.22*/("""
 
 """),format.raw/*5.1*/("""<!-- Main jumbotron for a primary marketing message or call to action -->
-<div class="jumbotron headline-img">
+<div class="jumbotron">
   <div class="container">
     <h1>Stock</h1>
-    <p>Add/remove stock and order more.</p>
+    <p>View stock levels, order more or remove from the product catalogue.</p>
   </div>
 </div>
 
@@ -59,8 +59,8 @@ Seq[Any](format.raw/*1.25*/("""
         <td>"""),_display_(/*28.14*/product/*28.21*/.total_stock),format.raw/*28.33*/("""</td>
         <td>"""),_display_(/*29.14*/product/*29.21*/.unit_price),format.raw/*29.32*/("""</td>
         <td>
-        <input type="button" class="btn btn-primary" value="Order More">
-        <a href="/stock/delete/"""),_display_(/*32.33*/product/*32.40*/.stock_id),format.raw/*32.49*/(""""><input type="button" class="btn btn-primary" value="Delete"></a>
+        <a href="#" onclick="$.post('/stock/update', """),format.raw/*31.54*/("""{"""),format.raw/*31.55*/(""" """),format.raw/*31.56*/("""id: '"""),_display_(/*31.62*/product/*31.69*/.stock_id),format.raw/*31.78*/("""', amount: '10' """),format.raw/*31.94*/("""}"""),format.raw/*31.95*/(""" """),format.raw/*31.96*/(""");" type="button" class="btn btn-primary">Order More</a>
+        <a href="/stock/delete/"""),_display_(/*32.33*/product/*32.40*/.stock_id),format.raw/*32.49*/("""" type="button" class="btn btn-danger">Delete</a>
         </td>
     </tr>
 """)))}),format.raw/*35.2*/("""
@@ -90,11 +90,11 @@ Seq[Any](format.raw/*1.25*/("""
 object allstock extends allstock_Scope0.allstock
               /*
                   -- GENERATED --
-                  DATE: Wed Sep 30 18:34:41 BST 2015
+                  DATE: Wed Sep 30 22:09:42 BST 2015
                   SOURCE: /Users/rsp04/Websites/Wednesday/BSkyBProject/Website/app/views/allstock.scala.html
-                  HASH: e9de750feb31457bf042974ced69af19cf9ccf59
-                  MATRIX: 756->1|874->24|902->27|929->46|968->48|996->50|1475->503|1515->527|1554->528|1586->533|1631->551|1647->558|1677->567|1723->586|1739->593|1772->605|1818->624|1834->631|1860->636|1906->655|1922->662|1955->674|2001->693|2017->700|2049->711|2200->835|2216->842|2246->851|2368->943|2396->944
-                  LINES: 27->1|32->1|34->3|34->3|34->3|36->5|54->23|54->23|54->23|55->24|56->25|56->25|56->25|57->26|57->26|57->26|58->27|58->27|58->27|59->28|59->28|59->28|60->29|60->29|60->29|63->32|63->32|63->32|66->35|67->36
+                  HASH: 095dfd06c7e90e65edfffcfe520b515eeff7e0c5
+                  MATRIX: 756->1|874->24|902->27|928->45|967->47|995->49|1496->524|1536->548|1575->549|1607->554|1652->572|1668->579|1698->588|1744->607|1760->614|1793->626|1839->645|1855->652|1881->657|1927->676|1943->683|1976->695|2022->714|2038->721|2070->732|2170->804|2199->805|2228->806|2261->812|2277->819|2307->828|2351->844|2380->845|2409->846|2525->935|2541->942|2571->951|2676->1026|2704->1027
+                  LINES: 27->1|32->1|34->3|34->3|34->3|36->5|54->23|54->23|54->23|55->24|56->25|56->25|56->25|57->26|57->26|57->26|58->27|58->27|58->27|59->28|59->28|59->28|60->29|60->29|60->29|62->31|62->31|62->31|62->31|62->31|62->31|62->31|62->31|62->31|63->32|63->32|63->32|66->35|67->36
                   -- GENERATED --
               */
           
