@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/mpe12/BSkyBProject/Website/conf/routes
-// @DATE:Wed Sep 30 08:58:01 BST 2015
+// @SOURCE:/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/conf/routes
+// @DATE:Wed Sep 30 14:52:39 BST 2015
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -15,7 +15,7 @@ import _root_.play.libs.F
 package controllers.javascript {
   import ReverseRouteContext.empty
 
-  // @LINE:14
+  // @LINE:25
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -23,7 +23,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:14
+    // @LINE:25
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """
@@ -43,7 +43,17 @@ package controllers.javascript {
     }
 
   
-    // @LINE:7
+    // @LINE:21
+    def checkOutCart: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.checkOutCart",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "checkout"})
+        }
+      """
+    )
+  
+    // @LINE:10
     def products: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.products",
       """
@@ -53,7 +63,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:11
+    // @LINE:17
     def getActiveOrders: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.getActiveOrders",
       """
@@ -63,7 +73,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:10
+    // @LINE:16
     def save: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.save",
       """
@@ -73,7 +83,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:9
+    // @LINE:15
     def createItem: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.createItem",
       """
@@ -83,7 +93,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:8
+    // @LINE:11
     def item: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.item",
       """

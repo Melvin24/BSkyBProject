@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/mpe12/BSkyBProject/Website/conf/routes
-// @DATE:Wed Sep 30 08:58:01 BST 2015
+// @SOURCE:/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/conf/routes
+// @DATE:Wed Sep 30 14:52:39 BST 2015
 
 package router
 
@@ -18,7 +18,7 @@ class Routes(
   override val errorHandler: play.api.http.HttpErrorHandler, 
   // @LINE:6
   Application_1: controllers.Application,
-  // @LINE:14
+  // @LINE:25
   Assets_0: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
@@ -27,7 +27,7 @@ class Routes(
    def this(errorHandler: play.api.http.HttpErrorHandler,
     // @LINE:6
     Application_1: controllers.Application,
-    // @LINE:14
+    // @LINE:25
     Assets_0: controllers.Assets
   ) = this(errorHandler, Application_1, Assets_0, "/")
 
@@ -49,6 +49,7 @@ class Routes(
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """stock/new""", """controllers.Application.createItem()"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """stock""", """controllers.Application.save()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """orders""", """controllers.Application.getActiveOrders()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """checkout""", """controllers.Application.checkOutCart()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""", """controllers.Assets.versioned(path:String = "/public", file:Asset)"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
@@ -74,7 +75,7 @@ class Routes(
     )
   )
 
-  // @LINE:7
+  // @LINE:10
   private[this] lazy val controllers_Application_products1_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("products")))
   )
@@ -91,7 +92,7 @@ class Routes(
     )
   )
 
-  // @LINE:8
+  // @LINE:11
   private[this] lazy val controllers_Application_item2_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("products/"), DynamicPart("id", """[^/]+""",true)))
   )
@@ -108,7 +109,7 @@ class Routes(
     )
   )
 
-  // @LINE:9
+  // @LINE:15
   private[this] lazy val controllers_Application_createItem3_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("stock/new")))
   )
@@ -125,7 +126,7 @@ class Routes(
     )
   )
 
-  // @LINE:10
+  // @LINE:16
   private[this] lazy val controllers_Application_save4_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("stock")))
   )
@@ -142,7 +143,7 @@ class Routes(
     )
   )
 
-  // @LINE:11
+  // @LINE:17
   private[this] lazy val controllers_Application_getActiveOrders5_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("orders")))
   )
@@ -159,11 +160,28 @@ class Routes(
     )
   )
 
-  // @LINE:14
-  private[this] lazy val controllers_Assets_versioned6_route = Route("GET",
+  // @LINE:21
+  private[this] lazy val controllers_Application_checkOutCart6_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("checkout")))
+  )
+  private[this] lazy val controllers_Application_checkOutCart6_invoker = createInvoker(
+    Application_1.checkOutCart(),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.Application",
+      "checkOutCart",
+      Nil,
+      "GET",
+      """""",
+      this.prefix + """checkout"""
+    )
+  )
+
+  // @LINE:25
+  private[this] lazy val controllers_Assets_versioned7_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_versioned6_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_versioned7_invoker = createInvoker(
     Assets_0.versioned(fakeValue[String], fakeValue[Asset]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -185,40 +203,46 @@ class Routes(
         controllers_Application_index0_invoker.call(Application_1.index())
       }
   
-    // @LINE:7
+    // @LINE:10
     case controllers_Application_products1_route(params) =>
       call { 
         controllers_Application_products1_invoker.call(Application_1.products())
       }
   
-    // @LINE:8
+    // @LINE:11
     case controllers_Application_item2_route(params) =>
       call(params.fromPath[Long]("id", None)) { (id) =>
         controllers_Application_item2_invoker.call(Application_1.item(id))
       }
   
-    // @LINE:9
+    // @LINE:15
     case controllers_Application_createItem3_route(params) =>
       call { 
         controllers_Application_createItem3_invoker.call(Application_1.createItem())
       }
   
-    // @LINE:10
+    // @LINE:16
     case controllers_Application_save4_route(params) =>
       call { 
         controllers_Application_save4_invoker.call(Application_1.save())
       }
   
-    // @LINE:11
+    // @LINE:17
     case controllers_Application_getActiveOrders5_route(params) =>
       call { 
         controllers_Application_getActiveOrders5_invoker.call(Application_1.getActiveOrders())
       }
   
-    // @LINE:14
-    case controllers_Assets_versioned6_route(params) =>
+    // @LINE:21
+    case controllers_Application_checkOutCart6_route(params) =>
+      call { 
+        controllers_Application_checkOutCart6_invoker.call(Application_1.checkOutCart())
+      }
+  
+    // @LINE:25
+    case controllers_Assets_versioned7_route(params) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
-        controllers_Assets_versioned6_invoker.call(Assets_0.versioned(path, file))
+        controllers_Assets_versioned7_invoker.call(Assets_0.versioned(path, file))
       }
   }
 }

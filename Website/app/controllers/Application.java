@@ -56,11 +56,18 @@ public class Application extends Controller {
 
     // Cart
 
-    public Result showCart() {
-      return TODO;
+    public Result showCart(Long id) {
+    
+        Orders orders = Orders.find.byId(id);
+        
+        if(orders == null){
+          return redirect(routes.Application.index());
+        }
+            
+        return ok(show_cart.render(orders));
     }
 
-    public Result saveCart() {
+    public Result checkOutCart() {
       return TODO;
     }
 

@@ -14,12 +14,12 @@ GET     /products/:id                 controllers.Application.item(id: Long)
 
 GET     /stock/new                    controllers.Application.createItem()
 POST    /stock                        controllers.Application.save()
-GET     /orders                    controllers.Application.getActiveOrders()
+GET     /orders                       controllers.Application.getActiveOrders()
 
 # View cart, edit cart
 
-GET     /cart                         controllers.Application.showCart()
-POST    /cart                         controllers.Application.saveCart()
+GET     /checkout                     controllers.Application.checkOutCart()
+#POST    /checkout                     controllers.Application.checkOutCart()
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
