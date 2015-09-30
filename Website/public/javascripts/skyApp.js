@@ -58,8 +58,16 @@ $(document).ready(function () {
 
 
           numberShoppingCartItems -= parseInt($(this).closest('tr').find('td.basketQuantity').text());
-          $.session.set("numberShoppingCartItems",parseInt(numberShoppingCartItems));
-          $('#shoppingCartBadge').text(numberShoppingCartItems);
+
+          if(numberShoppingCartItems > 0){
+            $('#shoppingCartBadge').text(numberShoppingCartItems);
+            $.session.set("numberShoppingCartItems",parseInt(numberShoppingCartItems));
+          }
+          else{
+            $('#shoppingCartBadge').text("");
+            $.session.set("numberShoppingCartItems","");
+          }
+
           removeFromShoppingBasketJSON(image, quantity, unitPrice);
 
 

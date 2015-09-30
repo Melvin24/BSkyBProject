@@ -100,6 +100,10 @@ li {
 	margin-right:5%;
 }
 
+.shoppingBadge{
+	background-color: orangered !important;
+}
+
 .decItem, .incItem, .removeItem{
 	background-color: transparent !important;
 	border:none !important;
