@@ -32,49 +32,42 @@ import helper._
 Seq[Any](format.raw/*1.28*/("""
 
 """),format.raw/*4.1*/("""
-"""),_display_(/*5.2*/main("test")/*5.14*/ {_display_(Seq[Any](format.raw/*5.16*/("""
+"""),_display_(/*5.2*/main("Create a new product for the catalogue.")/*5.49*/ {_display_(Seq[Any](format.raw/*5.51*/("""
 
-"""),format.raw/*7.1*/("""<h1>Add a product</h1>
-<!-- Main jumbotron for a primary marketing message or call to action -->
+
+"""),format.raw/*8.1*/("""<!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="jumbotron">
   <div class="container">
-        """),_display_(/*11.10*/helper/*11.16*/.form(action = routes.Application.save() )/*11.58*/{_display_(Seq[Any](format.raw/*11.59*/("""
-            """),format.raw/*12.13*/("""<div class="row">
-            """),_display_(/*13.14*/helper/*13.20*/.inputText(create_item("stock_id"))),format.raw/*13.55*/("""
-            """),format.raw/*14.13*/("""</div>
-            <div class="row">
+      <h1>Add a product.</h1>
+      <p>Blah blah blah.</p>
+  </div>
+</div>
+<div class="container">
+"""),_display_(/*16.2*/helper/*16.8*/.form(action = routes.Application.save() )/*16.50*/{_display_(Seq[Any](format.raw/*16.51*/("""
+            """),format.raw/*17.13*/("""<div class="row">
                 <div class="col-xs-12">
-                """),_display_(/*17.18*/helper/*17.24*/.inputText(create_item("category_id"))),format.raw/*17.62*/("""
-                """),format.raw/*18.17*/("""</div>
+                """),_display_(/*19.18*/helper/*19.24*/.inputText(create_item("name"), '_label -> "Product Title:")),format.raw/*19.84*/("""
+                """),format.raw/*20.17*/("""</div>
             </div>
             <div class="row">
                 <div class="col-xs-12">
-                """),_display_(/*22.18*/helper/*22.24*/.inputText(create_item("name"))),format.raw/*22.55*/("""
-                """),format.raw/*23.17*/("""</div>
+                """),_display_(/*24.18*/helper/*24.24*/.inputText(create_item("category_id"), '_label -> "Category ID:")),format.raw/*24.89*/("""
+                """),format.raw/*25.17*/("""</div>
             </div>
             <div class="row">
                 <div class="col-xs-12">
-                """),_display_(/*27.18*/helper/*27.24*/.inputText(create_item("total_stock"))),format.raw/*27.62*/("""
-                """),format.raw/*28.17*/("""</div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                """),_display_(/*32.18*/helper/*32.24*/.inputText(create_item("unit_price"))),format.raw/*32.61*/("""
-                """),format.raw/*33.17*/("""</div>
+                """),_display_(/*29.18*/helper/*29.24*/.inputText(create_item("unit_price"), '_label -> "Price:")),format.raw/*29.82*/("""
+                """),format.raw/*30.17*/("""</div>
             </div>
             <div class="row">
                 <div class="col-xs-12">
                  <input type="submit" value="Create New Item" class="btn primary">
                 </div>
             </div>
-        """)))}),format.raw/*40.10*/("""
-        """),format.raw/*41.9*/("""</div>
-    </div>
-<div class="container">
+        """)))}),format.raw/*37.10*/("""
+"""),format.raw/*38.1*/("""</div>
 
-</div>
-
-""")))}),format.raw/*47.2*/("""
+""")))}),format.raw/*40.2*/("""
 """))
       }
     }
@@ -95,11 +88,11 @@ Seq[Any](format.raw/*1.28*/("""
 object create_item extends create_item_Scope0.create_item
               /*
                   -- GENERATED --
-                  DATE: Wed Sep 30 14:30:35 BST 2015
+                  DATE: Wed Sep 30 22:20:27 BST 2015
                   SOURCE: /Users/rsp04/Websites/Wednesday/BSkyBProject/Website/app/views/create_item.scala.html
-                  HASH: b2bfea629de48f7907a7fc89b2a29255440ded4f
-                  MATRIX: 762->1|898->27|926->46|953->48|973->60|1012->62|1040->64|1223->220|1238->226|1289->268|1328->269|1369->282|1427->313|1442->319|1498->354|1539->367|1660->461|1675->467|1734->505|1779->522|1919->635|1934->641|1986->672|2031->689|2171->802|2186->808|2245->846|2290->863|2430->976|2445->982|2503->1019|2548->1036|2809->1266|2845->1275|2927->1327
-                  LINES: 27->1|32->1|34->4|35->5|35->5|35->5|37->7|41->11|41->11|41->11|41->11|42->12|43->13|43->13|43->13|44->14|47->17|47->17|47->17|48->18|52->22|52->22|52->22|53->23|57->27|57->27|57->27|58->28|62->32|62->32|62->32|63->33|70->40|71->41|77->47
+                  HASH: 94d41070f4bf79d14cd626f29a2099519073c5fa
+                  MATRIX: 762->1|898->27|926->46|953->48|1008->95|1047->97|1076->100|1326->324|1340->330|1391->372|1430->373|1471->386|1573->461|1588->467|1669->527|1714->544|1854->657|1869->663|1955->728|2000->745|2140->858|2155->864|2234->922|2279->939|2540->1169|2568->1170|2607->1179
+                  LINES: 27->1|32->1|34->4|35->5|35->5|35->5|38->8|46->16|46->16|46->16|46->16|47->17|49->19|49->19|49->19|50->20|54->24|54->24|54->24|55->25|59->29|59->29|59->29|60->30|67->37|68->38|70->40
                   -- GENERATED --
               */
           
