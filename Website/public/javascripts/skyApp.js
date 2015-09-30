@@ -1,6 +1,6 @@
 
 var shoppingCart = [];
-
+var totalOrderCost;
 
 $(document).ready(function () {
     $('.dropdown-toggle').dropdown();
@@ -57,11 +57,12 @@ $(document).ready(function () {
 
 
 
-
           numberShoppingCartItems -= parseInt($(this).closest('tr').find('td.basketQuantity').text());
           $.session.set("numberShoppingCartItems",parseInt(numberShoppingCartItems));
           $('#shoppingCartBadge').text(numberShoppingCartItems);
           removeFromShoppingBasketJSON(image, quantity, unitPrice);
+
+
           $(this).closest('tr').remove();
 
       });
@@ -129,10 +130,11 @@ $(document).ready(function () {
             var price = unitPrice.replace("£", "");
             var imagePath = image.replace("<img src=\"", "")
             var imagePathNew = imagePath.replace("\">","")
-
+            var orderPrice = parseInt(totalOrderCost - (parseInt(quantity)* parseInt(price)));
+            $('#orderTotalCost').text("£" + orderPrice);
           for(var i = 0; i < shoppingCart.length; i++){
             if(shoppingCart[i].imagePath == imagePathNew && shoppingCart[i].qty == quantity && shoppingCart[i].unitPrice == price){
-              shoppingCart.splice($.inArray(i,shoppingCart), 1);
+              shoppingCart.splice(i, 1);
               $.session.set("shoppingCart", JSON.stringify(shoppingCart));
               return;
             }
@@ -162,7 +164,8 @@ function onSuccessClientCustomerData() {
         itemType,
         itemNumber,
         quantity,
-        unitPrice;
+        unitPrice,
+        orderPrice = 0;
 
     if(temp != "")
       shoppingCart = $.parseJSON(temp);
@@ -194,14 +197,20 @@ function onSuccessClientCustomerData() {
               }
           }
         }
+        orderPrice += parseInt(unitPrice) * parseInt(quantity);
         stringBuild = '<td class="basketImage"><img src="' + imagePath + '"/></td><td class="basketQuantity">' + quantity + '</td><td class="basketUnitPrice">£' + unitPrice + '</td><td class="basketRemove"><button type ="button" class="btn removeItem" itemNumber="2"><span class="glyphicon glyphicon-remove-circle red"></span></button></td>';
         $('#orderList').find('tbody:last').append('<tr>' + stringBuild + '</tr>');
     }
+    totalOrderCost = orderPrice;
+    updateTotalCost(orderPrice);
   }
 }
 
 
+function updateTotalCost(orderPrice){
+  $('#orderTotalCost').text("£" + orderPrice);
 
+}
 
       function maketoast (evt)
       {

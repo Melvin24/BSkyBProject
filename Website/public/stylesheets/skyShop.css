@@ -95,6 +95,10 @@ li {
 .centerText{
 	text-align: center;
 }
+.rightText{
+	text-align: right;
+	margin-right:5%;
+}
 
 .decItem, .incItem, .removeItem{
 	background-color: transparent !important;
