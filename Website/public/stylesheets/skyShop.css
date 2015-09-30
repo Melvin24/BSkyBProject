@@ -84,6 +84,9 @@ li {
 .glyphicon.glyphicon-plus-sign {
     font-size: 30px;
 }
+.glyphicon.glyphicon-remove-circle {
+    font-size: 30px;
+}
 
 .quantityWidth{
 	width:50px;
@@ -93,7 +96,7 @@ li {
 	text-align: center;
 }
 
-.decItem, .incItem{
+.decItem, .incItem, .removeItem{
 	background-color: transparent !important;
 	border:none !important;
 	text-align: center;

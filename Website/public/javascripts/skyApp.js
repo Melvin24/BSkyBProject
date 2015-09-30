@@ -5,6 +5,8 @@ var shoppingCart = [];
 $(document).ready(function () {
     $('.dropdown-toggle').dropdown();
     $('.carousel').carousel();
+    onSuccessClientCustomerData();
+
     var numberShoppingCartItems = parseInt($.session.get("numberShoppingCartItems"));
 
     if(!isNaN(numberShoppingCartItems))
@@ -55,13 +57,15 @@ $(document).ready(function () {
       $(".addToBasketButton").click(function(event) {
               var itemNumber = $(this).attr("itemNumber"),
                   quantityToAdd = $('#quantityItem' + itemNumber).val(),
-                  numberShoppingCartItems = parseInt($.session.get("numberShoppingCartItems"));
+                  numberShoppingCartItems = parseInt($.session.get("numberShoppingCartItems")),
+                  unitPrice = $(this).attr("unitPrice"),
+                  imagePath = $(this).attr("imagePath");
 
               if(isNaN(numberShoppingCartItems))
                 numberShoppingCartItems = 0;
 
               if(quantityToAdd > 0){
-                  addToShoppingBasketJSON($(this).attr("itemType"),quantityToAdd,itemNumber);
+                  addToShoppingBasketJSON($(this).attr("itemType"),quantityToAdd,itemNumber, unitPrice, imagePath);
 
 
                 numberShoppingCartItems += parseInt(quantityToAdd);
@@ -75,29 +79,81 @@ $(document).ready(function () {
           });
 
 
-        function addToShoppingBasketJSON(itemType, quantity, itemNumber){
+        function addToShoppingBasketJSON(itemType, quantity, itemNumber, unitPrice, imagePath){
           var temp  = sessionStorage.getItem('shoppingCart');
           if(temp != "")
             shoppingCart = $.parseJSON(temp);
           if(shoppingCart == null)
             shoppingCart = [];
-          shoppingCart.push({  "type" : itemType,
+          shoppingCart.push({   "type" : itemType,
+                                "itemNumber" : itemNumber,
                                 "qty" : quantity,
-                                "itemNumber" : itemNumber
+                                "unitPrice" : unitPrice,
+                                "imagePath" : imagePath
                           });
 
           $.session.set("shoppingCart", JSON.stringify(shoppingCart));
-          alert(sessionStorage.getItem('shoppingCart'));
         }
 
       $('#shoppingCart').click(function(){
         var numberShoppingCartItems = parseInt($.session.get("numberShoppingCartItems"));
          //$('#link').click();
-         if(!isNaN(numberShoppingCartItems))
+         if(!isNaN(numberShoppingCartItems)){
+            onSuccessClientCustomerData();
             location.href=('/shoppingBag');
+
+          }
 
       });
 });
+
+
+function onSuccessClientCustomerData() {
+    var stringBuild,
+        imagePath,
+        temp  = sessionStorage.getItem('shoppingCart'),
+        itemType,
+        itemNumber,
+        quantity,
+        unitPrice;
+
+    if(temp != "")
+      shoppingCart = $.parseJSON(temp);
+
+    for (var i = 0; i < shoppingCart.length; i++) {
+        stringBuild = "";
+        var itemDetails = shoppingCart[i];
+
+        for (var key in itemDetails) {
+          if (itemDetails.hasOwnProperty(key)) {
+            switch(key) {
+                  case "type":
+                      itemType = itemDetails[key];
+                      break;
+                  case "itemNumber":
+                      itemNumber = itemDetails[key];
+                      break;
+                  case "qty":
+                      quantity = itemDetails[key];
+                      break;
+                  case "unitPrice":
+                      unitPrice = itemDetails[key];
+                      break;
+                  case "imagePath":
+                      imagePath = itemDetails[key];
+                      break;
+                  default:
+                      break;
+              }
+          }
+        }
+        stringBuild = '<td><img src="' + imagePath + '"/></td><td>' + quantity + '</td><td> £' + unitPrice + '</td><td><button type ="button" class="btn removeItem" itemNumber="2"><span class="glyphicon glyphicon-remove-circle red"></span></button></td>';
+        $('#orderList').find('tbody:last').append('<tr>' + stringBuild + '</tr>');
+    }
+}
+
+
+
 
       function maketoast (evt)
       {
