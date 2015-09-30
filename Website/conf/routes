@@ -14,6 +14,7 @@ GET     /products/:id                 controllers.Application.item(id: Long)
 
 GET     /stock/new                    controllers.Application.createItem()
 POST    /stock                        controllers.Application.save()
+GET     /orders                    controllers.Application.getActiveOrders()
 
 # View cart, edit cart
 

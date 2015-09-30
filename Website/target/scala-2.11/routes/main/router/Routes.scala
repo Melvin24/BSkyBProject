@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/mpe12/BSkyBProject/Website/conf/routes
-// @DATE:Tue Sep 29 17:48:29 BST 2015
+// @DATE:Wed Sep 30 08:58:01 BST 2015
 
 package router
 
@@ -18,7 +18,7 @@ class Routes(
   override val errorHandler: play.api.http.HttpErrorHandler, 
   // @LINE:6
   Application_1: controllers.Application,
-  // @LINE:13
+  // @LINE:14
   Assets_0: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
@@ -27,7 +27,7 @@ class Routes(
    def this(errorHandler: play.api.http.HttpErrorHandler,
     // @LINE:6
     Application_1: controllers.Application,
-    // @LINE:13
+    // @LINE:14
     Assets_0: controllers.Assets
   ) = this(errorHandler, Application_1, Assets_0, "/")
 
@@ -48,6 +48,7 @@ class Routes(
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """products/$id<[^/]+>""", """controllers.Application.item(id:Long)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """stock/new""", """controllers.Application.createItem()"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """stock""", """controllers.Application.save()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """orders""", """controllers.Application.getActiveOrders()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""", """controllers.Assets.versioned(path:String = "/public", file:Asset)"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
@@ -141,11 +142,28 @@ class Routes(
     )
   )
 
-  // @LINE:13
-  private[this] lazy val controllers_Assets_versioned5_route = Route("GET",
+  // @LINE:11
+  private[this] lazy val controllers_Application_getActiveOrders5_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("orders")))
+  )
+  private[this] lazy val controllers_Application_getActiveOrders5_invoker = createInvoker(
+    Application_1.getActiveOrders(),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.Application",
+      "getActiveOrders",
+      Nil,
+      "GET",
+      """""",
+      this.prefix + """orders"""
+    )
+  )
+
+  // @LINE:14
+  private[this] lazy val controllers_Assets_versioned6_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_versioned5_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_versioned6_invoker = createInvoker(
     Assets_0.versioned(fakeValue[String], fakeValue[Asset]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -191,10 +209,16 @@ class Routes(
         controllers_Application_save4_invoker.call(Application_1.save())
       }
   
-    // @LINE:13
-    case controllers_Assets_versioned5_route(params) =>
+    // @LINE:11
+    case controllers_Application_getActiveOrders5_route(params) =>
+      call { 
+        controllers_Application_getActiveOrders5_invoker.call(Application_1.getActiveOrders())
+      }
+  
+    // @LINE:14
+    case controllers_Assets_versioned6_route(params) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
-        controllers_Assets_versioned5_invoker.call(Assets_0.versioned(path, file))
+        controllers_Assets_versioned6_invoker.call(Assets_0.versioned(path, file))
       }
   }
 }

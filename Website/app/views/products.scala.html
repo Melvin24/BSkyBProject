@@ -18,6 +18,7 @@
         <th>Name</th>
         <th>Total Stock</th>
         <th>Unit Price</th>
+        <th>&nbsp</th>
     </tr>
 @for(product <- products){
     <tr>
@@ -26,6 +27,7 @@
         <td>@product.name</td>
         <td>@product.total_stock</td>
         <td>@product.unit_price</td>
+        <td><input type="button" class="btn btn-primary" value="Delete"></td>
     </tr>
 }
 </table>

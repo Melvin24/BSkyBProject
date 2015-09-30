@@ -8,19 +8,39 @@
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="jumbotron">
   <div class="container">
-    <p><a class="btn btn-primary btn-lg" href="/" role="button"></a></p>
-  </div>
-</div>
-
+        @helper.form(action = routes.Application.save() ){
+            <div class="row">
+            @helper.inputText(create_item("stock_id"))
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                @helper.inputText(create_item("category_id"))
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                @helper.inputText(create_item("name"))
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                @helper.inputText(create_item("total_stock"))
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                @helper.inputText(create_item("unit_price"))
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                 <input type="submit" value="Create New Item" class="btn primary">
+                </div>
+            </div>
+        }
+        </div>
+    </div>
 <div class="container">
-@helper.form(action = routes.Application.save() ){
-    @helper.inputText(create_item("stock_id"),'_label -> "Stock ID", '_help -> "")
-    @helper.inputText(create_item("category_id"),'_label -> "Category ID", '_help -> "")
-    @helper.inputText(create_item("name"),'_label -> "Name", '_help -> "")
-    @helper.inputText(create_item("total_stock"),'_label -> "Total Stock", '_help -> "")
-    @helper.inputText(create_item("unit_price"),'_label -> "Price", '_help -> "")
-    <input type="submit" value="Create New Item" class="btn primary">   
-}
 
 </div>
 
