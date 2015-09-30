@@ -3825,3 +3825,117 @@ Copy resource mappings:
 Total time: 1 s, completed Sep 30, 2015 10:20:28 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
+> {file:/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/}myProject/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@1e57408a, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/app/controllers/Application.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/app/controllers/Application.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/app/controllers/Application.java)
+
+Read from stdout: Compiling 1 Java source to /Users/rsp04/Websites/Wednesday/BSkyBProject/Website/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/rsp04/Websites/Wednesday/BSkyBProject/Website/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@be1b08c directly...
+Java compilation took 0.097545135 s
+Java analysis took 0.040893237 s
+Java compile + analysis took 0.141219454 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+ebean-enhance> transform> pkg: models
+ebean-enhance> cls: models/Address  msg: no detection so enhancing entity
+ebean-enhance> cls: play/db/ebean/Model  msg: read ClassMeta
+ebean-enhance> cls: com/avaje/ebean/Model  msg: read ClassMeta
+ebean-enhance> cls: models/Address  msg: Skip intercepting static field find
+ebean-enhance> cls: models/Address  msg: Found ebean marker field _EBEAN_MARKER models.Address
+ebean-enhance> cls: models/Address  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/Address  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/Address  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/Address  msg: skipping... no enhancement required
+ebean-enhance> cls: models/Customer  msg: no detection so enhancing entity
+ebean-enhance> cls: models/Customer  msg: Skip intercepting static field find
+ebean-enhance> cls: models/Customer  msg: Found ebean marker field _EBEAN_MARKER models.Customer
+ebean-enhance> cls: models/Customer  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/Customer  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/Customer  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/Customer  msg: skipping... no enhancement required
+ebean-enhance> cls: models/CustomerLoyalty  msg: no detection so enhancing entity
+ebean-enhance> cls: models/CustomerLoyalty  msg: Skip intercepting static field find
+ebean-enhance> cls: models/CustomerLoyalty  msg: Found ebean marker field _EBEAN_MARKER models.CustomerLoyalty
+ebean-enhance> cls: models/CustomerLoyalty  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/CustomerLoyalty  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/CustomerLoyalty  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/CustomerLoyalty  msg: skipping... no enhancement required
+ebean-enhance> cls: models/ItemCategory  msg: no detection so enhancing entity
+ebean-enhance> cls: models/ItemCategory  msg: Skip intercepting static field find
+ebean-enhance> cls: models/ItemCategory  msg: Found ebean marker field _EBEAN_MARKER models.ItemCategory
+ebean-enhance> cls: models/ItemCategory  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/ItemCategory  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/ItemCategory  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/ItemCategory  msg: skipping... no enhancement required
+ebean-enhance> cls: models/LoyaltyPoints  msg: no detection so enhancing entity
+ebean-enhance> cls: models/LoyaltyPoints  msg: Skip intercepting static field find
+ebean-enhance> cls: models/LoyaltyPoints  msg: Found ebean marker field _EBEAN_MARKER models.LoyaltyPoints
+ebean-enhance> cls: models/LoyaltyPoints  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/LoyaltyPoints  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/LoyaltyPoints  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/LoyaltyPoints  msg: skipping... no enhancement required
+ebean-enhance> cls: models/OrderedItems  msg: no detection so enhancing entity
+ebean-enhance> cls: models/OrderedItems  msg: Skip intercepting static field find
+ebean-enhance> cls: models/OrderedItems  msg: Found ebean marker field _EBEAN_MARKER models.OrderedItems
+ebean-enhance> cls: models/OrderedItems  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/OrderedItems  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/OrderedItems  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/OrderedItems  msg: skipping... no enhancement required
+ebean-enhance> cls: models/Orders  msg: no detection so enhancing entity
+ebean-enhance> cls: models/Orders  msg: Skip intercepting static field find
+ebean-enhance> cls: models/Orders  msg: Found ebean marker field _EBEAN_MARKER models.Orders
+ebean-enhance> cls: models/Orders  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/Orders  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/Orders  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/Orders  msg: skipping... no enhancement required
+ebean-enhance> cls: models/OrderStatus  msg: no detection so enhancing entity
+ebean-enhance> cls: models/OrderStatus  msg: Skip intercepting static field find
+ebean-enhance> cls: models/OrderStatus  msg: Found ebean marker field _EBEAN_MARKER models.OrderStatus
+ebean-enhance> cls: models/OrderStatus  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/OrderStatus  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/OrderStatus  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/OrderStatus  msg: skipping... no enhancement required
+ebean-enhance> cls: models/Stock  msg: no detection so enhancing entity
+ebean-enhance> cls: models/Stock  msg: Skip intercepting static field find
+ebean-enhance> cls: models/Stock  msg: Found ebean marker field _EBEAN_MARKER models.Stock
+ebean-enhance> cls: models/Stock  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/Stock  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/Stock  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/Stock  msg: skipping... no enhancement required
+ebean-enhance> cls: models/Users  msg: no detection so enhancing entity
+ebean-enhance> cls: models/Users  msg: Skip intercepting static field find
+ebean-enhance> cls: models/Users  msg: Found ebean marker field _EBEAN_MARKER models.Users
+ebean-enhance> cls: models/Users  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/Users  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/Users  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/Users  msg: skipping... no enhancement required
+Copy resource mappings: 
+	(/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/conf/application.conf,/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/target/scala-2.11/classes/application.conf)
+	(/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/conf/evolutions,/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/target/scala-2.11/classes/evolutions)
+	(/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/conf/logback.xml,/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/target/scala-2.11/classes/logback.xml)
+	(/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/conf/routes,/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/target/scala-2.11/classes/routes)
+	(/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/conf/evolutions/default,/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/target/scala-2.11/classes/evolutions/default)
+	(/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/conf/evolutions/default/1.sql,/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/target/scala-2.11/classes/evolutions/default/1.sql)
+Total time: 0 s, completed Sep 30, 2015 10:25:40 PM
+> server-post-command-cleanup
+> server-handle-next-server-request

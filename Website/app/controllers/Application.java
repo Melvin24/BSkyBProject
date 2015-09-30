@@ -48,7 +48,7 @@ public class Application extends Controller {
             return badRequest(create_item.render(productForm));
         }
         productForm.get().save();
-        return redirect(routes.Application.index());
+        return redirect(routes.Application.allstock());
     }
     
     public Result getActiveOrders(){
