@@ -1,13 +1,15 @@
 
-var shoppingCart,
-    numberShoppingCartItems;
-    
+var shoppingCart = [];
+
+
 $(document).ready(function () {
     $('.dropdown-toggle').dropdown();
     $('.carousel').carousel();
+    var numberShoppingCartItems = parseInt($.session.get("numberShoppingCartItems"));
 
-    shoppingCart = [];
-    numberShoppingCartItems = 0;
+    if(!isNaN(numberShoppingCartItems))
+      $('#shoppingCartBadge').text(numberShoppingCartItems);
+
 
     var easterEgg = "gnomepoints",
         keyHistory = "",
@@ -47,25 +49,43 @@ $(document).ready(function () {
 
       $(".addToBasketButton").click(function(event) {
               var itemNumber = $(this).attr("itemNumber"),
-                  currentBadgeCount = $('#shoppingCartBadge').text();
-                  quantityToAdd = $('#quantityItem' + itemNumber).val();
+                  quantityToAdd = $('#quantityItem' + itemNumber).val(),
+                  numberShoppingCartItems = parseInt($.session.get("numberShoppingCartItems"));
+
+              if(isNaN(numberShoppingCartItems))
+                numberShoppingCartItems = 0;
 
               if(quantityToAdd > 0){
-                  shoppingCart.push({  "type" : $(this).attr("itemType"),
-                                        "qty" : quantityToAdd,
-                                        "itemNumber" : itemNumber
-                                  });
+                  addToShoppingBasketJSON($(this).attr("itemType"),quantityToAdd,itemNumber);
+
+
                 numberShoppingCartItems += parseInt(quantityToAdd);
                 $('#shoppingCartBadge').text(numberShoppingCartItems);
                 $('#quantityItem' + itemNumber).val(0);
                 maketoast(event);
+
+                $.session.set("numberShoppingCartItems",parseInt(numberShoppingCartItems));
+
               }
           });
 
 
+        function addToShoppingBasketJSON(itemType, quantity, itemNumber){
+          var temp = shoppingCart = sessionStorage.getItem('shoppingCart');
+          shoppingCart = $.parseJSON(shoppingCart);
+
+          shoppingCart.push({  "type" : itemType,
+                                "qty" : quantity,
+                                "itemNumber" : itemNumber
+                          });
+
+          $.session.set("shoppingCart", JSON.stringify(shoppingCart));
+          alert(sessionStorage.getItem('shoppingCart'));
+        }
+
       $('#shoppingCart').click(function(){
          //$('#link').click();
-         if(numberShoppingCartItems > 0)
+         if(!isNaN(numberShoppingCartItems))
             location.href=('/shoppingBag');
 
       });
