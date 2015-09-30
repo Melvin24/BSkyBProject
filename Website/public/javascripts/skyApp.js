@@ -73,7 +73,8 @@ $(document).ready(function () {
         function addToShoppingBasketJSON(itemType, quantity, itemNumber){
           var temp = shoppingCart = sessionStorage.getItem('shoppingCart');
           shoppingCart = $.parseJSON(shoppingCart);
-
+          if(shoppingCart == null)
+            shoppingCart = [];
           shoppingCart.push({  "type" : itemType,
                                 "qty" : quantity,
                                 "itemNumber" : itemNumber
