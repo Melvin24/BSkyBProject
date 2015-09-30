@@ -1,5 +1,5 @@
-New log file opened at Wed Sep 30 15:35:13 BST 2015 by 3956@LEEML0195480
-jvm 3956@LEEML0195480
+New log file opened at Wed Sep 30 17:48:54 BST 2015 by 2550@LEEML0195480
+jvm 2550@LEEML0195480
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.60-b23
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in /Users/rsp04/Websites/Wednesday/BSkyBProject/Website/project, returning: (website-build)
 Loading project definition from /Users/rsp04/Websites/Wednesday/BSkyBProject/Website/project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@5d20ed99, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@190e5408, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -67,15 +67,9 @@ Set current project to play-java (in build file:/Users/rsp04/Websites/Wednesday/
 > iflast shell
 > server-send-ready-for-request
 > server-handle-next-server-request
-> {file:/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/}myProject/compile:mainClass
-Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@1b50020b, check cycles: false
-Total time: 0 s, completed Sep 30, 2015 3:35:18 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
 > {file:/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/}myProject/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@263677a6, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@c346998, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -165,18 +159,18 @@ ebean-enhance> cls: models/Users  msg: Skip intercepting static field _ebean_pro
 ebean-enhance> cls: models/Users  msg: ... ignore field _ebean_intercept
 ebean-enhance> cls: models/Users  msg: Skip intercepting transient field _ebean_identity
 ebean-enhance> cls: models/Users  msg: skipping... no enhancement required
-Total time: 1 s, completed Sep 30, 2015 3:35:19 PM
+Total time: 1 s, completed Sep 30, 2015 5:48:58 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/}myProject/compile:mainClass
 Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@2d5133b3, check cycles: false
-Total time: 0 s, completed Sep 30, 2015 3:35:19 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@7fcfd3e2, check cycles: false
+Total time: 0 s, completed Sep 30, 2015 5:48:58 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/}myProject/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@72a4a772, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@53745b43, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -266,254 +260,12 @@ ebean-enhance> cls: models/Users  msg: Skip intercepting static field _ebean_pro
 ebean-enhance> cls: models/Users  msg: ... ignore field _ebean_intercept
 ebean-enhance> cls: models/Users  msg: Skip intercepting transient field _ebean_identity
 ebean-enhance> cls: models/Users  msg: skipping... no enhancement required
-Total time: 0 s, completed Sep 30, 2015 3:35:19 PM
+Total time: 0 s, completed Sep 30, 2015 5:48:58 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
-> backgroundRun
-Evaluating tasks: compile:backgroundRun
-Running task... Cancel: sbt.server.ServerTaskCancellation@659c2672, check cycles: false
-Total time: 0 s, completed Sep 30, 2015 3:35:22 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/}myProject/*:playForkConfig
-Evaluating tasks: *:playForkConfig
-Running task... Cancel: sbt.server.ServerTaskCancellation@17954f16, check cycles: false
-Total time: 0 s, completed Sep 30, 2015 3:35:24 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> myProject/playForkNotifyStart http://localhost:9000
-Evaluating tasks: *:playForkNotifyStart
-Running task... Cancel: sbt.server.ServerTaskCancellation@5c534d1b, check cycles: false
-Total time: 0 s, completed Sep 30, 2015 3:35:25 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/}myProject/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@80066f9, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-ebean-enhance> transform> pkg: models
-ebean-enhance> cls: models/Address  msg: no detection so enhancing entity
-ebean-enhance> cls: play/db/ebean/Model  msg: read ClassMeta
-ebean-enhance> cls: com/avaje/ebean/Model  msg: read ClassMeta
-ebean-enhance> cls: models/Address  msg: Skip intercepting static field find
-ebean-enhance> cls: models/Address  msg: Found ebean marker field _EBEAN_MARKER models.Address
-ebean-enhance> cls: models/Address  msg: Skip intercepting static field _ebean_props
-ebean-enhance> cls: models/Address  msg: ... ignore field _ebean_intercept
-ebean-enhance> cls: models/Address  msg: Skip intercepting transient field _ebean_identity
-ebean-enhance> cls: models/Address  msg: skipping... no enhancement required
-ebean-enhance> cls: models/Customer  msg: no detection so enhancing entity
-ebean-enhance> cls: models/Customer  msg: Skip intercepting static field find
-ebean-enhance> cls: models/Customer  msg: Found ebean marker field _EBEAN_MARKER models.Customer
-ebean-enhance> cls: models/Customer  msg: Skip intercepting static field _ebean_props
-ebean-enhance> cls: models/Customer  msg: ... ignore field _ebean_intercept
-ebean-enhance> cls: models/Customer  msg: Skip intercepting transient field _ebean_identity
-ebean-enhance> cls: models/Customer  msg: skipping... no enhancement required
-ebean-enhance> cls: models/CustomerLoyalty  msg: no detection so enhancing entity
-ebean-enhance> cls: models/CustomerLoyalty  msg: Skip intercepting static field find
-ebean-enhance> cls: models/CustomerLoyalty  msg: Found ebean marker field _EBEAN_MARKER models.CustomerLoyalty
-ebean-enhance> cls: models/CustomerLoyalty  msg: Skip intercepting static field _ebean_props
-ebean-enhance> cls: models/CustomerLoyalty  msg: ... ignore field _ebean_intercept
-ebean-enhance> cls: models/CustomerLoyalty  msg: Skip intercepting transient field _ebean_identity
-ebean-enhance> cls: models/CustomerLoyalty  msg: skipping... no enhancement required
-ebean-enhance> cls: models/ItemCategory  msg: no detection so enhancing entity
-ebean-enhance> cls: models/ItemCategory  msg: Skip intercepting static field find
-ebean-enhance> cls: models/ItemCategory  msg: Found ebean marker field _EBEAN_MARKER models.ItemCategory
-ebean-enhance> cls: models/ItemCategory  msg: Skip intercepting static field _ebean_props
-ebean-enhance> cls: models/ItemCategory  msg: ... ignore field _ebean_intercept
-ebean-enhance> cls: models/ItemCategory  msg: Skip intercepting transient field _ebean_identity
-ebean-enhance> cls: models/ItemCategory  msg: skipping... no enhancement required
-ebean-enhance> cls: models/LoyaltyPoints  msg: no detection so enhancing entity
-ebean-enhance> cls: models/LoyaltyPoints  msg: Skip intercepting static field find
-ebean-enhance> cls: models/LoyaltyPoints  msg: Found ebean marker field _EBEAN_MARKER models.LoyaltyPoints
-ebean-enhance> cls: models/LoyaltyPoints  msg: Skip intercepting static field _ebean_props
-ebean-enhance> cls: models/LoyaltyPoints  msg: ... ignore field _ebean_intercept
-ebean-enhance> cls: models/LoyaltyPoints  msg: Skip intercepting transient field _ebean_identity
-ebean-enhance> cls: models/LoyaltyPoints  msg: skipping... no enhancement required
-ebean-enhance> cls: models/OrderedItems  msg: no detection so enhancing entity
-ebean-enhance> cls: models/OrderedItems  msg: Skip intercepting static field find
-ebean-enhance> cls: models/OrderedItems  msg: Found ebean marker field _EBEAN_MARKER models.OrderedItems
-ebean-enhance> cls: models/OrderedItems  msg: Skip intercepting static field _ebean_props
-ebean-enhance> cls: models/OrderedItems  msg: ... ignore field _ebean_intercept
-ebean-enhance> cls: models/OrderedItems  msg: Skip intercepting transient field _ebean_identity
-ebean-enhance> cls: models/OrderedItems  msg: skipping... no enhancement required
-ebean-enhance> cls: models/Orders  msg: no detection so enhancing entity
-ebean-enhance> cls: models/Orders  msg: Skip intercepting static field find
-ebean-enhance> cls: models/Orders  msg: Found ebean marker field _EBEAN_MARKER models.Orders
-ebean-enhance> cls: models/Orders  msg: Skip intercepting static field _ebean_props
-ebean-enhance> cls: models/Orders  msg: ... ignore field _ebean_intercept
-ebean-enhance> cls: models/Orders  msg: Skip intercepting transient field _ebean_identity
-ebean-enhance> cls: models/Orders  msg: skipping... no enhancement required
-ebean-enhance> cls: models/OrderStatus  msg: no detection so enhancing entity
-ebean-enhance> cls: models/OrderStatus  msg: Skip intercepting static field find
-ebean-enhance> cls: models/OrderStatus  msg: Found ebean marker field _EBEAN_MARKER models.OrderStatus
-ebean-enhance> cls: models/OrderStatus  msg: Skip intercepting static field _ebean_props
-ebean-enhance> cls: models/OrderStatus  msg: ... ignore field _ebean_intercept
-ebean-enhance> cls: models/OrderStatus  msg: Skip intercepting transient field _ebean_identity
-ebean-enhance> cls: models/OrderStatus  msg: skipping... no enhancement required
-ebean-enhance> cls: models/Stock  msg: no detection so enhancing entity
-ebean-enhance> cls: models/Stock  msg: Skip intercepting static field find
-ebean-enhance> cls: models/Stock  msg: Found ebean marker field _EBEAN_MARKER models.Stock
-ebean-enhance> cls: models/Stock  msg: Skip intercepting static field _ebean_props
-ebean-enhance> cls: models/Stock  msg: ... ignore field _ebean_intercept
-ebean-enhance> cls: models/Stock  msg: Skip intercepting transient field _ebean_identity
-ebean-enhance> cls: models/Stock  msg: skipping... no enhancement required
-ebean-enhance> cls: models/Users  msg: no detection so enhancing entity
-ebean-enhance> cls: models/Users  msg: Skip intercepting static field find
-ebean-enhance> cls: models/Users  msg: Found ebean marker field _EBEAN_MARKER models.Users
-ebean-enhance> cls: models/Users  msg: Skip intercepting static field _ebean_props
-ebean-enhance> cls: models/Users  msg: ... ignore field _ebean_intercept
-ebean-enhance> cls: models/Users  msg: Skip intercepting transient field _ebean_identity
-ebean-enhance> cls: models/Users  msg: skipping... no enhancement required
-Copy resource mappings: 
-	(/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/conf/application.conf,/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/target/scala-2.11/classes/application.conf)
-	(/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/conf/evolutions,/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/target/scala-2.11/classes/evolutions)
-	(/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/conf/logback.xml,/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/target/scala-2.11/classes/logback.xml)
-	(/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/conf/routes,/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/target/scala-2.11/classes/routes)
-	(/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/conf/evolutions/default,/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/target/scala-2.11/classes/evolutions/default)
-	(/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/conf/evolutions/default/1.sql,/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/target/scala-2.11/classes/evolutions/default/1.sql)
-Warning: node.js detection failed, sbt will use the Rhino based Trireme JavaScript engine instead to run JavaScript assets compilation, which in some cases may be orders of magnitude slower than using node.js.
-Total time: 1 s, completed Sep 30, 2015 3:35:35 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/}myProject/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@48e5d020, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/checkout.template.scala)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/checkout.template.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/checkout.template.scala)
-
-Read from stdout: Compiling 1 Scala source to /Users/rsp04/Websites/Wednesday/BSkyBProject/Website/target/scala-2.11/classes...
-Compiling 1 Scala source to /Users/rsp04/Websites/Wednesday/BSkyBProject/Website/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.6
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.6
-Other repositories:
-Default repositories:
-Running cached compiler 6872a1b8, interfacing (CompilerInterface) with Scala compiler version 2.11.6
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.scala-lang/scala-library/2.11.6/jars/scala-library.jar
-	-classpath
-	/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/target/scala-2.11/classes:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.typesafe.play/play-enhancer/1.1.0/jars/play-enhancer.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar:/Users/rsp04/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-ebean_2.11/jars/play-ebean_2.11-1.0.0.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.11/jars/play-java-jdbc_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.javassist/javassist/3.19.0-GA/bundles/javassist.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.typesafe/config/1.3.0/bundles/config.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/joda-time/joda-time/2.8.1/jars/joda-time.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.joda/joda-convert/1.7/jars/joda-convert.jar:/Users/rsp04/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.6.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.core/jackson-core/2.5.4/bundles/jackson-core.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.core/jackson-annotations/2.5.4/bundles/jackson-annotations.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.core/jackson-databind/2.5.4/bundles/jackson-databind.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.5.4/bundles/jackson-datatype-jdk8.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.5.4/bundles/jackson-datatype-jsr310.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.slf4j/slf4j-api/1.7.12/jars/slf4j-api.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.slf4j/jul-to-slf4j/1.7.12/jars/jul-to-slf4j.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.slf4j/jcl-over-slf4j/1.7.12/jars/jcl-over-slf4j.jar:/Users/rsp04/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/ch.qos.logback/logback-core/1.1.3/jars/logback-core.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/ch.qos.logback/logback-classic/1.1.3/jars/logback-classic.jar:/Users/rsp04/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.13.jar:/Users/rsp04/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.13.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/commons-codec/commons-codec/1.10/jars/commons-codec.jar:/Users/rsp04/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/rsp04/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/rsp04/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.inject/guice/4.0/jars/guice.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/javax.inject/javax.inject/1/jars/javax.inject.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.jolbox/bonecp/0.8.0.RELEASE/bundles/bonecp.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.zaxxer/HikariCP/2.3.7/bundles/HikariCP.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.h2database/h2/1.4.187/jars/h2.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/tyrex/tyrex/1.0.1/jars/tyrex.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.scala-lang.modules/scala-java8-compat_2.11/0.3.0/bundles/scala-java8-compat_2.11.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.yaml/snakeyaml/1.15/bundles/snakeyaml.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.hibernate/hibernate-validator/5.0.3.Final/jars/hibernate-validator.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/javax.validation/validation-api/1.1.0.Final/jars/validation-api.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml/classmate/1.0.0/bundles/classmate.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.jboss.logging/jboss-logging/3.2.1.Final/jars/jboss-logging.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.springframework/spring-context/4.1.6.RELEASE/jars/spring-context.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.springframework/spring-core/4.1.6.RELEASE/jars/spring-core.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.springframework/spring-beans/4.1.6.RELEASE/jars/spring-beans.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.reflections/reflections/0.9.9/jars/reflections.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.guava/guava/18.0/bundles/guava.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.code.findbugs/annotations/2.0.1/jars/annotations.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/net.jodah/typetools/0.4.1/bundles/typetools.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.code.findbugs/jsr305/2.0.3/jars/jsr305.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.apache.tomcat/tomcat-servlet-api/8.0.21/jars/tomcat-servlet-api.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.11/jars/play-jdbc-evolutions_2.11-2.4.0.jar:/Users/rsp04/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-4.6.2.jar:/Users/rsp04/.ivy2/cache/javax.persistence/persistence-api/jars/persistence-api-1.0.jar:/Users/rsp04/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-4.5.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/io.netty/netty/bundles/netty-3.10.4.Final.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.typesafe.netty/netty-http-pipelining/1.1.4/jars/netty-http-pipelining.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-java-ws_2.11/jars/play-java-ws_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.ning/async-http-client/1.9.21/jars/async-http-client.jar:/Users/rsp04/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/rsp04/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/rsp04/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/rsp04/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.18.jar
-Scala compilation took 3.069927572 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-ebean-enhance> transform> pkg: models
-ebean-enhance> cls: models/Address  msg: no detection so enhancing entity
-ebean-enhance> cls: play/db/ebean/Model  msg: read ClassMeta
-ebean-enhance> cls: com/avaje/ebean/Model  msg: read ClassMeta
-ebean-enhance> cls: models/Address  msg: Skip intercepting static field find
-ebean-enhance> cls: models/Address  msg: Found ebean marker field _EBEAN_MARKER models.Address
-ebean-enhance> cls: models/Address  msg: Skip intercepting static field _ebean_props
-ebean-enhance> cls: models/Address  msg: ... ignore field _ebean_intercept
-ebean-enhance> cls: models/Address  msg: Skip intercepting transient field _ebean_identity
-ebean-enhance> cls: models/Address  msg: skipping... no enhancement required
-ebean-enhance> cls: models/Customer  msg: no detection so enhancing entity
-ebean-enhance> cls: models/Customer  msg: Skip intercepting static field find
-ebean-enhance> cls: models/Customer  msg: Found ebean marker field _EBEAN_MARKER models.Customer
-ebean-enhance> cls: models/Customer  msg: Skip intercepting static field _ebean_props
-ebean-enhance> cls: models/Customer  msg: ... ignore field _ebean_intercept
-ebean-enhance> cls: models/Customer  msg: Skip intercepting transient field _ebean_identity
-ebean-enhance> cls: models/Customer  msg: skipping... no enhancement required
-ebean-enhance> cls: models/CustomerLoyalty  msg: no detection so enhancing entity
-ebean-enhance> cls: models/CustomerLoyalty  msg: Skip intercepting static field find
-ebean-enhance> cls: models/CustomerLoyalty  msg: Found ebean marker field _EBEAN_MARKER models.CustomerLoyalty
-ebean-enhance> cls: models/CustomerLoyalty  msg: Skip intercepting static field _ebean_props
-ebean-enhance> cls: models/CustomerLoyalty  msg: ... ignore field _ebean_intercept
-ebean-enhance> cls: models/CustomerLoyalty  msg: Skip intercepting transient field _ebean_identity
-ebean-enhance> cls: models/CustomerLoyalty  msg: skipping... no enhancement required
-ebean-enhance> cls: models/ItemCategory  msg: no detection so enhancing entity
-ebean-enhance> cls: models/ItemCategory  msg: Skip intercepting static field find
-ebean-enhance> cls: models/ItemCategory  msg: Found ebean marker field _EBEAN_MARKER models.ItemCategory
-ebean-enhance> cls: models/ItemCategory  msg: Skip intercepting static field _ebean_props
-ebean-enhance> cls: models/ItemCategory  msg: ... ignore field _ebean_intercept
-ebean-enhance> cls: models/ItemCategory  msg: Skip intercepting transient field _ebean_identity
-ebean-enhance> cls: models/ItemCategory  msg: skipping... no enhancement required
-ebean-enhance> cls: models/LoyaltyPoints  msg: no detection so enhancing entity
-ebean-enhance> cls: models/LoyaltyPoints  msg: Skip intercepting static field find
-ebean-enhance> cls: models/LoyaltyPoints  msg: Found ebean marker field _EBEAN_MARKER models.LoyaltyPoints
-ebean-enhance> cls: models/LoyaltyPoints  msg: Skip intercepting static field _ebean_props
-ebean-enhance> cls: models/LoyaltyPoints  msg: ... ignore field _ebean_intercept
-ebean-enhance> cls: models/LoyaltyPoints  msg: Skip intercepting transient field _ebean_identity
-ebean-enhance> cls: models/LoyaltyPoints  msg: skipping... no enhancement required
-ebean-enhance> cls: models/OrderedItems  msg: no detection so enhancing entity
-ebean-enhance> cls: models/OrderedItems  msg: Skip intercepting static field find
-ebean-enhance> cls: models/OrderedItems  msg: Found ebean marker field _EBEAN_MARKER models.OrderedItems
-ebean-enhance> cls: models/OrderedItems  msg: Skip intercepting static field _ebean_props
-ebean-enhance> cls: models/OrderedItems  msg: ... ignore field _ebean_intercept
-ebean-enhance> cls: models/OrderedItems  msg: Skip intercepting transient field _ebean_identity
-ebean-enhance> cls: models/OrderedItems  msg: skipping... no enhancement required
-ebean-enhance> cls: models/Orders  msg: no detection so enhancing entity
-ebean-enhance> cls: models/Orders  msg: Skip intercepting static field find
-ebean-enhance> cls: models/Orders  msg: Found ebean marker field _EBEAN_MARKER models.Orders
-ebean-enhance> cls: models/Orders  msg: Skip intercepting static field _ebean_props
-ebean-enhance> cls: models/Orders  msg: ... ignore field _ebean_intercept
-ebean-enhance> cls: models/Orders  msg: Skip intercepting transient field _ebean_identity
-ebean-enhance> cls: models/Orders  msg: skipping... no enhancement required
-ebean-enhance> cls: models/OrderStatus  msg: no detection so enhancing entity
-ebean-enhance> cls: models/OrderStatus  msg: Skip intercepting static field find
-ebean-enhance> cls: models/OrderStatus  msg: Found ebean marker field _EBEAN_MARKER models.OrderStatus
-ebean-enhance> cls: models/OrderStatus  msg: Skip intercepting static field _ebean_props
-ebean-enhance> cls: models/OrderStatus  msg: ... ignore field _ebean_intercept
-ebean-enhance> cls: models/OrderStatus  msg: Skip intercepting transient field _ebean_identity
-ebean-enhance> cls: models/OrderStatus  msg: skipping... no enhancement required
-ebean-enhance> cls: models/Stock  msg: no detection so enhancing entity
-ebean-enhance> cls: models/Stock  msg: Skip intercepting static field find
-ebean-enhance> cls: models/Stock  msg: Found ebean marker field _EBEAN_MARKER models.Stock
-ebean-enhance> cls: models/Stock  msg: Skip intercepting static field _ebean_props
-ebean-enhance> cls: models/Stock  msg: ... ignore field _ebean_intercept
-ebean-enhance> cls: models/Stock  msg: Skip intercepting transient field _ebean_identity
-ebean-enhance> cls: models/Stock  msg: skipping... no enhancement required
-ebean-enhance> cls: models/Users  msg: no detection so enhancing entity
-ebean-enhance> cls: models/Users  msg: Skip intercepting static field find
-ebean-enhance> cls: models/Users  msg: Found ebean marker field _EBEAN_MARKER models.Users
-ebean-enhance> cls: models/Users  msg: Skip intercepting static field _ebean_props
-ebean-enhance> cls: models/Users  msg: ... ignore field _ebean_intercept
-ebean-enhance> cls: models/Users  msg: Skip intercepting transient field _ebean_identity
-ebean-enhance> cls: models/Users  msg: skipping... no enhancement required
-Copy resource mappings: 
-	(/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/conf/application.conf,/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/target/scala-2.11/classes/application.conf)
-	(/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/conf/evolutions,/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/target/scala-2.11/classes/evolutions)
-	(/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/conf/logback.xml,/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/target/scala-2.11/classes/logback.xml)
-	(/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/conf/routes,/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/target/scala-2.11/classes/routes)
-	(/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/conf/evolutions/default,/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/target/scala-2.11/classes/evolutions/default)
-	(/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/conf/evolutions/default/1.sql,/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/target/scala-2.11/classes/evolutions/default/1.sql)
-Total time: 4 s, completed Sep 30, 2015 3:47:56 PM
+> {file:/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/}myProject/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@3ec394e3, check cycles: false
+Total time: 0 s, completed Sep 30, 2015 5:48:58 PM
 > server-post-command-cleanup
 > server-handle-next-server-request

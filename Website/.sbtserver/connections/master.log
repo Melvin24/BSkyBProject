@@ -1,13 +1,13 @@
-New log file opened at Wed Sep 30 15:35:13 BST 2015 by 3956@LEEML0195480
-Taking next connection to: 50438
-New client attempting to connect on port: 50439-50438
-  Address = /10.128.3.67:50438
-This client on port 50439 has uuid 23105c0b-16a3-45ab-a693-ad040cd87d84 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-23105c0b-16a3-45ab-a693-ad040cd87d84
-Taking next connection to: 50438
-New client attempting to connect on port: 50440-50438
-  Address = /10.128.3.67:50438
-Handshake exception on socket: 50440
+New log file opened at Wed Sep 30 17:48:54 BST 2015 by 2550@LEEML0195480
+Taking next connection to: 49933
+New client attempting to connect on port: 49934-49933
+  Address = /10.128.3.67:49933
+This client on port 49934 has uuid 586772f0-a964-4621-a89e-fe53013d847d configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-586772f0-a964-4621-a89e-fe53013d847d
+Taking next connection to: 49933
+New client attempting to connect on port: 49935-49933
+  Address = /10.128.3.67:49933
+Handshake exception on socket: 49935
 sbt.impl.ipc.HandshakeException: Unable to perform handshake
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
 	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
@@ -17,27 +17,12 @@ Caused by: java.io.EOFException
 	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
 	... 2 more
-Taking next connection to: 50438
-New client attempting to connect on port: 50441-50438
-  Address = /10.128.3.67:50438
-This client on port 50441 has uuid a69d6985-7106-4ead-9d62-bc107a606d12 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: activator-23105c0b-16a3-45ab-a693-ad040cd87d84, play-fork-run-a69d6985-7106-4ead-9d62-bc107a606d12
-Taking next connection to: 50438
+Taking next connection to: 49933
+New client attempting to connect on port: 49936-49933
+  Address = /10.128.3.67:49933
+This client on port 49936 has uuid 23263c31-f4ce-48ff-8fdf-a9ffc43150e9 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-586772f0-a964-4621-a89e-fe53013d847d, activator-23263c31-f4ce-48ff-8fdf-a9ffc43150e9
+Taking next connection to: 49933
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 50438
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 50438
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 50438
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 50438
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 50438
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 50438
+Taking next connection to: 49933

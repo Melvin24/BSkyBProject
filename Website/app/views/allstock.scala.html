@@ -1,0 +1,42 @@
+@(products: List[Stock])
+
+@main("Stock page!") {
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron headline-img">
+  <div class="container">
+    <h1>Stock</h1>
+    <p>Add/remove stock and order more.</p>
+  </div>
+</div>
+
+<div class="container">
+  <table class="table table-condensed">
+    <tr>
+        <th>Stock ID</th>
+        <th>Category ID</th>
+        <th>Name</th>
+        <th>Total Stock</th>
+        <th>Unit Price</th>
+        <th></th>
+    </tr>
+@for(product <- products){
+    <tr>
+        <td>@product.stock_id</td>
+        <td>@product.category_id</td>
+        <td>@product.name</td>
+        <td>@product.total_stock</td>
+        <td>@product.unit_price</td>
+        <td>
+        <input type="button" class="btn btn-primary" value="Order More">
+        <input type="button" class="btn btn-primary" value="Delete">
+        </td>
+    </tr>
+}
+</table>
+
+Add new items: <input type="button" class="btn btn-primary" value="Add new items">
+
+</div>
+
+}

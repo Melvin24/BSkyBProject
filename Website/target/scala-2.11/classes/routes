@@ -12,8 +12,13 @@ GET     /products/:id                 controllers.Application.item(id: Long)
 
 # Manage products - back end of shop front
 
+GET     /backofhouse                  controllers.Application.backofhouse()
+
 GET     /stock/new                    controllers.Application.createItem()
+GET     /stock                        controllers.Application.allstock()
 POST    /stock                        controllers.Application.save()
+
+# JSON
 GET     /orders                       controllers.Application.getActiveOrders()
 
 # View cart, edit cart
