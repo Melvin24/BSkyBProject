@@ -47,6 +47,11 @@ $(document).ready(function () {
         $("#quantityItem" + itemNumber).val(parseInt($("#quantityItem" + itemNumber).val()) + 1);
       });
 
+      $("#resetSession").click(function() {
+        $.session.set("numberShoppingCartItems","");
+        $.session.set("shoppingCart", "");
+      });
+
       $(".addToBasketButton").click(function(event) {
               var itemNumber = $(this).attr("itemNumber"),
                   quantityToAdd = $('#quantityItem' + itemNumber).val(),
@@ -71,8 +76,9 @@ $(document).ready(function () {
 
 
         function addToShoppingBasketJSON(itemType, quantity, itemNumber){
-          var temp = shoppingCart = sessionStorage.getItem('shoppingCart');
-          shoppingCart = $.parseJSON(shoppingCart);
+          var temp  = sessionStorage.getItem('shoppingCart');
+          if(temp != "")
+            shoppingCart = $.parseJSON(temp);
           if(shoppingCart == null)
             shoppingCart = [];
           shoppingCart.push({  "type" : itemType,
@@ -85,6 +91,7 @@ $(document).ready(function () {
         }
 
       $('#shoppingCart').click(function(){
+        var numberShoppingCartItems = parseInt($.session.get("numberShoppingCartItems"));
          //$('#link').click();
          if(!isNaN(numberShoppingCartItems))
             location.href=('/shoppingBag');
