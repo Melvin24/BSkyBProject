@@ -37,7 +37,7 @@ Seq[Any](format.raw/*1.25*/("""
 <div class="jumbotron headline-img">
   <div class="container">
     <h1>Product Catalogue</h1>
-    <p><a class="btn btn-primary btn-lg" href="/products/iphone6" role="button">Learn more &raquo;</a></p>
+    <p>List of all our fantastic products.</p>
   </div>
 </div>
 
@@ -58,7 +58,7 @@ Seq[Any](format.raw/*1.25*/("""
         <td>"""),_display_(/*27.14*/product/*27.21*/.name),format.raw/*27.26*/("""</td>
         <td>"""),_display_(/*28.14*/product/*28.21*/.total_stock),format.raw/*28.33*/("""</td>
         <td>"""),_display_(/*29.14*/product/*29.21*/.unit_price),format.raw/*29.32*/("""</td>
-        <td><input type="button" class="btn btn-primary" value="Delete"></td>
+        <td><input type="button" class="btn btn-primary" value="Add to cart"></td>
     </tr>
 """)))}),format.raw/*32.2*/("""
 """),format.raw/*33.1*/("""</table>
@@ -85,10 +85,10 @@ Seq[Any](format.raw/*1.25*/("""
 object products extends products_Scope0.products
               /*
                   -- GENERATED --
-                  DATE: Wed Sep 30 17:42:17 BST 2015
+                  DATE: Wed Sep 30 18:40:55 BST 2015
                   SOURCE: /Users/rsp04/Websites/Wednesday/BSkyBProject/Website/app/views/products.scala.html
-                  HASH: 3c22e0f478c3987aa11eb635d93363250f51edb5
-                  MATRIX: 756->1|874->24|902->27|945->62|984->64|1012->66|1571->599|1611->623|1650->624|1682->629|1727->647|1743->654|1773->663|1819->682|1835->689|1868->701|1914->720|1930->727|1956->732|2002->751|2018->758|2051->770|2097->789|2113->796|2145->807|2270->902|2298->903
+                  HASH: c20d2e3e5908d3fed27e44b6b235f55756ca25a1
+                  MATRIX: 756->1|874->24|902->27|945->62|984->64|1012->66|1511->539|1551->563|1590->564|1622->569|1667->587|1683->594|1713->603|1759->622|1775->629|1808->641|1854->660|1870->667|1896->672|1942->691|1958->698|1991->710|2037->729|2053->736|2085->747|2215->847|2243->848
                   LINES: 27->1|32->1|34->3|34->3|34->3|36->5|54->23|54->23|54->23|55->24|56->25|56->25|56->25|57->26|57->26|57->26|58->27|58->27|58->27|59->28|59->28|59->28|60->29|60->29|60->29|63->32|64->33
                   -- GENERATED --
               */

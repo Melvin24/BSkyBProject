@@ -16,8 +16,11 @@ import views.html.*;
 public class Application extends Controller {
 
     public Result index() {
-        return ok(index.render());
+        return ok(
+            index.render()
+            );
     }
+    
     public Result products() {
         List<Stock> stock = Stock.find.all();
         if(stock == null){
@@ -30,6 +33,17 @@ public class Application extends Controller {
         return ok(
             create_item.render(productForm)
         );
+    }
+    
+    /*public Result addItem() {
+        
+    }*/
+    
+    public Result deleteItem(Long id) {
+        Stock.find.ref(id).delete();
+        flash("success", "Stock has been deleted from the catalogue.");
+        
+        return ok(index.render());
     }
     
     public Result save() {

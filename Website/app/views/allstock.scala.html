@@ -29,13 +29,13 @@
         <td>@product.unit_price</td>
         <td>
         <input type="button" class="btn btn-primary" value="Order More">
-        <input type="button" class="btn btn-primary" value="Delete">
+        <a href="/stock/delete/@product.stock_id"><input type="button" class="btn btn-primary" value="Delete"></a>
         </td>
     </tr>
 }
 </table>
 
-Add new items: <input type="button" class="btn btn-primary" value="Add new items">
+<a href="/stock/new"><input type="button" class="btn btn-primary" value="Add new items"></a>
 
 </div>
 

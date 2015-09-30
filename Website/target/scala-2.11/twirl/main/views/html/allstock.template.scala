@@ -60,13 +60,13 @@ Seq[Any](format.raw/*1.25*/("""
         <td>"""),_display_(/*29.14*/product/*29.21*/.unit_price),format.raw/*29.32*/("""</td>
         <td>
         <input type="button" class="btn btn-primary" value="Order More">
-        <input type="button" class="btn btn-primary" value="Delete">
+        <a href="/stock/delete/"""),_display_(/*32.33*/product/*32.40*/.stock_id),format.raw/*32.49*/(""""><input type="button" class="btn btn-primary" value="Delete"></a>
         </td>
     </tr>
 """)))}),format.raw/*35.2*/("""
 """),format.raw/*36.1*/("""</table>
 
-Add new items: <input type="button" class="btn btn-primary" value="Add new items">
+<a href="/stock/new"><input type="button" class="btn btn-primary" value="Add new items"></a>
 
 </div>
 
@@ -90,11 +90,11 @@ Add new items: <input type="button" class="btn btn-primary" value="Add new items
 object allstock extends allstock_Scope0.allstock
               /*
                   -- GENERATED --
-                  DATE: Wed Sep 30 17:43:34 BST 2015
+                  DATE: Wed Sep 30 18:34:41 BST 2015
                   SOURCE: /Users/rsp04/Websites/Wednesday/BSkyBProject/Website/app/views/allstock.scala.html
-                  HASH: c72b28a77e38b598f7a109bd693f13eea29003ea
-                  MATRIX: 756->1|874->24|902->27|929->46|968->48|996->50|1475->503|1515->527|1554->528|1586->533|1631->551|1647->558|1677->567|1723->586|1739->593|1772->605|1818->624|1834->631|1860->636|1906->655|1922->662|1955->674|2001->693|2017->700|2049->711|2265->897|2293->898
-                  LINES: 27->1|32->1|34->3|34->3|34->3|36->5|54->23|54->23|54->23|55->24|56->25|56->25|56->25|57->26|57->26|57->26|58->27|58->27|58->27|59->28|59->28|59->28|60->29|60->29|60->29|66->35|67->36
+                  HASH: e9de750feb31457bf042974ced69af19cf9ccf59
+                  MATRIX: 756->1|874->24|902->27|929->46|968->48|996->50|1475->503|1515->527|1554->528|1586->533|1631->551|1647->558|1677->567|1723->586|1739->593|1772->605|1818->624|1834->631|1860->636|1906->655|1922->662|1955->674|2001->693|2017->700|2049->711|2200->835|2216->842|2246->851|2368->943|2396->944
+                  LINES: 27->1|32->1|34->3|34->3|34->3|36->5|54->23|54->23|54->23|55->24|56->25|56->25|56->25|57->26|57->26|57->26|58->27|58->27|58->27|59->28|59->28|59->28|60->29|60->29|60->29|63->32|63->32|63->32|66->35|67->36
                   -- GENERATED --
               */
           

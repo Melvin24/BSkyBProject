@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/conf/routes
-// @DATE:Wed Sep 30 17:41:05 BST 2015
+// @DATE:Wed Sep 30 18:36:16 BST 2015
 
 package router
 
@@ -18,7 +18,7 @@ class Routes(
   override val errorHandler: play.api.http.HttpErrorHandler, 
   // @LINE:6
   Application_1: controllers.Application,
-  // @LINE:30
+  // @LINE:32
   Assets_0: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
@@ -27,7 +27,7 @@ class Routes(
    def this(errorHandler: play.api.http.HttpErrorHandler,
     // @LINE:6
     Application_1: controllers.Application,
-    // @LINE:30
+    // @LINE:32
     Assets_0: controllers.Assets
   ) = this(errorHandler, Application_1, Assets_0, "/")
 
@@ -48,6 +48,7 @@ class Routes(
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """products/$id<[^/]+>""", """controllers.Application.item(id:Long)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """backofhouse""", """controllers.Application.backofhouse()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """stock/new""", """controllers.Application.createItem()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """stock/delete/$id<[^/]+>""", """controllers.Application.deleteItem(id:Long)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """stock""", """controllers.Application.allstock()"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """stock""", """controllers.Application.save()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """orders""", """controllers.Application.getActiveOrders()"""),
@@ -145,11 +146,28 @@ class Routes(
     )
   )
 
-  // @LINE:18
-  private[this] lazy val controllers_Application_allstock5_route = Route("GET",
+  // @LINE:19
+  private[this] lazy val controllers_Application_deleteItem5_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("stock/delete/"), DynamicPart("id", """[^/]+""",true)))
+  )
+  private[this] lazy val controllers_Application_deleteItem5_invoker = createInvoker(
+    Application_1.deleteItem(fakeValue[Long]),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.Application",
+      "deleteItem",
+      Seq(classOf[Long]),
+      "GET",
+      """POST   /stock/add                   controllers.Application.addItem(id: Long, amount: Long)""",
+      this.prefix + """stock/delete/$id<[^/]+>"""
+    )
+  )
+
+  // @LINE:20
+  private[this] lazy val controllers_Application_allstock6_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("stock")))
   )
-  private[this] lazy val controllers_Application_allstock5_invoker = createInvoker(
+  private[this] lazy val controllers_Application_allstock6_invoker = createInvoker(
     Application_1.allstock(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -162,11 +180,11 @@ class Routes(
     )
   )
 
-  // @LINE:19
-  private[this] lazy val controllers_Application_save6_route = Route("POST",
+  // @LINE:21
+  private[this] lazy val controllers_Application_save7_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("stock")))
   )
-  private[this] lazy val controllers_Application_save6_invoker = createInvoker(
+  private[this] lazy val controllers_Application_save7_invoker = createInvoker(
     Application_1.save(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -179,11 +197,11 @@ class Routes(
     )
   )
 
-  // @LINE:22
-  private[this] lazy val controllers_Application_getActiveOrders7_route = Route("GET",
+  // @LINE:24
+  private[this] lazy val controllers_Application_getActiveOrders8_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("orders")))
   )
-  private[this] lazy val controllers_Application_getActiveOrders7_invoker = createInvoker(
+  private[this] lazy val controllers_Application_getActiveOrders8_invoker = createInvoker(
     Application_1.getActiveOrders(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -196,11 +214,11 @@ class Routes(
     )
   )
 
-  // @LINE:26
-  private[this] lazy val controllers_Application_checkout8_route = Route("GET",
+  // @LINE:28
+  private[this] lazy val controllers_Application_checkout9_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("checkout")))
   )
-  private[this] lazy val controllers_Application_checkout8_invoker = createInvoker(
+  private[this] lazy val controllers_Application_checkout9_invoker = createInvoker(
     Application_1.checkout(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -213,11 +231,11 @@ class Routes(
     )
   )
 
-  // @LINE:30
-  private[this] lazy val controllers_Assets_versioned9_route = Route("GET",
+  // @LINE:32
+  private[this] lazy val controllers_Assets_versioned10_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_versioned9_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_versioned10_invoker = createInvoker(
     Assets_0.versioned(fakeValue[String], fakeValue[Asset]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -263,34 +281,40 @@ class Routes(
         controllers_Application_createItem4_invoker.call(Application_1.createItem())
       }
   
-    // @LINE:18
-    case controllers_Application_allstock5_route(params) =>
-      call { 
-        controllers_Application_allstock5_invoker.call(Application_1.allstock())
-      }
-  
     // @LINE:19
-    case controllers_Application_save6_route(params) =>
-      call { 
-        controllers_Application_save6_invoker.call(Application_1.save())
+    case controllers_Application_deleteItem5_route(params) =>
+      call(params.fromPath[Long]("id", None)) { (id) =>
+        controllers_Application_deleteItem5_invoker.call(Application_1.deleteItem(id))
       }
   
-    // @LINE:22
-    case controllers_Application_getActiveOrders7_route(params) =>
+    // @LINE:20
+    case controllers_Application_allstock6_route(params) =>
       call { 
-        controllers_Application_getActiveOrders7_invoker.call(Application_1.getActiveOrders())
+        controllers_Application_allstock6_invoker.call(Application_1.allstock())
       }
   
-    // @LINE:26
-    case controllers_Application_checkout8_route(params) =>
+    // @LINE:21
+    case controllers_Application_save7_route(params) =>
       call { 
-        controllers_Application_checkout8_invoker.call(Application_1.checkout())
+        controllers_Application_save7_invoker.call(Application_1.save())
       }
   
-    // @LINE:30
-    case controllers_Assets_versioned9_route(params) =>
+    // @LINE:24
+    case controllers_Application_getActiveOrders8_route(params) =>
+      call { 
+        controllers_Application_getActiveOrders8_invoker.call(Application_1.getActiveOrders())
+      }
+  
+    // @LINE:28
+    case controllers_Application_checkout9_route(params) =>
+      call { 
+        controllers_Application_checkout9_invoker.call(Application_1.checkout())
+      }
+  
+    // @LINE:32
+    case controllers_Assets_versioned10_route(params) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
-        controllers_Assets_versioned9_invoker.call(Assets_0.versioned(path, file))
+        controllers_Assets_versioned10_invoker.call(Assets_0.versioned(path, file))
       }
   }
 }
