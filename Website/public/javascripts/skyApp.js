@@ -142,6 +142,7 @@ $(document).ready(function () {
             var imagePathNew = imagePath.replace("\">","")
             totalOrderCost = parseInt(totalOrderCost - (parseInt(quantity)* parseInt(price)));
             $('#orderTotalCost').text("£" + totalOrderCost);
+            $('#orderTotalCostWithDelivery').text("£" + parseFloat(totalOrderCost + 3.99));
           for(var i = 0; i < shoppingCart.length; i++){
             if(shoppingCart[i].imagePath == imagePathNew && shoppingCart[i].qty == quantity && shoppingCart[i].unitPrice == price){
               shoppingCart.splice(i, 1);
@@ -243,7 +244,7 @@ function onSuccessClientCustomerData() {
 
 function updateTotalCost(orderPrice){
   $('#orderTotalCost').text("£" + orderPrice);
-
+$('#orderTotalCostWithDelivery').text("£" + parseFloat(orderPrice + 3.99));
 }
 
       function maketoast (evt)
