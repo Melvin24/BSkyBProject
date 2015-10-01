@@ -78,8 +78,11 @@ $(document).ready(function () {
 
 
       $("#resetSession").click(function() {
-        $.session.set("numberShoppingCartItems","");
-        $.session.set("shoppingCart", "");
+        if (confirm('Are you sure you want to empty your basket?')) {
+          $.session.set("numberShoppingCartItems","");
+          $.session.set("shoppingCart", "");
+          $('#shoppingCartBadge').text("");      }
+
       });
 
       $(".addToBasketButton").click(function(event) {
