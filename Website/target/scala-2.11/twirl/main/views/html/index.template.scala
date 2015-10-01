@@ -83,7 +83,7 @@ Seq[Any](_display_(/*1.2*/main("Welcome to the Sky Store.")/*1.35*/ {_display_(S
 object index extends index_Scope0.index
               /*
                   -- GENERATED --
-                  DATE: Thu Oct 01 10:39:19 BST 2015
+                  DATE: Thu Oct 01 12:33:10 BST 2015
                   SOURCE: /Users/rsp04/Websites/thursday/BSkyBProject/Website/app/views/index.scala.html
                   HASH: e5cf8ae5c2922a6e90091d860af5a7e7b8ac6ac2
                   MATRIX: 827->1|868->34|907->36|937->40|2546->1619

@@ -84,7 +84,7 @@ Seq[Any](format.raw/*1.20*/("""
 object shoppingBag extends shoppingBag_Scope0.shoppingBag
               /*
                   -- GENERATED --
-                  DATE: Thu Oct 01 10:39:19 BST 2015
+                  DATE: Thu Oct 01 12:33:10 BST 2015
                   SOURCE: /Users/rsp04/Websites/thursday/BSkyBProject/Website/app/views/shoppingBag.scala.html
                   HASH: 837499a0e3d2f0efefdc7b1c13cb6c359590b57b
                   MATRIX: 757->1|870->19|898->22|941->57|980->59|1009->62|1688->711
