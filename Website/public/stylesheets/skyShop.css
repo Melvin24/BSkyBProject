@@ -48,6 +48,11 @@
 		padding-left: 20%;
     margin:auto;
 }
+
+.thumbnailContainer{
+		padding-left: 17% !important;
+}
+
 .productCaption{
 	background-color: transparent !important;
 	border:none !important;
@@ -59,6 +64,13 @@ li {
 	font-size: large;
 }
 
+.breadCrumbStyle{
+	padding-top: 70px;
+}
+
+.gnomeContainer{
+	margin-left: 10% !important;
+}
 /* -------------- Products page ------------------- */
 #filterDiv{
 	border: solid;
@@ -113,6 +125,16 @@ li {
 
 .addToBasketButton{
 	margin-left:25%;
+}
+
+.gnomePageImage, .phonePageLeftImage, .tshirtPageLeftImage{
+	width:40%;
+	padding-left: 15%;
+}
+
+.phonePageRightImage, .tshirtPageRightImage{
+	width:40%;
+	padding-right: 15%;
 }
 
 

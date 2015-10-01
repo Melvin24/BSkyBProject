@@ -1,7 +1,7 @@
 @(products: String)
 
 @main("List of all products pages.") {
-  <ol class="breadcrumb">
+  <ol class="breadcrumb breadCrumbStyle">
     <li><a href="/">Home</a></li>
     <li><a href="/products">T-Shirts</a></li>
   </ol>
@@ -24,8 +24,8 @@ glyphicon glyphicon-plus-sign
   <h1 class="centerText"> T-Shirts</h1>
 
 
-<div class="row" id ="mainThumbnail">
-  <div class="col-sm-4 col-md-3">
+<div class="row thumbnailContainer" id ="mainThumbnail">
+  <div class="col-sm-4 col-md-3 tshirtPageLeftImage">
     <div class="thumbnail">
       <img id="tshirt-1" src="@routes.Assets.versioned("images/mensTshirt.png")"/>
       <p class="centerText">Mens T-Shirt - <span class="price">£10.00</span></p>
@@ -40,7 +40,7 @@ glyphicon glyphicon-plus-sign
   </div>
 </div>
 
-<div class="col-sm-4 col-md-3">
+<div class="col-sm-4 col-md-3 tshirtPageRightImage">
   <div class="thumbnail">
     <img id="tshirt-2" src="@routes.Assets.versioned("images/womensTshirt.png")"/>
     <p class="centerText">Ladies T-Shirt - <span class="price">£10.00</span></p>
