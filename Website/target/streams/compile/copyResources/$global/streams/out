@@ -1,7 +1,7 @@
 [0m[[0mdebug[0m] [0mCopy resource mappings: [0m
-[0m[[0mdebug[0m] [0m	(/Users/rsp04/Websites/thursday/BSkyBProject/Website/conf/application.conf,/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes/application.conf)[0m
-[0m[[0mdebug[0m] [0m	(/Users/rsp04/Websites/thursday/BSkyBProject/Website/conf/evolutions,/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes/evolutions)[0m
-[0m[[0mdebug[0m] [0m	(/Users/rsp04/Websites/thursday/BSkyBProject/Website/conf/logback.xml,/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes/logback.xml)[0m
-[0m[[0mdebug[0m] [0m	(/Users/rsp04/Websites/thursday/BSkyBProject/Website/conf/routes,/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes/routes)[0m
-[0m[[0mdebug[0m] [0m	(/Users/rsp04/Websites/thursday/BSkyBProject/Website/conf/evolutions/default,/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes/evolutions/default)[0m
-[0m[[0mdebug[0m] [0m	(/Users/rsp04/Websites/thursday/BSkyBProject/Website/conf/evolutions/default/1.sql,/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes/evolutions/default/1.sql)[0m
+[0m[[0mdebug[0m] [0m	(/Users/rsp04/Websites/BSkyBProject/Website/conf/application.conf,/Users/rsp04/Websites/BSkyBProject/Website/target/scala-2.11/classes/application.conf)[0m
+[0m[[0mdebug[0m] [0m	(/Users/rsp04/Websites/BSkyBProject/Website/conf/evolutions,/Users/rsp04/Websites/BSkyBProject/Website/target/scala-2.11/classes/evolutions)[0m
+[0m[[0mdebug[0m] [0m	(/Users/rsp04/Websites/BSkyBProject/Website/conf/logback.xml,/Users/rsp04/Websites/BSkyBProject/Website/target/scala-2.11/classes/logback.xml)[0m
+[0m[[0mdebug[0m] [0m	(/Users/rsp04/Websites/BSkyBProject/Website/conf/routes,/Users/rsp04/Websites/BSkyBProject/Website/target/scala-2.11/classes/routes)[0m
+[0m[[0mdebug[0m] [0m	(/Users/rsp04/Websites/BSkyBProject/Website/conf/evolutions/default,/Users/rsp04/Websites/BSkyBProject/Website/target/scala-2.11/classes/evolutions/default)[0m
+[0m[[0mdebug[0m] [0m	(/Users/rsp04/Websites/BSkyBProject/Website/conf/evolutions/default/1.sql,/Users/rsp04/Websites/BSkyBProject/Website/target/scala-2.11/classes/evolutions/default/1.sql)[0m

@@ -15,8 +15,13 @@ public class OrderedItems extends Model {
   public Long ordered_items_id;
   public Long order_id;
   public Long stock_id;
-  public Long quantity;
+  public int quantity;
   
   public static Finder<Long,OrderedItems> find = new Finder<Long,OrderedItems>(Long.class,OrderedItems.class);
+  
+  public void orderStock() {
+      this.quantity = this.quantity + 10;
+  }
+  
 
 }

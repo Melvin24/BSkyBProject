@@ -28,6 +28,7 @@ import org.apache.http.message.BasicNameValuePair;
 import views.html.*;
 
 
+
 public class Application extends Controller {
     
      // Find your Account Sid and Token at twilio.com/user/account
@@ -38,20 +39,20 @@ public class Application extends Controller {
          return ok(home.render("Advertisments and shop"));
     }
     
-    public Result sendsms() throws TwilioRestException {
+    public Result sendsms(String to, String body) throws TwilioRestException {
         TwilioRestClient client = new TwilioRestClient(ACCOUNT_SID, AUTH_TOKEN);
 
 	    // Build the parameters
 	    List<NameValuePair> params = new ArrayList<NameValuePair>();
-	    params.add(new BasicNameValuePair("To", "+447540816679"));
-	    params.add(new BasicNameValuePair("From", "+441133209759"));
-	    params.add(new BasicNameValuePair("Body", "Your order has been accepted and is currently being processed.\n- Sky"));
+	    params.add(new BasicNameValuePair("To", to));
+	    params.add(new BasicNameValuePair("From", "Sky Store"));
+	    params.add(new BasicNameValuePair("Body", body));
 
 	    MessageFactory messageFactory = client.getAccount().getMessageFactory();
 	    Message message = messageFactory.create(params);
 	    //System.out.println(message.getSid());
-	 
-	 return redirect(routes.Application.index());
+	    
+	    return null;
 	 
  }
 
@@ -130,23 +131,17 @@ public class Application extends Controller {
         // Checkout
     }
     
-    public Result checkout() {
+    public Result checkout(int id, int price) {
+        //String id = form().bindFromRequest().get("id");
         
-    }
-    
-    
-    public createOrder() {
-        Order order = new Order();
-
-        order.setName(name);
-        Server.save(customer);
-    }
-
-    public addAddress() {
-        Address address = new Address();
-
-        address.setName(name);
-        Server.save(customer);
+        Orders orders = new Orders();
+        orders.createOrder(id, price);
+        orders.save();
+        
+        //Orders checkoutData = form().bindFromRequest();
+        //sendsms("+44750816679","Order confirmation: Thank you very much for shopping at the Sky Store.");
+        return redirect(routes.Application.index());
+   
     }
 
     public Result backofhouse() {
@@ -156,10 +151,14 @@ public class Application extends Controller {
     public Result addItem() {
         String id = form().bindFromRequest().get("id");
         
-        return ok(toJson(id));
+        OrderedItems ordereditems = new OrderedItems();
+        ordereditems.orderStock();
+        ordereditems.update(id);
+        
+        //return ok();
         
         //flash("success", "Stock has been ordered!");
-        //return redirect(routes.Application.allstock());
+        return redirect(routes.Application.allstock());
     }
 
     public Result allstock() {

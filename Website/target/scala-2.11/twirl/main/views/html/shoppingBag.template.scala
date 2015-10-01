@@ -65,7 +65,7 @@ Seq[Any](format.raw/*1.20*/("""
         <h2 class="rightText">Total Cost: <span id = "orderTotalCostWithDelivery"><span></h2>
       </div>
       <div id="shoppingBagSubmit">
-        <form role="form" id = "orderForm">
+        <form role="form" id="orderForm" action="/checkout/5/55">
           <h1>Delivery Address</h1>
 
           <div id="postcode_lookup"></div>
@@ -114,7 +114,7 @@ Seq[Any](format.raw/*1.20*/("""
             """),format.raw/*83.13*/("""}"""),format.raw/*83.14*/(""");
         </script>
     </div>
-    <button type="submit" class="btn btn-default btn-lg" id="submitOrder" >Place Order</button>
+    <input type="submit" class="btn btn-default btn-lg" id="submitOrder" >Place Order</button>
   </form>
   </div>
 
@@ -140,10 +140,10 @@ Seq[Any](format.raw/*1.20*/("""
 object shoppingBag extends shoppingBag_Scope0.shoppingBag
               /*
                   -- GENERATED --
-                  DATE: Thu Oct 01 17:37:49 BST 2015
+                  DATE: Thu Oct 01 22:26:17 BST 2015
                   SOURCE: /Users/rsp04/Websites/BSkyBProject/Website/app/views/shoppingBag.scala.html
-                  HASH: f94815b4acc948efee63a6c230063d6dbd19f26f
-                  MATRIX: 757->1|870->19|898->22|941->57|980->59|1009->62|3165->2189|3195->2190|3227->2193|3257->2194|3341->2249|3371->2250|3401->2251|3431->2252|3547->2340|3576->2341|3621->2358|3718->2427|3747->2428|3796->2449|4064->2689|4093->2690|4241->2810|4270->2811|4320->2833|4349->2834|4420->2877|4449->2878|4499->2900|4528->2901|4613->2958|4642->2959|4692->2981|4721->2982|4762->2995|4791->2996|4971->3146
+                  HASH: b948a98257b20624d4cee9d17fe24a6cded5aaf7
+                  MATRIX: 757->1|870->19|898->22|941->57|980->59|1009->62|3187->2211|3217->2212|3249->2215|3279->2216|3363->2271|3393->2272|3423->2273|3453->2274|3569->2362|3598->2363|3643->2380|3740->2449|3769->2450|3818->2471|4086->2711|4115->2712|4263->2832|4292->2833|4342->2855|4371->2856|4442->2899|4471->2900|4521->2922|4550->2923|4635->2980|4664->2981|4714->3003|4743->3004|4784->3017|4813->3018|4992->3167
                   LINES: 27->1|32->1|34->3|34->3|34->3|35->4|95->64|95->64|95->64|95->64|95->64|95->64|95->64|95->64|100->69|100->69|101->70|102->71|102->71|103->72|109->78|109->78|111->80|111->80|111->80|111->80|112->81|112->81|112->81|112->81|113->82|113->82|113->82|113->82|114->83|114->83|122->91
                   -- GENERATED --
               */

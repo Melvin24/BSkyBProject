@@ -1,7 +1,6 @@
 
 var shoppingCart = [];
 var totalOrderCost;
-
 $(document).ready(function () {
     $('.dropdown-toggle').dropdown();
     $('.carousel').carousel();
@@ -78,9 +77,17 @@ $(document).ready(function () {
 
 
       $("#resetSession").click(function() {
+        if (confirm('Are you sure you want to empty your basket?')) {
+          resetSession();
+        }
+
+      });
+
+      function resetSession(){
         $.session.set("numberShoppingCartItems","");
         $.session.set("shoppingCart", "");
-      });
+        $('#shoppingCartBadge').text("");
+      }
 
       $(".addToBasketButton").click(function(event) {
               var itemNumber = $(this).attr("itemNumber"),
@@ -107,8 +114,15 @@ $(document).ready(function () {
               }
           });
 
-
-
+          /*
+          $(".requiredFields").keyup(function(){
+              if($("#Address1").val().length && $("#Postcode").val().length && $("#Postcode").valid())
+              //if($("#orderForm").valid())
+                  $("#submitOrder").prop('disabled', false);
+              else
+                  $("#submitOrder").prop('disabled', true);
+          });
+          */
 
         function addToShoppingBasketJSON(itemType, quantity, itemNumber, unitPrice, imagePath, itemID){
           var temp  = sessionStorage.getItem('shoppingCart');
@@ -142,6 +156,7 @@ $(document).ready(function () {
             var imagePathNew = imagePath.replace("\">","")
             totalOrderCost = parseInt(totalOrderCost - (parseInt(quantity)* parseInt(price)));
             $('#orderTotalCost').text("£" + totalOrderCost);
+            $('#orderTotalCostWithDelivery').text("£" + parseFloat(totalOrderCost + 3.99));
           for(var i = 0; i < shoppingCart.length; i++){
             if(shoppingCart[i].imagePath == imagePathNew && shoppingCart[i].qty == quantity && shoppingCart[i].unitPrice == price){
               shoppingCart.splice(i, 1);
@@ -165,6 +180,19 @@ $(document).ready(function () {
 
       });
 
+      $('#submitOrder').click(function(){
+        var temp  = sessionStorage.getItem('shoppingCart');
+
+        if(temp != "")
+          shoppingCart = $.parseJSON(temp);
+
+          //put your code here
+
+
+          resetSession();
+          location.href=('/');
+      });
+
 
 
       $('#findPostcosde').click(function(){
@@ -183,8 +211,6 @@ $(document).ready(function () {
             onAddressSelected: function(elem,index){alert("here")},
             onLookupError: function(){alert("here")}
         });
-        alert("here2");
-
       });
 
 
@@ -243,7 +269,7 @@ function onSuccessClientCustomerData() {
 
 function updateTotalCost(orderPrice){
   $('#orderTotalCost').text("£" + orderPrice);
-
+  $('#orderTotalCostWithDelivery').text("£" + parseFloat(orderPrice + 3.99));
 }
 
       function maketoast (evt)

@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/rsp04/Websites/BSkyBProject/Website/conf/routes
-// @DATE:Thu Oct 01 17:37:48 BST 2015
+// @DATE:Thu Oct 01 21:53:54 BST 2015
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -11,11 +11,11 @@ import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamic
 import _root_.controllers.Assets.Asset
 import _root_.play.libs.F
 
-// @LINE:7
+// @LINE:9
 package controllers.javascript {
   import ReverseRouteContext.empty
 
-  // @LINE:50
+  // @LINE:47
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -23,7 +23,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:50
+    // @LINE:47
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """
@@ -35,7 +35,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:7
+  // @LINE:9
   class ReverseApplication(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -83,7 +83,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:26
+    // @LINE:23
     def products: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.products",
       """
@@ -93,7 +93,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:36
+    // @LINE:33
     def allstock: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.allstock",
       """
@@ -103,17 +103,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:7
-    def sendsms: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.Application.sendsms",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "sendsms"})
-        }
-      """
-    )
-  
-    // @LINE:42
+    // @LINE:39
     def getActiveOrders: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.getActiveOrders",
       """
@@ -123,7 +113,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:35
+    // @LINE:32
     def deleteItem: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.deleteItem",
       """
@@ -133,7 +123,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:39
+    // @LINE:36
     def viewallorders: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.viewallorders",
       """
@@ -153,7 +143,17 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:37
+    // @LINE:43
+    def checkout: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.checkout",
+      """
+        function(id,price) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "checkout/" + (""" + implicitly[PathBindable[Int]].javascriptUnbind + """)("id", id) + "/" + (""" + implicitly[PathBindable[Int]].javascriptUnbind + """)("price", price)})
+        }
+      """
+    )
+  
+    // @LINE:34
     def save: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.save",
       """
@@ -163,7 +163,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:33
+    // @LINE:30
     def createItem: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.createItem",
       """
@@ -187,31 +187,17 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:46
-    def checkout: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.Application.checkout",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "checkout"})
-        }
-      """
-    )
-  
     // @LINE:9
     def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.index",
       """
         function() {
-        
-          if (true) {
-            return _wA({method:"GET", url:"""" + _prefix + """"})
-          }
-        
+          return _wA({method:"GET", url:"""" + _prefix + """"})
         }
       """
     )
   
-    // @LINE:31
+    // @LINE:28
     def backofhouse: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.backofhouse",
       """
@@ -221,7 +207,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:34
+    // @LINE:31
     def addItem: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.addItem",
       """

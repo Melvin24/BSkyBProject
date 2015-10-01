@@ -50,12 +50,10 @@ Seq[Any](format.raw/*1.20*/("""
       <a class="carousel-control right" href="#carousel" data-slide="next">&rsaquo;</a>
   </div>
 
-<p><a href="/sendsms">Send Twillo</a></p>
-
 <div class="row" id ="mainThumbnail">
   <div class="col-sm-4 col-md-3">
     <div class="thumbnail">
-      <img src=""""),_display_(/*27.18*/routes/*27.24*/.Assets.versioned("images/mensTshirt.png")),format.raw/*27.66*/(""""/>
+      <img src=""""),_display_(/*25.18*/routes/*25.24*/.Assets.versioned("images/mensTshirt.png")),format.raw/*25.66*/(""""/>
       <div class="caption productCaption">
         <p><a href="/tshirts" class="btn btn-primary" role="button">Shop T-Shirts</a> </p>
       </div>
@@ -63,7 +61,7 @@ Seq[Any](format.raw/*1.20*/("""
   </div>
   <div class="col-sm-4 col-md-3">
     <div class="thumbnail">
-      <img src=""""),_display_(/*35.18*/routes/*35.24*/.Assets.versioned("images/skyPhone5.png")),format.raw/*35.65*/(""""/>
+      <img src=""""),_display_(/*33.18*/routes/*33.24*/.Assets.versioned("images/skyPhone5.png")),format.raw/*33.65*/(""""/>
       <div class="caption productCaption">
         <p><a href="/phones" class="btn btn-primary" role="button">Shop Phones</a> </p>
       </div>
@@ -71,7 +69,7 @@ Seq[Any](format.raw/*1.20*/("""
   </div>
   <div class="col-sm-4 col-md-3">
     <div class="thumbnail">
-      <img src=""""),_display_(/*43.18*/routes/*43.24*/.Assets.versioned("images/gnome.png")),format.raw/*43.61*/(""""/>
+      <img src=""""),_display_(/*41.18*/routes/*41.24*/.Assets.versioned("images/gnome.png")),format.raw/*41.61*/(""""/>
       <div class="caption productCaption">
         <p><a href="/gnomes" class="btn btn-primary" role="button">Shop Gnomes</a> </p>
       </div>
@@ -79,7 +77,7 @@ Seq[Any](format.raw/*1.20*/("""
   </div>
 </div>
 
-""")))}),format.raw/*51.2*/("""
+""")))}),format.raw/*49.2*/("""
 """))
       }
     }
@@ -100,11 +98,11 @@ Seq[Any](format.raw/*1.20*/("""
 object home extends home_Scope0.home
               /*
                   -- GENERATED --
-                  DATE: Thu Oct 01 17:37:49 BST 2015
+                  DATE: Thu Oct 01 22:27:17 BST 2015
                   SOURCE: /Users/rsp04/Websites/BSkyBProject/Website/app/views/home.scala.html
-                  HASH: 063c73cb3d400299702d140b9ba323d311e8c829
-                  MATRIX: 743->1|856->19|884->22|927->57|966->59|996->63|1486->526|1501->532|1573->582|1671->653|1686->659|1755->706|1853->777|1868->783|1939->832|2362->1228|2377->1234|2440->1276|2717->1526|2732->1532|2794->1573|3068->1820|3083->1826|3141->1863|3348->2040
-                  LINES: 27->1|32->1|34->3|34->3|34->3|36->5|44->13|44->13|44->13|45->14|45->14|45->14|46->15|46->15|46->15|58->27|58->27|58->27|66->35|66->35|66->35|74->43|74->43|74->43|82->51
+                  HASH: fd3f84f338d57baba0fc3a62fc0a51e50e9607fb
+                  MATRIX: 743->1|856->19|884->22|927->57|966->59|996->63|1486->526|1501->532|1573->582|1671->653|1686->659|1755->706|1853->777|1868->783|1939->832|2319->1185|2334->1191|2397->1233|2674->1483|2689->1489|2751->1530|3025->1777|3040->1783|3098->1820|3305->1997
+                  LINES: 27->1|32->1|34->3|34->3|34->3|36->5|44->13|44->13|44->13|45->14|45->14|45->14|46->15|46->15|46->15|56->25|56->25|56->25|64->33|64->33|64->33|72->41|72->41|72->41|80->49
                   -- GENERATED --
               */
           

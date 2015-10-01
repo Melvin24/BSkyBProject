@@ -4,7 +4,7 @@
 
 # Home page
 
-GET     /sendsms                    controllers.Application.sendsms()
+#GET     /sendsms                    controllers.Application.sendsms()
 
 GET     /                           controllers.Application.index()
 
@@ -17,9 +17,6 @@ GET     /gnomes                     controllers.Application.gnomes()
 
 GET     /faq                        controllers.Application.faq()
 GET     /shoppingBag                controllers.Application.shoppingBag()
-
-
-GET     /                             controllers.Application.index()
 
 # Display products - shop front
 
@@ -43,7 +40,7 @@ GET     /orders                       controllers.Application.getActiveOrders()
 
 # View cart, edit cart
 
-GET     /checkout                     controllers.Application.checkout()
+GET     /checkout/:id/:price           controllers.Application.checkout(id: Int, price: Int)
 #POST    /checkout                     controllers.Application.checkOutCart()
 
 # Map static resources from the /public folder to the /assets URL path

@@ -51,16 +51,16 @@ create table ordered_items (
   ordered_items_id          bigint auto_increment not null,
   order_id                  bigint,
   stock_id                  bigint,
-  quantity                  bigint,
+  quantity                  integer,
   constraint pk_ordered_items primary key (ordered_items_id))
 ;
 
 create table orders (
-  order_id                  bigint auto_increment not null,
-  customer_id               bigint,
-  date                      varchar(255),
-  price                     bigint,
-  order_status_id           bigint,
+  order_id                  integer auto_increment not null,
+  customer_id               integer,
+  date                      datetime(6),
+  price                     integer,
+  order_status_id           integer,
   constraint pk_orders primary key (order_id))
 ;
 
