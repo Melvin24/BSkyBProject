@@ -25,67 +25,66 @@
         <tr></tr>
       </tbody>
     </table>
+<hr />
+    <div id = "shoppingSummary">
+      <div id = "priceSummary">
+        <h1 class="rightText">Order Summary</h1>
+        <h2 class="rightText">Total Cost: <span id = "orderTotalCost"><span></h2>
+        <h2 class="rightText">Delivery Cost: £3.99</h2>
+      </div>
+      <div id="shoppingBagSubmit">
+        <form role="form">
+          <h1>Delivery Address</h1>
 
-    <h1 class="rightText">Order Summary</h1>
-    <h2 class="rightText">Total Cost: <span id = "orderTotalCost"><span></h2>
-    <h2 class="rightText">Delivery Cost: £3.99</h2>
-    <div id="shoppingBagSubmit">
-      <form role="form">
-        <h2>Delivery Address</h2>
-        <!--
-        <div id="postcode_lookup">
-          <div class="form-group">
-            <label for="inputPostCode"></label>
-            <input type="text" class="form-control" id="inputPostCode" placeholder="Enter Postcode">
-            <button type = "button" class="btn" id ="findPostcode">Search</button>
-          </div>
-        </div>-->
-<div id="postcode_lookup"></div>
-        <div class="form-group">
-          <label for="Address1">Address Line 1:</label>
-          <input type="text" class="form-control" id="Address1">
-        </div>
-        <div class="form-group">
-          <label for="Address2">Address Line 2:</label>
-          <input type="text" class="form-control" id="Address2">
-        </div>
-        <div class="form-group">
-          <label for="Address3">Address Line 3:</label>
-          <input type="text" class="form-control" id="Address3">
-        </div>
-        <div class="form-group">
-          <label for="Town">Town:</label>
-          <input type="text" class="form-control" id="Town">
-        </div>
-        <div class="form-group">
-          <label for="County">County:</label>
-          <input type="text" class="form-control" id="County">
-        </div>
-        <div class="form-group">
-          <label for="Postcode">Postcode:</label>
-          <input type="text" class="form-control" id="Postcode">
-        </div>
-        <button type="submit" class="btn btn-default">Place Order</button>
-      </form>
+          <div id="postcode_lookup"></div>
+        <br/>
+            <div class="form-group">
+              <label for="Address1">Address Line 1:</label>
+              <input type="text" class="form-control" id="Address1" required>
+            </div>
+            <div class="form-group">
+              <label for="Address2">Address Line 2:</label>
+              <input type="text" class="form-control" id="Address2">
+            </div>
+            <div class="form-group">
+              <label for="Address3">Address Line 3:</label>
+              <input type="text" class="form-control" id="Address3">
+            </div>
+            <div class="form-group">
+              <label for="Town">Town:</label>
+              <input type="text" class="form-control" id="Town">
+            </div>
+            <div class="form-group">
+              <label for="County">County:</label>
+              <input type="text" class="form-control" id="County">
+            </div>
+            <div class="form-group">
+              <label for="Postcode">Postcode:</label>
+              <input type="text" class="form-control" id="Postcode" required>
+            </div>
 
-      <script>
-          $('#postcode_lookup').getAddress({
-              api_key: 'EtGodLRTsUeWBljaQzmvLw1760',
-              output_fields:{
-                  line_1: '#Address1',
-                  line_2: '#Address2',
-                  line_3: '#Address3',
-                  post_town: '#Town',
-                  county: '#County',
-                  postcode: '#Postcode'
-              },
-          <!--  Optionally register callbacks at specific stages -->
-              onLookupSuccess: function(data){/* Your custom code */},
-              onLookupError: function(){/* Your custom code */},
-              onAddressSelected: function(elem,index){/* Your custom code */}
-          });
+
+          <script>
+            $('#postcode_lookup').getAddress({
+                api_key: 'EtGodLRTsUeWBljaQzmvLw1760',
+                output_fields:{
+                    line_1: '#Address1',
+                    line_2: '#Address2',
+                    line_3: '#Address3',
+                    post_town: '#Town',
+                    county: '#County',
+                    postcode: '#Postcode'
+                },
+            <!--  Optionally register callbacks at specific stages -->
+                onLookupSuccess: function(data){/* Your custom code */},
+                onLookupError: function(){/* Your custom code */},
+                onAddressSelected: function(elem,index){/* Your custom code */}
+            });
         </script>
     </div>
+    <button type="submit" class="btn btn-default btn-lg" id="submitOrder">Place Order</button>
+  </form>
+  </div>
 
 
 }
