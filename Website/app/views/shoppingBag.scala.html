@@ -34,14 +34,14 @@
         <h2 class="rightText">Total Cost: <span id = "orderTotalCostWithDelivery"><span></h2>
       </div>
       <div id="shoppingBagSubmit">
-        <form role="form">
+        <form role="form" id = "orderForm">
           <h1>Delivery Address</h1>
 
           <div id="postcode_lookup"></div>
         <br/>
             <div class="form-group">
               <label for="Address1">Address Line 1:</label>
-              <input type="text" class="form-control" id="Address1" required>
+              <input type="text" class="form-control requiredFields" id="Address1" required>
             </div>
             <div class="form-group">
               <label for="Address2">Address Line 2:</label>
@@ -61,7 +61,7 @@
             </div>
             <div class="form-group">
               <label for="Postcode">Postcode:</label>
-              <input type="text" class="form-control" id="Postcode" required pattern ="[A-Za-z]{1,2}[0-9Rr][0-9A-Za-z]? [0-9][ABD-HJLNP-UW-Zabd-hjlnp-uw-z]{2}">
+              <input type="text" class="form-control requiredFields" id="Postcode" required pattern ="[A-Za-z]{1,2}[0-9Rr][0-9A-Za-z]? [0-9][ABD-HJLNP-UW-Zabd-hjlnp-uw-z]{2}">
             </div>
 
 
@@ -83,7 +83,7 @@
             });
         </script>
     </div>
-    <button type="submit" class="btn btn-default btn-lg" id="submitOrder">Place Order</button>
+    <button type="submit" class="btn btn-default btn-lg" id="submitOrder" >Place Order</button>
   </form>
   </div>
 
