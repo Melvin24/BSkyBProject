@@ -99,8 +99,8 @@ Seq[Any](format.raw/*1.20*/("""
 object faq extends faq_Scope0.faq
               /*
                   -- GENERATED --
-                  DATE: Thu Oct 01 16:10:12 BST 2015
-                  SOURCE: /Users/rsp04/Websites/thursday/BSkyBProject/Website/app/views/faq.scala.html
+                  DATE: Thu Oct 01 17:37:49 BST 2015
+                  SOURCE: /Users/rsp04/Websites/BSkyBProject/Website/app/views/faq.scala.html
                   HASH: 96e67e259e9b5ae7895f0417d143ee8be8da2729
                   MATRIX: 741->1|854->19|882->22|925->57|964->59|993->62|3153->2192
                   LINES: 27->1|32->1|34->3|34->3|34->3|35->4|81->50

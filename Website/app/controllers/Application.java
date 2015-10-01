@@ -45,7 +45,7 @@ public class Application extends Controller {
 	    List<NameValuePair> params = new ArrayList<NameValuePair>();
 	    params.add(new BasicNameValuePair("To", "+447540816679"));
 	    params.add(new BasicNameValuePair("From", "+441133209759"));
-	    params.add(new BasicNameValuePair("Body", "FOOOO, your order has been accepted and is currently being processed."));
+	    params.add(new BasicNameValuePair("Body", "Your order has been accepted and is currently being processed.\n- Sky"));
 
 	    MessageFactory messageFactory = client.getAccount().getMessageFactory();
 	    Message message = messageFactory.create(params);
@@ -126,18 +126,27 @@ public class Application extends Controller {
     }
 
     public Result shoppingBag() {
-      return ok(shoppingBag.render("shopping Bag page"));
-    // Checkout
-}
+        return ok(shoppingBag.render("shopping Bag page"));
+        // Checkout
+    }
+    
     public Result checkout() {
+        
+    }
+    
+    
+    public createOrder() {
+        Order order = new Order();
 
-        // Check customer is signed in.
-        // if not... ask for details (guest login?)
+        order.setName(name);
+        Server.save(customer);
+    }
 
-        Form<Customer> customerForm = form(Customer.class);
-        return ok(
-            checkout.render(customerForm)
-        );
+    public addAddress() {
+        Address address = new Address();
+
+        address.setName(name);
+        Server.save(customer);
     }
 
     public Result backofhouse() {
@@ -145,7 +154,6 @@ public class Application extends Controller {
     }
 
     public Result addItem() {
-        
         String id = form().bindFromRequest().get("id");
         
         return ok(toJson(id));
