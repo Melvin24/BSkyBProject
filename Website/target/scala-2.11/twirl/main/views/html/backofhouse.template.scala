@@ -42,7 +42,7 @@ Seq[Any](format.raw/*1.4*/("""
 
 <div class="container">
     <h1>- <a href="/stock">Stock Control</a></h1>
-    <h1>- <a href="">View Orders/Order Statuses</a></h1>
+    <h1>- <a href="/manage/orders">View Orders/Order Status</a></h1>
 </div>
 
 """)))}),format.raw/*17.2*/("""
@@ -66,10 +66,10 @@ Seq[Any](format.raw/*1.4*/("""
 object backofhouse extends backofhouse_Scope0.backofhouse
               /*
                   -- GENERATED --
-                  DATE: Wed Sep 30 21:25:04 BST 2015
-                  SOURCE: /Users/rsp04/Websites/Wednesday/BSkyBProject/Website/app/views/backofhouse.scala.html
-                  HASH: 3565bdad614d4222f77036b31bae8c6272960c95
-                  MATRIX: 750->1|846->3|874->6|911->35|950->37|977->38|1392->423
+                  DATE: Thu Oct 01 17:37:49 BST 2015
+                  SOURCE: /Users/rsp04/Websites/BSkyBProject/Website/app/views/backofhouse.scala.html
+                  HASH: 33b7c0f332f6ac648c12be9e8d063afc84b5853a
+                  MATRIX: 750->1|846->3|874->6|911->35|950->37|977->38|1404->435
                   LINES: 27->1|32->1|34->3|34->3|34->3|35->4|48->17
                   -- GENERATED --
               */

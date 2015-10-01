@@ -1,0 +1,92 @@
+@(products: String)
+
+@main("List of all products pages.") {
+  <ol class="breadcrumb breadCrumbStyle">
+    <li><a href="/">Home</a></li>
+    <li><a href="/shoppingBag">Shopping Bag</a></li>
+  </ol>
+
+
+</div>
+  <h1 class="centerText"> Shopping Bag</h1>
+
+
+
+    <table class="table table-hover" id ="orderList">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Quantity</th>
+          <th>Unit Price</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr></tr>
+      </tbody>
+    </table>
+<hr />
+    <div id = "shoppingSummary">
+      <div id = "priceSummary">
+        <h1 class="rightText">Order Summary</h1>
+        <h2 class="rightText">Item Cost: <span id = "orderTotalCost"><span></h2>
+        <h2 class="rightText">Delivery Cost: £3.99</h2>
+        <h2 class="rightText">Total Cost: <span id = "orderTotalCostWithDelivery"><span></h2>
+      </div>
+      <div id="shoppingBagSubmit">
+      <!-- THIS NEEEDS CHANGING -->
+        <form role="form" id="orderForm" action="/checkout/5/55">
+          <h1>Delivery Address</h1>
+
+          <div id="postcode_lookup"></div>
+        <br/>
+            <div class="form-group">
+              <label for="Address1">Address Line 1:</label>
+              <input type="text" class="form-control requiredFields" id="Address1" required>
+            </div>
+            <div class="form-group">
+              <label for="Address2">Address Line 2:</label>
+              <input type="text" class="form-control" id="Address2">
+            </div>
+            <div class="form-group">
+              <label for="Address3">Address Line 3:</label>
+              <input type="text" class="form-control" id="Address3">
+            </div>
+            <div class="form-group">
+              <label for="Town">Town:</label>
+              <input type="text" class="form-control" id="Town">
+            </div>
+            <div class="form-group">
+              <label for="County">County:</label>
+              <input type="text" class="form-control" id="County">
+            </div>
+            <div class="form-group">
+              <label for="Postcode">Postcode:</label>
+              <input type="text" class="form-control requiredFields" id="Postcode" required pattern ="[A-Za-z]{1,2}[0-9Rr][0-9A-Za-z]? [0-9][ABD-HJLNP-UW-Zabd-hjlnp-uw-z]{2}">
+            </div>
+
+
+          <script>
+            $('#postcode_lookup').getAddress({
+                api_key: 'EtGodLRTsUeWBljaQzmvLw1760',
+                output_fields:{
+                    line_1: '#Address1',
+                    line_2: '#Address2',
+                    line_3: '#Address3',
+                    post_town: '#Town',
+                    county: '#County',
+                    postcode: '#Postcode'
+                },
+            <!--  Optionally register callbacks at specific stages -->
+                onLookupSuccess: function(data){/* Your custom code */},
+                onLookupError: function(){/* Your custom code */},
+                onAddressSelected: function(elem,index){/* Your custom code */}
+            });
+        </script>
+    </div>
+    <input type="submit" class="btn btn-default btn-lg" id="submitOrder" >Place Order</button>
+  </form>
+  </div>
+
+
+}

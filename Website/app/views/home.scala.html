@@ -1,0 +1,49 @@
+@(products: String)
+
+@main("List of all products pages.") {
+
+  <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+      <ol class="carousel-indicators">
+          <li data-target="#carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel" data-slide-to="1"></li>
+          <li data-target="#carousel" data-slide-to="2"></li>
+      </ol>
+      <!-- Carousel items -->
+      <div class="carousel-inner">
+          <div class="active item"><img class="carouselImage" src="@routes.Assets.versioned("images/tShirtCarouselText.png")"/></div>
+          <div class="item"><img class="carouselImage" src="@routes.Assets.versioned("images/iPhone6carousel.png")"/></div>
+          <div class="item"><img class="carouselImage" src="@routes.Assets.versioned("images/gnomeCarouselText.png")"/></div>
+      </div>
+      <!-- Carousel nav -->
+      <a class="carousel-control left" href="#carousel" data-slide="prev">&lsaquo;</a>
+      <a class="carousel-control right" href="#carousel" data-slide="next">&rsaquo;</a>
+  </div>
+
+<div class="row" id ="mainThumbnail">
+  <div class="col-sm-4 col-md-3">
+    <div class="thumbnail">
+      <img src="@routes.Assets.versioned("images/mensTshirt.png")"/>
+      <div class="caption productCaption">
+        <p><a href="/tshirts" class="btn btn-primary" role="button">Shop T-Shirts</a> </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4 col-md-3">
+    <div class="thumbnail">
+      <img src="@routes.Assets.versioned("images/skyPhone5.png")"/>
+      <div class="caption productCaption">
+        <p><a href="/phones" class="btn btn-primary" role="button">Shop Phones</a> </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4 col-md-3">
+    <div class="thumbnail">
+      <img src="@routes.Assets.versioned("images/gnome.png")"/>
+      <div class="caption productCaption">
+        <p><a href="/gnomes" class="btn btn-primary" role="button">Shop Gnomes</a> </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+}

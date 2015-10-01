@@ -1,4 +1,10 @@
-.headline-img {
-  background: url('/assets/images/iphone6.jpg') no-repeat center top;
-  background-size: 70% auto;
+#skylogo {
+    width: 55px;
+    height: 35px;
+    display: block;
+}
+
+body {
+    padding-top: 100px;
+    padding-bottom: 20px;
 }

@@ -1,4 +1,4 @@
-[0m[[0minfo[0m] [0mUpdating {file:/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/}myProject...[0m
+[0m[[0minfo[0m] [0mUpdating {file:/Users/rsp04/Websites/BSkyBProject/Website/}myProject...[0m
 [0m[[0mdebug[0m] [0m:: resolving dependencies :: play-java#play-java_2.11;1.0-SNAPSHOT[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool, fork-run][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for play-java#play-java_2.11;1.0-SNAPSHOT [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.11.6 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3ca3d542[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4daba61e[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.6[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.11.6 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m	[2.11.6] org.scala-lang#scala-library;2.11.6[0m
@@ -1595,6 +1595,83 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ws_2.11;2.4.3->oauth.signpost#signpost-commonshttp4;1.2.1.2 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ws_2.11;2.4.3->oauth.signpost#signpost-commonshttp4;1.2.1.2 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->com.twilio.sdk#twilio-java-sdk;3.4.5 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.twilio.sdk#twilio-java-sdk;3.4.5 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.twilio.sdk#twilio-java-sdk;3.4.5 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.twilio.sdk#twilio-java-sdk;3.4.5[0m
+[0m[[0mdebug[0m] [0m	found com.twilio.sdk#twilio-java-sdk;3.4.5 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->com.twilio.sdk#twilio-java-sdk;3.4.5 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->com.twilio.sdk#twilio-java-sdk;3.4.5 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.apache.httpcomponents#httpclient;4.1.2 [compile->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.apache.httpcomponents#httpclient;4.1.2 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.httpcomponents#httpclient;4.1.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.httpcomponents#httpclient;4.1.2[0m
+[0m[[0mdebug[0m] [0m	found org.apache.httpcomponents#httpclient;4.1.2 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.apache.httpcomponents#httpclient;4.1.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->org.apache.httpcomponents#httpcore;4.1.2 [compile->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.apache.httpcomponents#httpcore;4.1.2 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.httpcomponents#httpcore;4.1.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.httpcomponents#httpcore;4.1.2[0m
+[0m[[0mdebug[0m] [0m	found org.apache.httpcomponents#httpcore;4.1.2 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->org.apache.httpcomponents#httpcore;4.1.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->org.apache.httpcomponents#httpcore;4.1.2 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->org.apache.httpcomponents#httpcore;4.1.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-logging#commons-logging;1.1.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-logging#commons-logging;1.1.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-codec#commons-codec;1.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-codec#commons-codec;1.10 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-codec#commons-codec;1.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-codec#commons-codec;1.10 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.apache.httpcomponents#httpclient;4.1.2 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.apache.httpcomponents#httpclient;4.1.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->org.apache.httpcomponents#httpcore;4.1.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->org.apache.httpcomponents#httpcore;4.1.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-logging#commons-logging;1.1.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-logging#commons-logging;1.1.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-codec#commons-codec;1.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-codec#commons-codec;1.10 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-codec#commons-codec;1.10 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->commons-lang#commons-lang;2.6 [compile->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving commons-lang#commons-lang;2.6 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: commons-lang#commons-lang;2.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: commons-lang#commons-lang;2.6[0m
+[0m[[0mdebug[0m] [0m	found commons-lang#commons-lang;2.6 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->commons-lang#commons-lang;2.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->commons-lang#commons-lang;2.6 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->commons-lang#commons-lang;2.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->com.googlecode.json-simple#json-simple;1.1 [compile->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.googlecode.json-simple#json-simple;1.1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.googlecode.json-simple#json-simple;1.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.googlecode.json-simple#json-simple;1.1[0m
+[0m[[0mdebug[0m] [0m	found com.googlecode.json-simple#json-simple;1.1 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->com.googlecode.json-simple#json-simple;1.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->com.googlecode.json-simple#json-simple;1.1 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->com.googlecode.json-simple#json-simple;1.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [compile->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.codehaus.jackson#jackson-mapper-asl;1.9.3 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.codehaus.jackson#jackson-mapper-asl;1.9.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.codehaus.jackson#jackson-mapper-asl;1.9.3[0m
+[0m[[0mdebug[0m] [0m	found org.codehaus.jackson#jackson-mapper-asl;1.9.3 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.3->org.codehaus.jackson#jackson-core-asl;1.9.3 [compile->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.codehaus.jackson#jackson-core-asl;1.9.3 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.codehaus.jackson#jackson-core-asl;1.9.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.codehaus.jackson#jackson-core-asl;1.9.3[0m
+[0m[[0mdebug[0m] [0m	found org.codehaus.jackson#jackson-core-asl;1.9.3 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.3->org.codehaus.jackson#jackson-core-asl;1.9.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.3->org.codehaus.jackson#jackson-core-asl;1.9.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.3->org.codehaus.jackson#jackson-core-asl;1.9.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.apache.httpcomponents#httpclient;4.1.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.apache.httpcomponents#httpclient;4.1.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->commons-lang#commons-lang;2.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->commons-lang#commons-lang;2.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->com.googlecode.json-simple#json-simple;1.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->com.googlecode.json-simple#json-simple;1.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->com.twilio.sdk#twilio-java-sdk;3.4.5 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.18 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving mysql#mysql-connector-java;5.1.18 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: mysql#mysql-connector-java;5.1.18 {compile=[default(compile)]}[0m
@@ -2428,6 +2505,45 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ws_2.11;2.4.3->oauth.signpost#signpost-commonshttp4;1.2.1.2 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ws_2.11;2.4.3->oauth.signpost#signpost-commonshttp4;1.2.1.2 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->com.twilio.sdk#twilio-java-sdk;3.4.5 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->com.twilio.sdk#twilio-java-sdk;3.4.5 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->com.twilio.sdk#twilio-java-sdk;3.4.5 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.apache.httpcomponents#httpclient;4.1.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.apache.httpcomponents#httpclient;4.1.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->org.apache.httpcomponents#httpcore;4.1.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->org.apache.httpcomponents#httpcore;4.1.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-logging#commons-logging;1.1.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-logging#commons-logging;1.1.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-codec#commons-codec;1.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-codec#commons-codec;1.10 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-codec#commons-codec;1.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-codec#commons-codec;1.10 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->commons-lang#commons-lang;2.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->commons-lang#commons-lang;2.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->com.googlecode.json-simple#json-simple;1.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->com.googlecode.json-simple#json-simple;1.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.3->org.codehaus.jackson#jackson-core-asl;1.9.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.3->org.codehaus.jackson#jackson-core-asl;1.9.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.apache.httpcomponents#httpclient;4.1.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.apache.httpcomponents#httpclient;4.1.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->org.apache.httpcomponents#httpcore;4.1.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->org.apache.httpcomponents#httpcore;4.1.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-logging#commons-logging;1.1.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-logging#commons-logging;1.1.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-codec#commons-codec;1.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-codec#commons-codec;1.10 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-codec#commons-codec;1.10 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->commons-lang#commons-lang;2.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->commons-lang#commons-lang;2.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->com.googlecode.json-simple#json-simple;1.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->com.googlecode.json-simple#json-simple;1.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.3->org.codehaus.jackson#jackson-core-asl;1.9.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.3->org.codehaus.jackson#jackson-core-asl;1.9.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->com.twilio.sdk#twilio-java-sdk;3.4.5 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.18 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.18 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.18 [compile->compile][0m
@@ -3258,6 +3374,45 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ws_2.11;2.4.3->oauth.signpost#signpost-commonshttp4;1.2.1.2 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ws_2.11;2.4.3->oauth.signpost#signpost-commonshttp4;1.2.1.2 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->com.twilio.sdk#twilio-java-sdk;3.4.5 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->com.twilio.sdk#twilio-java-sdk;3.4.5 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->com.twilio.sdk#twilio-java-sdk;3.4.5 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.apache.httpcomponents#httpclient;4.1.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.apache.httpcomponents#httpclient;4.1.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->org.apache.httpcomponents#httpcore;4.1.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->org.apache.httpcomponents#httpcore;4.1.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-logging#commons-logging;1.1.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-logging#commons-logging;1.1.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-codec#commons-codec;1.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-codec#commons-codec;1.10 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-codec#commons-codec;1.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-codec#commons-codec;1.10 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->commons-lang#commons-lang;2.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->commons-lang#commons-lang;2.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->com.googlecode.json-simple#json-simple;1.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->com.googlecode.json-simple#json-simple;1.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.3->org.codehaus.jackson#jackson-core-asl;1.9.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.3->org.codehaus.jackson#jackson-core-asl;1.9.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.apache.httpcomponents#httpclient;4.1.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.apache.httpcomponents#httpclient;4.1.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->org.apache.httpcomponents#httpcore;4.1.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->org.apache.httpcomponents#httpcore;4.1.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-logging#commons-logging;1.1.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-logging#commons-logging;1.1.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-codec#commons-codec;1.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-codec#commons-codec;1.10 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-codec#commons-codec;1.10 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->commons-lang#commons-lang;2.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->commons-lang#commons-lang;2.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->com.googlecode.json-simple#json-simple;1.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->com.googlecode.json-simple#json-simple;1.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.3->org.codehaus.jackson#jackson-core-asl;1.9.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.3->org.codehaus.jackson#jackson-core-asl;1.9.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->com.twilio.sdk#twilio-java-sdk;3.4.5 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.18 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.18 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.18 [compile->compile][0m
@@ -4982,6 +5137,45 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ws_2.11;2.4.3->oauth.signpost#signpost-commonshttp4;1.2.1.2 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ws_2.11;2.4.3->oauth.signpost#signpost-commonshttp4;1.2.1.2 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->com.twilio.sdk#twilio-java-sdk;3.4.5 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->com.twilio.sdk#twilio-java-sdk;3.4.5 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->com.twilio.sdk#twilio-java-sdk;3.4.5 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.apache.httpcomponents#httpclient;4.1.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.apache.httpcomponents#httpclient;4.1.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->org.apache.httpcomponents#httpcore;4.1.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->org.apache.httpcomponents#httpcore;4.1.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-logging#commons-logging;1.1.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-logging#commons-logging;1.1.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-codec#commons-codec;1.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-codec#commons-codec;1.10 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-codec#commons-codec;1.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-codec#commons-codec;1.10 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->commons-lang#commons-lang;2.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->commons-lang#commons-lang;2.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->com.googlecode.json-simple#json-simple;1.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->com.googlecode.json-simple#json-simple;1.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.3->org.codehaus.jackson#jackson-core-asl;1.9.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.3->org.codehaus.jackson#jackson-core-asl;1.9.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.apache.httpcomponents#httpclient;4.1.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.apache.httpcomponents#httpclient;4.1.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->org.apache.httpcomponents#httpcore;4.1.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->org.apache.httpcomponents#httpcore;4.1.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-logging#commons-logging;1.1.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-logging#commons-logging;1.1.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-codec#commons-codec;1.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-codec#commons-codec;1.10 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-codec#commons-codec;1.10 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->commons-lang#commons-lang;2.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->commons-lang#commons-lang;2.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->com.googlecode.json-simple#json-simple;1.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->com.googlecode.json-simple#json-simple;1.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.3->org.codehaus.jackson#jackson-core-asl;1.9.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.3->org.codehaus.jackson#jackson-core-asl;1.9.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->com.twilio.sdk#twilio-java-sdk;3.4.5 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.18 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.18 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.18 [compile->compile][0m
@@ -5814,6 +6008,45 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ws_2.11;2.4.3->oauth.signpost#signpost-commonshttp4;1.2.1.2 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ws_2.11;2.4.3->oauth.signpost#signpost-commonshttp4;1.2.1.2 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->com.twilio.sdk#twilio-java-sdk;3.4.5 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->com.twilio.sdk#twilio-java-sdk;3.4.5 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->com.twilio.sdk#twilio-java-sdk;3.4.5 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.apache.httpcomponents#httpclient;4.1.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.apache.httpcomponents#httpclient;4.1.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->org.apache.httpcomponents#httpcore;4.1.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->org.apache.httpcomponents#httpcore;4.1.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-logging#commons-logging;1.1.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-logging#commons-logging;1.1.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-codec#commons-codec;1.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-codec#commons-codec;1.10 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-codec#commons-codec;1.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-codec#commons-codec;1.10 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->commons-lang#commons-lang;2.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->commons-lang#commons-lang;2.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->com.googlecode.json-simple#json-simple;1.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->com.googlecode.json-simple#json-simple;1.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.3->org.codehaus.jackson#jackson-core-asl;1.9.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.3->org.codehaus.jackson#jackson-core-asl;1.9.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.apache.httpcomponents#httpclient;4.1.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.apache.httpcomponents#httpclient;4.1.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->org.apache.httpcomponents#httpcore;4.1.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->org.apache.httpcomponents#httpcore;4.1.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-logging#commons-logging;1.1.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-logging#commons-logging;1.1.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-codec#commons-codec;1.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-codec#commons-codec;1.10 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-codec#commons-codec;1.10 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->commons-lang#commons-lang;2.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->commons-lang#commons-lang;2.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->com.googlecode.json-simple#json-simple;1.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->com.googlecode.json-simple#json-simple;1.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.3->org.codehaus.jackson#jackson-core-asl;1.9.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.3->org.codehaus.jackson#jackson-core-asl;1.9.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->com.twilio.sdk#twilio-java-sdk;3.4.5 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.18 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.18 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.18 [compile->compile][0m
@@ -6646,6 +6879,45 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ws_2.11;2.4.3->oauth.signpost#signpost-commonshttp4;1.2.1.2 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ws_2.11;2.4.3->oauth.signpost#signpost-commonshttp4;1.2.1.2 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->com.twilio.sdk#twilio-java-sdk;3.4.5 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->com.twilio.sdk#twilio-java-sdk;3.4.5 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->com.twilio.sdk#twilio-java-sdk;3.4.5 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.apache.httpcomponents#httpclient;4.1.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.apache.httpcomponents#httpclient;4.1.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->org.apache.httpcomponents#httpcore;4.1.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->org.apache.httpcomponents#httpcore;4.1.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-logging#commons-logging;1.1.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-logging#commons-logging;1.1.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-codec#commons-codec;1.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-codec#commons-codec;1.10 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-codec#commons-codec;1.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-codec#commons-codec;1.10 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->commons-lang#commons-lang;2.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->commons-lang#commons-lang;2.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->com.googlecode.json-simple#json-simple;1.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->com.googlecode.json-simple#json-simple;1.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.3->org.codehaus.jackson#jackson-core-asl;1.9.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.3->org.codehaus.jackson#jackson-core-asl;1.9.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.apache.httpcomponents#httpclient;4.1.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.apache.httpcomponents#httpclient;4.1.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->org.apache.httpcomponents#httpcore;4.1.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->org.apache.httpcomponents#httpcore;4.1.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-logging#commons-logging;1.1.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-logging#commons-logging;1.1.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-codec#commons-codec;1.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-codec#commons-codec;1.10 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.1.2->commons-codec#commons-codec;1.10 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->commons-lang#commons-lang;2.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->commons-lang#commons-lang;2.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->com.googlecode.json-simple#json-simple;1.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->com.googlecode.json-simple#json-simple;1.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;3.4.5->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.3->org.codehaus.jackson#jackson-core-asl;1.9.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.3->org.codehaus.jackson#jackson-core-asl;1.9.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->com.twilio.sdk#twilio-java-sdk;3.4.5 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.18 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.18 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.18 [compile->compile][0m
@@ -8384,6 +8656,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-java-jdbc_2.11;2.4.3!play-java-jdbc_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-cache_2.11;2.4.3!play-cache_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-java-ws_2.11;2.4.3!play-java-ws_2.11.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.twilio.sdk#twilio-java-sdk;3.4.5!twilio-java-sdk.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] mysql#mysql-connector-java;5.1.18!mysql-connector-java.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.commons#commons-lang3;3.4!commons-lang3.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.1!scala-xml_2.11.jar(bundle)[0m
@@ -8456,9 +8729,13 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.ning#async-http-client;1.9.21!async-http-client.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] oauth.signpost#signpost-core;1.2.1.2!signpost-core.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] oauth.signpost#signpost-commonshttp4;1.2.1.2!signpost-commonshttp4.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.httpcomponents#httpcore;4.0.1!httpcore.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.httpcomponents#httpclient;4.0.1!httpclient.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] commons-logging#commons-logging;1.1.1!commons-logging.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.httpcomponents#httpclient;4.1.2!httpclient.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] commons-lang#commons-lang;2.6!commons-lang.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.googlecode.json-simple#json-simple;1.1!json-simple.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.codehaus.jackson#jackson-mapper-asl;1.9.3!jackson-mapper-asl.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.httpcomponents#httpcore;4.1.2!httpcore.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.codehaus.jackson#jackson-core-asl;1.9.3!jackson-core-asl.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-test_2.11;2.4.3!play-test_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] junit#junit;4.12!junit.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.novocode#junit-interface;0.11!junit-interface.jar[0m
@@ -8536,20 +8813,20 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#control_2.11;0.13.8-M3!control_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-actor_2.11;2.3.8!akka-actor_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-testkit_2.11;2.3.8!akka-testkit_2.11.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 2432ms :: artifacts dl 68ms[0m
-[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT compile produced in /Users/rsp04/Websites/Wednesday/BSkyBProject/Website/target/resolution-cache/reports/play-java-play-java_2.11-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT runtime produced in /Users/rsp04/Websites/Wednesday/BSkyBProject/Website/target/resolution-cache/reports/play-java-play-java_2.11-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT test produced in /Users/rsp04/Websites/Wednesday/BSkyBProject/Website/target/resolution-cache/reports/play-java-play-java_2.11-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT provided produced in /Users/rsp04/Websites/Wednesday/BSkyBProject/Website/target/resolution-cache/reports/play-java-play-java_2.11-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT optional produced in /Users/rsp04/Websites/Wednesday/BSkyBProject/Website/target/resolution-cache/reports/play-java-play-java_2.11-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT compile-internal produced in /Users/rsp04/Websites/Wednesday/BSkyBProject/Website/target/resolution-cache/reports/play-java-play-java_2.11-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT runtime-internal produced in /Users/rsp04/Websites/Wednesday/BSkyBProject/Website/target/resolution-cache/reports/play-java-play-java_2.11-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT test-internal produced in /Users/rsp04/Websites/Wednesday/BSkyBProject/Website/target/resolution-cache/reports/play-java-play-java_2.11-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT plugin produced in /Users/rsp04/Websites/Wednesday/BSkyBProject/Website/target/resolution-cache/reports/play-java-play-java_2.11-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT sources produced in /Users/rsp04/Websites/Wednesday/BSkyBProject/Website/target/resolution-cache/reports/play-java-play-java_2.11-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT docs produced in /Users/rsp04/Websites/Wednesday/BSkyBProject/Website/target/resolution-cache/reports/play-java-play-java_2.11-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT pom produced in /Users/rsp04/Websites/Wednesday/BSkyBProject/Website/target/resolution-cache/reports/play-java-play-java_2.11-pom.xml[0m
-[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT scala-tool produced in /Users/rsp04/Websites/Wednesday/BSkyBProject/Website/target/resolution-cache/reports/play-java-play-java_2.11-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT fork-run produced in /Users/rsp04/Websites/Wednesday/BSkyBProject/Website/target/resolution-cache/reports/play-java-play-java_2.11-fork-run.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (2432ms resolve - 68ms download)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 2729ms :: artifacts dl 57ms[0m
+[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT compile produced in /Users/rsp04/Websites/BSkyBProject/Website/target/resolution-cache/reports/play-java-play-java_2.11-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT runtime produced in /Users/rsp04/Websites/BSkyBProject/Website/target/resolution-cache/reports/play-java-play-java_2.11-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT test produced in /Users/rsp04/Websites/BSkyBProject/Website/target/resolution-cache/reports/play-java-play-java_2.11-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT provided produced in /Users/rsp04/Websites/BSkyBProject/Website/target/resolution-cache/reports/play-java-play-java_2.11-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT optional produced in /Users/rsp04/Websites/BSkyBProject/Website/target/resolution-cache/reports/play-java-play-java_2.11-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT compile-internal produced in /Users/rsp04/Websites/BSkyBProject/Website/target/resolution-cache/reports/play-java-play-java_2.11-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT runtime-internal produced in /Users/rsp04/Websites/BSkyBProject/Website/target/resolution-cache/reports/play-java-play-java_2.11-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT test-internal produced in /Users/rsp04/Websites/BSkyBProject/Website/target/resolution-cache/reports/play-java-play-java_2.11-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT plugin produced in /Users/rsp04/Websites/BSkyBProject/Website/target/resolution-cache/reports/play-java-play-java_2.11-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT sources produced in /Users/rsp04/Websites/BSkyBProject/Website/target/resolution-cache/reports/play-java-play-java_2.11-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT docs produced in /Users/rsp04/Websites/BSkyBProject/Website/target/resolution-cache/reports/play-java-play-java_2.11-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT pom produced in /Users/rsp04/Websites/BSkyBProject/Website/target/resolution-cache/reports/play-java-play-java_2.11-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT scala-tool produced in /Users/rsp04/Websites/BSkyBProject/Website/target/resolution-cache/reports/play-java-play-java_2.11-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	report for play-java#play-java_2.11;1.0-SNAPSHOT fork-run produced in /Users/rsp04/Websites/BSkyBProject/Website/target/resolution-cache/reports/play-java-play-java_2.11-fork-run.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (2729ms resolve - 57ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m
