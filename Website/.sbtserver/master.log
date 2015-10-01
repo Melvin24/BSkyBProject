@@ -1,5 +1,5 @@
-New log file opened at Thu Oct 01 12:34:59 BST 2015 by 13454@LEEML0195480
-jvm 13454@LEEML0195480
+New log file opened at Thu Oct 01 16:29:32 BST 2015 by 7735@LEEML0195480
+jvm 7735@LEEML0195480
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.60-b23
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in /Users/rsp04/Websites/thursday/BSkyBProject/Website/project, returning: (website-build)
 Loading project definition from /Users/rsp04/Websites/thursday/BSkyBProject/Website/project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@45f10c2c, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@55f3817d, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -69,13 +69,13 @@ Set current project to play-java (in build file:/Users/rsp04/Websites/thursday/B
 > server-handle-next-server-request
 > {file:/Users/rsp04/Websites/thursday/BSkyBProject/Website/}myProject/compile:mainClass
 Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@57b1965b, check cycles: false
-Total time: 0 s, completed Oct 1, 2015 12:35:03 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@72427c7f, check cycles: false
+Total time: 0 s, completed Oct 1, 2015 4:29:36 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/rsp04/Websites/thursday/BSkyBProject/Website/}myProject/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@5f528a5, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@1e595b17, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -165,18 +165,18 @@ ebean-enhance> cls: models/Users  msg: Skip intercepting static field _ebean_pro
 ebean-enhance> cls: models/Users  msg: ... ignore field _ebean_intercept
 ebean-enhance> cls: models/Users  msg: Skip intercepting transient field _ebean_identity
 ebean-enhance> cls: models/Users  msg: skipping... no enhancement required
-Total time: 1 s, completed Oct 1, 2015 12:35:04 PM
+Total time: 1 s, completed Oct 1, 2015 4:29:37 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/rsp04/Websites/thursday/BSkyBProject/Website/}myProject/compile:mainClass
 Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@46e83008, check cycles: false
-Total time: 0 s, completed Oct 1, 2015 12:35:04 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@2b3f09f9, check cycles: false
+Total time: 0 s, completed Oct 1, 2015 4:29:37 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/rsp04/Websites/thursday/BSkyBProject/Website/}myProject/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@9a9cf79, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@6ce0bb67, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -266,30 +266,30 @@ ebean-enhance> cls: models/Users  msg: Skip intercepting static field _ebean_pro
 ebean-enhance> cls: models/Users  msg: ... ignore field _ebean_intercept
 ebean-enhance> cls: models/Users  msg: Skip intercepting transient field _ebean_identity
 ebean-enhance> cls: models/Users  msg: skipping... no enhancement required
-Total time: 0 s, completed Oct 1, 2015 12:35:04 PM
+Total time: 0 s, completed Oct 1, 2015 4:29:37 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > backgroundRun
 Evaluating tasks: compile:backgroundRun
-Running task... Cancel: sbt.server.ServerTaskCancellation@7bd3f5e8, check cycles: false
-Total time: 0 s, completed Oct 1, 2015 12:35:06 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@2d36fe77, check cycles: false
+Total time: 0 s, completed Oct 1, 2015 4:30:02 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/rsp04/Websites/thursday/BSkyBProject/Website/}myProject/*:playForkConfig
 Evaluating tasks: *:playForkConfig
-Running task... Cancel: sbt.server.ServerTaskCancellation@1d6f5e1e, check cycles: false
-Total time: 0 s, completed Oct 1, 2015 12:35:08 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@43ec9b7b, check cycles: false
+Total time: 0 s, completed Oct 1, 2015 4:30:04 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > myProject/playForkNotifyStart http://localhost:9000
 Evaluating tasks: *:playForkNotifyStart
-Running task... Cancel: sbt.server.ServerTaskCancellation@2e9c585e, check cycles: false
-Total time: 0 s, completed Oct 1, 2015 12:35:09 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@5a99bef0, check cycles: false
+Total time: 0 s, completed Oct 1, 2015 4:30:05 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/rsp04/Websites/thursday/BSkyBProject/Website/}myProject/*:playForkReload
 Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@d0cee71, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@439acf8e, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -387,6 +387,6 @@ Copy resource mappings:
 	(/Users/rsp04/Websites/thursday/BSkyBProject/Website/conf/evolutions/default,/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes/evolutions/default)
 	(/Users/rsp04/Websites/thursday/BSkyBProject/Website/conf/evolutions/default/1.sql,/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes/evolutions/default/1.sql)
 Warning: node.js detection failed, sbt will use the Rhino based Trireme JavaScript engine instead to run JavaScript assets compilation, which in some cases may be orders of magnitude slower than using node.js.
-Total time: 1 s, completed Oct 1, 2015 12:35:13 PM
+Total time: 1 s, completed Oct 1, 2015 4:30:09 PM
 > server-post-command-cleanup
 > server-handle-next-server-request

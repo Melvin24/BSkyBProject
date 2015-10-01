@@ -52,7 +52,7 @@ Seq[Any](format.raw/*1.20*/("""
           <button type="button" class="btn incItem" id = "inc1" itemNumber="1"><span class="glyphicon glyphicon-plus-sign green"></span></button>
         </div>
         <div>
-          <button type="button" class="btn btn-success addToBasketButton" id = "addToBasket1" itemNumber="1" itemType="gnome" unitPrice="5" imagePath=""""),_display_(/*24.153*/routes/*24.159*/.Assets.versioned("images/gnome-small.png")),format.raw/*24.202*/("""")>Add To Basket</button>
+          <button type="button" class="btn btn-success addToBasketButton" id = "addToBasket1" itemID="12122" itemNumber="1" itemType="gnome" unitPrice="5" imagePath=""""),_display_(/*24.168*/routes/*24.174*/.Assets.versioned("images/gnome-small.png")),format.raw/*24.217*/("""")>Add To Basket</button>
         </div>
       </div>
     </div>
@@ -80,10 +80,10 @@ Seq[Any](format.raw/*1.20*/("""
 object gnomes extends gnomes_Scope0.gnomes
               /*
                   -- GENERATED --
-                  DATE: Thu Oct 01 12:33:10 BST 2015
+                  DATE: Thu Oct 01 16:10:12 BST 2015
                   SOURCE: /Users/rsp04/Websites/thursday/BSkyBProject/Website/app/views/gnomes.scala.html
-                  HASH: 360a0448d07779771f3e9e03fdacf7eaf20048ae
-                  MATRIX: 747->1|860->19|888->22|931->57|970->59|999->62|1382->418|1397->424|1455->461|2178->1156|2194->1162|2259->1205|2372->1288
+                  HASH: 8a59a1ba006b7e7886092bcad55b3609ae6c87f1
+                  MATRIX: 747->1|860->19|888->22|931->57|970->59|999->62|1382->418|1397->424|1455->461|2193->1171|2209->1177|2274->1220|2387->1303
                   LINES: 27->1|32->1|34->3|34->3|34->3|35->4|47->16|47->16|47->16|55->24|55->24|55->24|62->31
                   -- GENERATED --
               */

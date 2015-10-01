@@ -4,9 +4,9 @@
 
 # Home page
 
-GET     /                           controllers.Application.index()
+GET     /sendsms                    controllers.Application.sendsms()
 
-GET     /home                       controllers.Application.index()
+GET     /                           controllers.Application.index()
 
 GET     /tshirts                   controllers.Application.tshirts()
 GET     /tshirts/:id               controllers.Application.item(id: Long)

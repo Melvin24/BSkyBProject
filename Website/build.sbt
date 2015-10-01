@@ -9,7 +9,8 @@ scalaVersion := "2.11.6"
 libraryDependencies ++= Seq(
   javaJdbc,
   cache,
-  javaWs
+  javaWs,
+  "com.twilio.sdk" % "twilio-java-sdk" % "3.4.5"
 )
 
 libraryDependencies += "mysql" % "mysql-connector-java" % "5.1.18"

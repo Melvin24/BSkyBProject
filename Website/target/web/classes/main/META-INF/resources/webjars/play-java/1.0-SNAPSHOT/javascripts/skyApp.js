@@ -87,13 +87,14 @@ $(document).ready(function () {
                   quantityToAdd = $('#quantityItem' + itemNumber).val(),
                   numberShoppingCartItems = parseInt($.session.get("numberShoppingCartItems")),
                   unitPrice = $(this).attr("unitPrice"),
-                  imagePath = $(this).attr("imagePath");
+                  imagePath = $(this).attr("imagePath"),
+                  itemID = $(this).attr("itemID");
 
               if(isNaN(numberShoppingCartItems))
                 numberShoppingCartItems = 0;
 
               if(quantityToAdd > 0){
-                  addToShoppingBasketJSON($(this).attr("itemType"),quantityToAdd,itemNumber, unitPrice, imagePath);
+                  addToShoppingBasketJSON($(this).attr("itemType"),quantityToAdd,itemNumber, unitPrice, imagePath, itemID);
 
 
                 numberShoppingCartItems += parseInt(quantityToAdd);
@@ -109,7 +110,7 @@ $(document).ready(function () {
 
 
 
-        function addToShoppingBasketJSON(itemType, quantity, itemNumber, unitPrice, imagePath){
+        function addToShoppingBasketJSON(itemType, quantity, itemNumber, unitPrice, imagePath, itemID){
           var temp  = sessionStorage.getItem('shoppingCart');
           if(temp != "")
             shoppingCart = $.parseJSON(temp);
@@ -119,7 +120,8 @@ $(document).ready(function () {
                                 "itemNumber" : itemNumber,
                                 "qty" : quantity,
                                 "unitPrice" : unitPrice,
-                                "imagePath" : imagePath
+                                "imagePath" : imagePath,
+                                "itemID" : itemID
                           });
 
           $.session.set("shoppingCart", JSON.stringify(shoppingCart));
@@ -162,6 +164,30 @@ $(document).ready(function () {
           }
 
       });
+
+
+
+      $('#findPostcosde').click(function(){
+        $('#inputPostCode').getAddress({
+            api_key: 'EtGodLRTsUeWBljaQzmvLw1760',
+            output_fields:{
+                line_1: '#Address1',
+                line_2: '#Address2',
+                line_3: '#Address3',
+                post_town: '#Town',
+                county: '#County',
+                postcode: '#postcode'
+            },
+            onLookupSuccess: function(data){alert(data);},
+            onLookupError: function(){alert("Postcode not recognised. Please enter address manually")},
+            onAddressSelected: function(elem,index){alert("here")},
+            onLookupError: function(){alert("here")}
+        });
+        alert("here2");
+
+      });
+
+
 });
 
 

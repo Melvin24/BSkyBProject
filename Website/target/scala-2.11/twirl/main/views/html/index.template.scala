@@ -42,6 +42,8 @@ Seq[Any](_display_(/*1.2*/main("Welcome to the Sky Store.")/*1.35*/ {_display_(S
   </div>
 </div>
 
+
+
 <div class="container">
   <!-- Example row of columns -->
   <div class="row">
@@ -62,7 +64,7 @@ Seq[Any](_display_(/*1.2*/main("Welcome to the Sky Store.")/*1.35*/ {_display_(S
     </div>
   </div>
 
-""")))}),format.raw/*34.2*/("""
+""")))}),format.raw/*36.2*/("""
 """))
       }
     }
@@ -83,11 +85,11 @@ Seq[Any](_display_(/*1.2*/main("Welcome to the Sky Store.")/*1.35*/ {_display_(S
 object index extends index_Scope0.index
               /*
                   -- GENERATED --
-                  DATE: Thu Oct 01 12:33:10 BST 2015
+                  DATE: Thu Oct 01 16:10:12 BST 2015
                   SOURCE: /Users/rsp04/Websites/thursday/BSkyBProject/Website/app/views/index.scala.html
-                  HASH: e5cf8ae5c2922a6e90091d860af5a7e7b8ac6ac2
-                  MATRIX: 827->1|868->34|907->36|937->40|2546->1619
-                  LINES: 32->1|32->1|32->1|36->5|65->34
+                  HASH: ccf715a06da629532bd5e480410cbe8f58716e4e
+                  MATRIX: 827->1|868->34|907->36|937->40|2548->1621
+                  LINES: 32->1|32->1|32->1|36->5|67->36
                   -- GENERATED --
               */
           

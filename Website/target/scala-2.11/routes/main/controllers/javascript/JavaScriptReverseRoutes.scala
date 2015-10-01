@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/rsp04/Websites/thursday/BSkyBProject/Website/conf/routes
-// @DATE:Thu Oct 01 12:33:10 BST 2015
+// @DATE:Thu Oct 01 16:27:59 BST 2015
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -103,6 +103,16 @@ package controllers.javascript {
       """
     )
   
+    // @LINE:7
+    def sendsms: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.sendsms",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "sendsms"})
+        }
+      """
+    )
+  
     // @LINE:42
     def getActiveOrders: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.getActiveOrders",
@@ -187,7 +197,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:7
+    // @LINE:9
     def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.index",
       """

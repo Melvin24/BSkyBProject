@@ -10,14 +10,50 @@ import play.data.*;
 import static play.data.Form.*;
 import static play.libs.Json.toJson;
 
+import com.twilio.sdk.*;
+import com.twilio.sdk.resource.factory.*;
+import com.twilio.sdk.resource.instance.*;
+import com.twilio.sdk.resource.list.*;
+
+import org.apache.http.NameValuePair;
+import org.apache.http.auth.UsernamePasswordCredentials;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.impl.auth.BasicScheme;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.message.BasicNameValuePair;
+
 import views.html.*;
 
 
 public class Application extends Controller {
+    
+     // Find your Account Sid and Token at twilio.com/user/account
+     public static final String ACCOUNT_SID = "AC051c9238648d83634e82a75f82a9d44a";
+     public static final String AUTH_TOKEN = "d0b002329c305948e9293997e3e42242";
 
     public Result index() {
          return ok(home.render("Advertisments and shop"));
     }
+    
+    public Result sendsms() throws TwilioRestException {
+        TwilioRestClient client = new TwilioRestClient(ACCOUNT_SID, AUTH_TOKEN);
+
+	    // Build the parameters
+	    List<NameValuePair> params = new ArrayList<NameValuePair>();
+	    params.add(new BasicNameValuePair("To", "+447540816679"));
+	    params.add(new BasicNameValuePair("From", "+441133209759"));
+	    params.add(new BasicNameValuePair("Body", "FOOOO, your order has been accepted and is currently being processed."));
+
+	    MessageFactory messageFactory = client.getAccount().getMessageFactory();
+	    Message message = messageFactory.create(params);
+	    //System.out.println(message.getSid());
+	 
+	 return redirect(routes.Application.index());
+	 
+ }
 
     public Result tshirts() {
         return ok(tshirts.render("list of all the tshirts"));
@@ -109,11 +145,13 @@ public class Application extends Controller {
     }
 
     public Result addItem() {
-        //stock = Stock.class.bindFromRequest();
-       // stock.update(id)
-
-        flash("success", "Stock has been ordered!");
-        return redirect(routes.Application.allstock());
+        
+        String id = form().bindFromRequest().get("id");
+        
+        return ok(toJson(id));
+        
+        //flash("success", "Stock has been ordered!");
+        //return redirect(routes.Application.allstock());
     }
 
     public Result allstock() {
