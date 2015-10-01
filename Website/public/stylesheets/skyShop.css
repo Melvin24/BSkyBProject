@@ -65,11 +65,17 @@ li {
 }
 
 .breadCrumbStyle{
-	padding-top: 70px;
+	padding-top: 10px;
 }
 
 .gnomeContainer{
 	margin-left: 10% !important;
+}
+
+
+
+#shoppingBagSubmit{
+	width:30%;
 }
 /* -------------- Products page ------------------- */
 #filterDiv{
