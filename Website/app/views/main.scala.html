@@ -21,15 +21,6 @@
         <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/skyShop.css")">
 
         <link rel="shortcut icon" type="image/ico" href="@routes.Assets.versioned("images/favicon.ico")"/>
-
-        <style>
-            body {
-                padding-top: 50px;
-                padding-bottom: 20px;
-            }
-        </style>
-
-
         </script>
         <!-- Start of skyblueteam Zendesk Widget script -->
         <script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("//assets.zendesk.com/embeddable_framework/main.js","skyblueteam.zendesk.com");/*]]>*/</script>
@@ -154,7 +145,6 @@
 
 <nav class="navbar navbar-inverse navbar-fixed-top navBarCustom" role="navigation">
   <div class="container">
-    <a class="navbar-brand" href="/"></a>
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
         <span class="sr-only">Toggle navigation</span>
@@ -163,7 +153,7 @@
         <span class="icon-bar"></span>
       </button>
 
-      <a class="navbar-brand" href="/"><img id="skylogo" src="@routes.Assets.versioned("images/sky-logo.png")"></img>Accessories</a>
+      <a class="navbar-brand" href="/"><img id="skylogo" src="@routes.Assets.versioned("images/sky-logo.png")">Accessories</a></img>
 
     </div>
 
@@ -202,27 +192,16 @@
 
 <hr />
 
-<div
-class="fb-like"
-data-share="true"
-data-width="450"
-data-show-faces="true">
-</div>
-
-<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-</fb:login-button>
-
-<div id="status">
-</div>
-<footer>
-    <p>&copy; Sky Blue Team 2015</p>
-    <button type="button" id ="resetSession" class="btn btn-info">Reset Basket</button>
-</footer>
-</div>
-
 <div class="container">
     <footer>
         <p>Sky Blue Team 2015</p>
+        <button type="button" id ="resetSession" class="btn btn-info">Reset Basket</button>
+        <div class="fb-like" data-share="true" data-width="450" data-show-faces="true">
+            
+        </div>
+
+        <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+        </fb:login-button>
     </footer>
 </div>
 </body>

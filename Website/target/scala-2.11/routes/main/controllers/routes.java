@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/conf/routes
-// @DATE:Wed Sep 30 22:04:54 BST 2015
+// @SOURCE:/Users/rsp04/Websites/thursday/BSkyBProject/Website/conf/routes
+// @DATE:Thu Oct 01 10:39:19 BST 2015
 
 package controllers;
 

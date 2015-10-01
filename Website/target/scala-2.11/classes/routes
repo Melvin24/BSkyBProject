@@ -3,6 +3,22 @@
 # ~~~~
 
 # Home page
+
+GET     /                           controllers.Application.index()
+
+GET     /home                       controllers.Application.index()
+
+GET     /tshirts                   controllers.Application.tshirts()
+GET     /tshirts/:id               controllers.Application.item(id: Long)
+
+GET     /phones                     controllers.Application.phones()
+GET     /gnomes                     controllers.Application.gnomes()
+
+
+GET     /faq                        controllers.Application.faq()
+GET     /shoppingBag                controllers.Application.shoppingBag()
+
+
 GET     /                             controllers.Application.index()
 
 # Display products - shop front
@@ -16,7 +32,7 @@ GET     /backofhouse                  controllers.Application.backofhouse()
 
 GET     /stock/new                    controllers.Application.createItem()
 POST    /stock/update                 controllers.Application.addItem()
-GET     /stock/delete/:id             controllers.Application.deleteItem(id: Long)    
+GET     /stock/delete/:id             controllers.Application.deleteItem(id: Long)
 GET     /stock                        controllers.Application.allstock()
 POST    /stock                        controllers.Application.save()
 

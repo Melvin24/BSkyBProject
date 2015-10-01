@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/rsp04/Websites/Wednesday/BSkyBProject/Website/conf/routes
-// @DATE:Wed Sep 30 22:04:54 BST 2015
+// @SOURCE:/Users/rsp04/Websites/thursday/BSkyBProject/Website/conf/routes
+// @DATE:Thu Oct 01 10:39:19 BST 2015
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -10,17 +10,17 @@ import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamic
 import _root_.controllers.Assets.Asset
 import _root_.play.libs.F
 
-// @LINE:6
+// @LINE:7
 package controllers {
 
-  // @LINE:32
+  // @LINE:48
   class ReverseAssets(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:32
+    // @LINE:48
     def versioned(file:Asset): Call = {
       implicit val _rrc = new ReverseRouteContext(Map(("path", "/public")))
       Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[PathBindable[Asset]].unbind("file", file))
@@ -28,74 +28,120 @@ package controllers {
   
   }
 
-  // @LINE:6
+  // @LINE:7
   class ReverseApplication(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:10
+    // @LINE:15
+    def gnomes(): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "gnomes")
+    }
+  
+    // @LINE:19
+    def shoppingBag(): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "shoppingBag")
+    }
+  
+    // @LINE:11
+    def tshirts(): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "tshirts")
+    }
+  
+    // @LINE:14
+    def phones(): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "phones")
+    }
+  
+    // @LINE:26
     def products(): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix + { _defaultPrefix } + "products")
     }
   
-    // @LINE:20
+    // @LINE:36
     def allstock(): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix + { _defaultPrefix } + "stock")
     }
   
-    // @LINE:24
+    // @LINE:40
     def getActiveOrders(): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix + { _defaultPrefix } + "orders")
     }
   
-    // @LINE:19
+    // @LINE:35
     def deleteItem(id:Long): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix + { _defaultPrefix } + "stock/delete/" + implicitly[PathBindable[Long]].unbind("id", id))
     }
   
-    // @LINE:21
+    // @LINE:18
+    def faq(): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "faq")
+    }
+  
+    // @LINE:37
     def save(): Call = {
       import ReverseRouteContext.empty
       Call("POST", _prefix + { _defaultPrefix } + "stock")
     }
   
-    // @LINE:17
+    // @LINE:33
     def createItem(): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix + { _defaultPrefix } + "stock/new")
     }
   
-    // @LINE:11
+    // @LINE:12
     def item(id:Long): Call = {
-      import ReverseRouteContext.empty
-      Call("GET", _prefix + { _defaultPrefix } + "products/" + implicitly[PathBindable[Long]].unbind("id", id))
+    
+      (id: @unchecked) match {
+      
+        // @LINE:12
+        case (id)  =>
+          import ReverseRouteContext.empty
+          Call("GET", _prefix + { _defaultPrefix } + "tshirts/" + implicitly[PathBindable[Long]].unbind("id", id))
+      
+      }
+    
     }
   
-    // @LINE:28
+    // @LINE:44
     def checkout(): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix + { _defaultPrefix } + "checkout")
     }
   
-    // @LINE:6
+    // @LINE:7
     def index(): Call = {
-      import ReverseRouteContext.empty
-      Call("GET", _prefix)
+    
+      () match {
+      
+        // @LINE:7
+        case ()  =>
+          import ReverseRouteContext.empty
+          Call("GET", _prefix)
+      
+      }
+    
     }
   
-    // @LINE:15
+    // @LINE:31
     def backofhouse(): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix + { _defaultPrefix } + "backofhouse")
     }
   
-    // @LINE:18
+    // @LINE:34
     def addItem(): Call = {
       import ReverseRouteContext.empty
       Call("POST", _prefix + { _defaultPrefix } + "stock/update")
