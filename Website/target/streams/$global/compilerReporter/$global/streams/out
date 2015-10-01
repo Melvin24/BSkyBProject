@@ -1,2 +1,7 @@
-[0m[[0minfo[0m] [0m/Users/rsp04/Websites/thursday/BSkyBProject/Website/app/models/Address.java: Some input files use or override a deprecated API.[0m
-[0m[[0minfo[0m] [0m/Users/rsp04/Websites/thursday/BSkyBProject/Website/app/models/Address.java: Recompile with -Xlint:deprecation for details.[0m
+[0m[[31merror[0m] [0m/Users/rsp04/Websites/thursday/BSkyBProject/Website/app/views/viewallorders.scala.html:36: ')' expected but 'else' found.[0m
+[0m[[31merror[0m] [0m        } else {[0m
+[0m[[31merror[0m] [0m          ^[0m
+[0m[[31merror[0m] [0m/Users/rsp04/Websites/thursday/BSkyBProject/Website/app/views/viewallorders.scala.html:42: ')' expected but '}' found.[0m
+[0m[[31merror[0m] [0m</table>[0m
+[0m[[31merror[0m] [0m        ^[0m
+[0m[[31merror[0m] [0mtwo errors found[0m

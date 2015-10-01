@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/rsp04/Websites/thursday/BSkyBProject/Website/conf/routes
-// @DATE:Thu Oct 01 10:39:19 BST 2015
+// @DATE:Thu Oct 01 11:09:54 BST 2015
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -13,14 +13,14 @@ import _root_.play.libs.F
 // @LINE:7
 package controllers {
 
-  // @LINE:48
+  // @LINE:50
   class ReverseAssets(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:48
+    // @LINE:50
     def versioned(file:Asset): Call = {
       implicit val _rrc = new ReverseRouteContext(Map(("path", "/public")))
       Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[PathBindable[Asset]].unbind("file", file))
@@ -71,7 +71,7 @@ package controllers {
       Call("GET", _prefix + { _defaultPrefix } + "stock")
     }
   
-    // @LINE:40
+    // @LINE:42
     def getActiveOrders(): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix + { _defaultPrefix } + "orders")
@@ -81,6 +81,12 @@ package controllers {
     def deleteItem(id:Long): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix + { _defaultPrefix } + "stock/delete/" + implicitly[PathBindable[Long]].unbind("id", id))
+    }
+  
+    // @LINE:39
+    def viewallorders(): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "manage/orders")
     }
   
     // @LINE:18
@@ -115,7 +121,7 @@ package controllers {
     
     }
   
-    // @LINE:44
+    // @LINE:46
     def checkout(): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix + { _defaultPrefix } + "checkout")

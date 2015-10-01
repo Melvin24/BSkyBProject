@@ -14,17 +14,8 @@ import views.html.*;
 
 
 public class Application extends Controller {
-  /*
-    public Result index() {
-         return ok(products.render("list of all the products"));
-       // List<Customer> c = Customer.find.all();
-        //List<Users> u = Users.find.all();
-        //return ok(index.render(c,u));
-    }*/
 
     public Result index() {
-
-
          return ok(home.render("Advertisments and shop"));
     }
 
@@ -38,11 +29,6 @@ public class Application extends Controller {
 
     public Result gnomes() {
         return ok(gnomes.render("list of all the gnomes"));
-
-
-        //return ok(
-        //    index.render()
-        //    );
     }
 
     public Result products() {
@@ -83,6 +69,12 @@ public class Application extends Controller {
             return redirect(routes.Application.index());
         }
         return ok(toJson(orders));
+    }
+    
+    public Result viewallorders(){
+        List<Orders> orders= Orders.find.all();
+
+        return ok(viewallorders.render(orders));
     }
 
     public Result item(Long id) {

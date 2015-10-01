@@ -390,3 +390,1010 @@ Warning: node.js detection failed, sbt will use the Rhino based Trireme JavaScri
 Total time: 1 s, completed Oct 1, 2015 10:41:14 AM
 > server-post-command-cleanup
 > server-handle-next-server-request
+> {file:/Users/rsp04/Websites/thursday/BSkyBProject/Website/}myProject/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@649d8adf, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/backofhouse.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/backofhouse.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/backofhouse.template.scala)
+
+Read from stdout: Compiling 1 Scala source to /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes...
+Compiling 1 Scala source to /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 3e3a66d3, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.scala-lang/scala-library/2.11.6/jars/scala-library.jar
+	-classpath
+	/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.typesafe.play/play-enhancer/1.1.0/jars/play-enhancer.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar:/Users/rsp04/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-ebean_2.11/jars/play-ebean_2.11-1.0.0.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.11/jars/play-java-jdbc_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.javassist/javassist/3.19.0-GA/bundles/javassist.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.typesafe/config/1.3.0/bundles/config.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/joda-time/joda-time/2.8.1/jars/joda-time.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.joda/joda-convert/1.7/jars/joda-convert.jar:/Users/rsp04/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.6.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.core/jackson-core/2.5.4/bundles/jackson-core.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.core/jackson-annotations/2.5.4/bundles/jackson-annotations.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.core/jackson-databind/2.5.4/bundles/jackson-databind.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.5.4/bundles/jackson-datatype-jdk8.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.5.4/bundles/jackson-datatype-jsr310.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.slf4j/slf4j-api/1.7.12/jars/slf4j-api.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.slf4j/jul-to-slf4j/1.7.12/jars/jul-to-slf4j.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.slf4j/jcl-over-slf4j/1.7.12/jars/jcl-over-slf4j.jar:/Users/rsp04/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/ch.qos.logback/logback-core/1.1.3/jars/logback-core.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/ch.qos.logback/logback-classic/1.1.3/jars/logback-classic.jar:/Users/rsp04/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.13.jar:/Users/rsp04/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.13.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/commons-codec/commons-codec/1.10/jars/commons-codec.jar:/Users/rsp04/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/rsp04/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/rsp04/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.inject/guice/4.0/jars/guice.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/javax.inject/javax.inject/1/jars/javax.inject.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.jolbox/bonecp/0.8.0.RELEASE/bundles/bonecp.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.zaxxer/HikariCP/2.3.7/bundles/HikariCP.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.h2database/h2/1.4.187/jars/h2.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/tyrex/tyrex/1.0.1/jars/tyrex.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.scala-lang.modules/scala-java8-compat_2.11/0.3.0/bundles/scala-java8-compat_2.11.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.yaml/snakeyaml/1.15/bundles/snakeyaml.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.hibernate/hibernate-validator/5.0.3.Final/jars/hibernate-validator.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/javax.validation/validation-api/1.1.0.Final/jars/validation-api.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml/classmate/1.0.0/bundles/classmate.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.jboss.logging/jboss-logging/3.2.1.Final/jars/jboss-logging.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.springframework/spring-context/4.1.6.RELEASE/jars/spring-context.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.springframework/spring-core/4.1.6.RELEASE/jars/spring-core.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.springframework/spring-beans/4.1.6.RELEASE/jars/spring-beans.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.reflections/reflections/0.9.9/jars/reflections.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.guava/guava/18.0/bundles/guava.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.code.findbugs/annotations/2.0.1/jars/annotations.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/net.jodah/typetools/0.4.1/bundles/typetools.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.code.findbugs/jsr305/2.0.3/jars/jsr305.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.apache.tomcat/tomcat-servlet-api/8.0.21/jars/tomcat-servlet-api.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.11/jars/play-jdbc-evolutions_2.11-2.4.0.jar:/Users/rsp04/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-4.6.2.jar:/Users/rsp04/.ivy2/cache/javax.persistence/persistence-api/jars/persistence-api-1.0.jar:/Users/rsp04/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-4.5.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/io.netty/netty/bundles/netty-3.10.4.Final.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.typesafe.netty/netty-http-pipelining/1.1.4/jars/netty-http-pipelining.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-java-ws_2.11/jars/play-java-ws_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.ning/async-http-client/1.9.21/jars/async-http-client.jar:/Users/rsp04/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/rsp04/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/rsp04/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/rsp04/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.18.jar
+Scala compilation took 3.155806549 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+ebean-enhance> transform> pkg: models
+ebean-enhance> cls: models/Address  msg: no detection so enhancing entity
+ebean-enhance> cls: play/db/ebean/Model  msg: read ClassMeta
+ebean-enhance> cls: com/avaje/ebean/Model  msg: read ClassMeta
+ebean-enhance> cls: models/Address  msg: Skip intercepting static field find
+ebean-enhance> cls: models/Address  msg: Found ebean marker field _EBEAN_MARKER models.Address
+ebean-enhance> cls: models/Address  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/Address  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/Address  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/Address  msg: skipping... no enhancement required
+ebean-enhance> cls: models/Customer  msg: no detection so enhancing entity
+ebean-enhance> cls: models/Customer  msg: Skip intercepting static field find
+ebean-enhance> cls: models/Customer  msg: Found ebean marker field _EBEAN_MARKER models.Customer
+ebean-enhance> cls: models/Customer  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/Customer  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/Customer  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/Customer  msg: skipping... no enhancement required
+ebean-enhance> cls: models/CustomerLoyalty  msg: no detection so enhancing entity
+ebean-enhance> cls: models/CustomerLoyalty  msg: Skip intercepting static field find
+ebean-enhance> cls: models/CustomerLoyalty  msg: Found ebean marker field _EBEAN_MARKER models.CustomerLoyalty
+ebean-enhance> cls: models/CustomerLoyalty  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/CustomerLoyalty  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/CustomerLoyalty  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/CustomerLoyalty  msg: skipping... no enhancement required
+ebean-enhance> cls: models/ItemCategory  msg: no detection so enhancing entity
+ebean-enhance> cls: models/ItemCategory  msg: Skip intercepting static field find
+ebean-enhance> cls: models/ItemCategory  msg: Found ebean marker field _EBEAN_MARKER models.ItemCategory
+ebean-enhance> cls: models/ItemCategory  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/ItemCategory  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/ItemCategory  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/ItemCategory  msg: skipping... no enhancement required
+ebean-enhance> cls: models/LoyaltyPoints  msg: no detection so enhancing entity
+ebean-enhance> cls: models/LoyaltyPoints  msg: Skip intercepting static field find
+ebean-enhance> cls: models/LoyaltyPoints  msg: Found ebean marker field _EBEAN_MARKER models.LoyaltyPoints
+ebean-enhance> cls: models/LoyaltyPoints  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/LoyaltyPoints  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/LoyaltyPoints  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/LoyaltyPoints  msg: skipping... no enhancement required
+ebean-enhance> cls: models/OrderedItems  msg: no detection so enhancing entity
+ebean-enhance> cls: models/OrderedItems  msg: Skip intercepting static field find
+ebean-enhance> cls: models/OrderedItems  msg: Found ebean marker field _EBEAN_MARKER models.OrderedItems
+ebean-enhance> cls: models/OrderedItems  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/OrderedItems  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/OrderedItems  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/OrderedItems  msg: skipping... no enhancement required
+ebean-enhance> cls: models/Orders  msg: no detection so enhancing entity
+ebean-enhance> cls: models/Orders  msg: Skip intercepting static field find
+ebean-enhance> cls: models/Orders  msg: Found ebean marker field _EBEAN_MARKER models.Orders
+ebean-enhance> cls: models/Orders  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/Orders  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/Orders  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/Orders  msg: skipping... no enhancement required
+ebean-enhance> cls: models/OrderStatus  msg: no detection so enhancing entity
+ebean-enhance> cls: models/OrderStatus  msg: Skip intercepting static field find
+ebean-enhance> cls: models/OrderStatus  msg: Found ebean marker field _EBEAN_MARKER models.OrderStatus
+ebean-enhance> cls: models/OrderStatus  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/OrderStatus  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/OrderStatus  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/OrderStatus  msg: skipping... no enhancement required
+ebean-enhance> cls: models/Stock  msg: no detection so enhancing entity
+ebean-enhance> cls: models/Stock  msg: Skip intercepting static field find
+ebean-enhance> cls: models/Stock  msg: Found ebean marker field _EBEAN_MARKER models.Stock
+ebean-enhance> cls: models/Stock  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/Stock  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/Stock  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/Stock  msg: skipping... no enhancement required
+ebean-enhance> cls: models/Users  msg: no detection so enhancing entity
+ebean-enhance> cls: models/Users  msg: Skip intercepting static field find
+ebean-enhance> cls: models/Users  msg: Found ebean marker field _EBEAN_MARKER models.Users
+ebean-enhance> cls: models/Users  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/Users  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/Users  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/Users  msg: skipping... no enhancement required
+Copy resource mappings: 
+	(/Users/rsp04/Websites/thursday/BSkyBProject/Website/conf/application.conf,/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes/application.conf)
+	(/Users/rsp04/Websites/thursday/BSkyBProject/Website/conf/evolutions,/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes/evolutions)
+	(/Users/rsp04/Websites/thursday/BSkyBProject/Website/conf/logback.xml,/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes/logback.xml)
+	(/Users/rsp04/Websites/thursday/BSkyBProject/Website/conf/routes,/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes/routes)
+	(/Users/rsp04/Websites/thursday/BSkyBProject/Website/conf/evolutions/default,/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes/evolutions/default)
+	(/Users/rsp04/Websites/thursday/BSkyBProject/Website/conf/evolutions/default/1.sql,/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes/evolutions/default/1.sql)
+Total time: 4 s, completed Oct 1, 2015 10:51:49 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/rsp04/Websites/thursday/BSkyBProject/Website/}myProject/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@b3eb10c, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set(/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/viewallorders.template.scala)
+	modified: Set(/Users/rsp04/Websites/thursday/BSkyBProject/Website/app/controllers/Application.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/rsp04/Websites/thursday/BSkyBProject/Website/app/controllers/Application.java, /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/viewallorders.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/rsp04/Websites/thursday/BSkyBProject/Website/app/controllers/Application.java, /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/viewallorders.template.scala)
+
+Read from stdout: Compiling 1 Scala source and 1 Java source to /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes...
+Compiling 1 Scala source and 1 Java source to /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 442e0f3b, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.scala-lang/scala-library/2.11.6/jars/scala-library.jar
+	-classpath
+	/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.typesafe.play/play-enhancer/1.1.0/jars/play-enhancer.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar:/Users/rsp04/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-ebean_2.11/jars/play-ebean_2.11-1.0.0.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.11/jars/play-java-jdbc_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.javassist/javassist/3.19.0-GA/bundles/javassist.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.typesafe/config/1.3.0/bundles/config.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/joda-time/joda-time/2.8.1/jars/joda-time.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.joda/joda-convert/1.7/jars/joda-convert.jar:/Users/rsp04/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.6.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.core/jackson-core/2.5.4/bundles/jackson-core.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.core/jackson-annotations/2.5.4/bundles/jackson-annotations.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.core/jackson-databind/2.5.4/bundles/jackson-databind.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.5.4/bundles/jackson-datatype-jdk8.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.5.4/bundles/jackson-datatype-jsr310.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.slf4j/slf4j-api/1.7.12/jars/slf4j-api.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.slf4j/jul-to-slf4j/1.7.12/jars/jul-to-slf4j.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.slf4j/jcl-over-slf4j/1.7.12/jars/jcl-over-slf4j.jar:/Users/rsp04/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/ch.qos.logback/logback-core/1.1.3/jars/logback-core.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/ch.qos.logback/logback-classic/1.1.3/jars/logback-classic.jar:/Users/rsp04/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.13.jar:/Users/rsp04/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.13.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/commons-codec/commons-codec/1.10/jars/commons-codec.jar:/Users/rsp04/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/rsp04/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/rsp04/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.inject/guice/4.0/jars/guice.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/javax.inject/javax.inject/1/jars/javax.inject.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.jolbox/bonecp/0.8.0.RELEASE/bundles/bonecp.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.zaxxer/HikariCP/2.3.7/bundles/HikariCP.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.h2database/h2/1.4.187/jars/h2.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/tyrex/tyrex/1.0.1/jars/tyrex.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.scala-lang.modules/scala-java8-compat_2.11/0.3.0/bundles/scala-java8-compat_2.11.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.yaml/snakeyaml/1.15/bundles/snakeyaml.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.hibernate/hibernate-validator/5.0.3.Final/jars/hibernate-validator.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/javax.validation/validation-api/1.1.0.Final/jars/validation-api.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml/classmate/1.0.0/bundles/classmate.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.jboss.logging/jboss-logging/3.2.1.Final/jars/jboss-logging.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.springframework/spring-context/4.1.6.RELEASE/jars/spring-context.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.springframework/spring-core/4.1.6.RELEASE/jars/spring-core.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.springframework/spring-beans/4.1.6.RELEASE/jars/spring-beans.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.reflections/reflections/0.9.9/jars/reflections.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.guava/guava/18.0/bundles/guava.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.code.findbugs/annotations/2.0.1/jars/annotations.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/net.jodah/typetools/0.4.1/bundles/typetools.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.code.findbugs/jsr305/2.0.3/jars/jsr305.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.apache.tomcat/tomcat-servlet-api/8.0.21/jars/tomcat-servlet-api.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.11/jars/play-jdbc-evolutions_2.11-2.4.0.jar:/Users/rsp04/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-4.6.2.jar:/Users/rsp04/.ivy2/cache/javax.persistence/persistence-api/jars/persistence-api-1.0.jar:/Users/rsp04/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-4.5.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/io.netty/netty/bundles/netty-3.10.4.Final.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.typesafe.netty/netty-http-pipelining/1.1.4/jars/netty-http-pipelining.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-java-ws_2.11/jars/play-java-ws_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.ning/async-http-client/1.9.21/jars/async-http-client.jar:/Users/rsp04/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/rsp04/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/rsp04/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/rsp04/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.18.jar
+Read from stdout: /Users/rsp04/Websites/thursday/BSkyBProject/Website/app/views/viewallorders.scala.html:26: not found: value product
+/Users/rsp04/Websites/thursday/BSkyBProject/Website/app/views/viewallorders.scala.html:26: not found: value product
+Read from stdout: <td>@product.customer_id</td>
+        <td>@product.customer_id</td>
+Read from stdout: ^
+             ^
+Read from stdout: /Users/rsp04/Websites/thursday/BSkyBProject/Website/app/views/viewallorders.scala.html:27: not found: value product
+/Users/rsp04/Websites/thursday/BSkyBProject/Website/app/views/viewallorders.scala.html:27: not found: value product
+Read from stdout: <td>@product.date</td>
+        <td>@product.date</td>
+Read from stdout: ^
+             ^
+Read from stdout: /Users/rsp04/Websites/thursday/BSkyBProject/Website/app/views/viewallorders.scala.html:28: not found: value product
+/Users/rsp04/Websites/thursday/BSkyBProject/Website/app/views/viewallorders.scala.html:28: not found: value product
+Read from stdout: <td>@product.price</td>
+        <td>@product.price</td>
+Read from stdout: ^
+             ^
+Read from stdout: /Users/rsp04/Websites/thursday/BSkyBProject/Website/app/views/viewallorders.scala.html:29: not found: value product
+/Users/rsp04/Websites/thursday/BSkyBProject/Website/app/views/viewallorders.scala.html:29: not found: value product
+Read from stdout: <td>@product.order_status_id</td>
+        <td>@product.order_status_id</td>
+Read from stdout: ^
+             ^
+Read from stdout: four errors found
+four errors found
+Compilation failed (CompilerInterface)
+Total time: 1 s, completed Oct 1, 2015 11:03:34 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/rsp04/Websites/thursday/BSkyBProject/Website/}myProject/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@707d1f76, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set(/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/viewallorders.template.scala)
+	modified: Set(/Users/rsp04/Websites/thursday/BSkyBProject/Website/app/controllers/Application.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/rsp04/Websites/thursday/BSkyBProject/Website/app/controllers/Application.java, /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/viewallorders.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/rsp04/Websites/thursday/BSkyBProject/Website/app/controllers/Application.java, /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/viewallorders.template.scala)
+
+Read from stdout: Compiling 1 Scala source and 1 Java source to /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes...
+Compiling 1 Scala source and 1 Java source to /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 2301aa47, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.scala-lang/scala-library/2.11.6/jars/scala-library.jar
+	-classpath
+	/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.typesafe.play/play-enhancer/1.1.0/jars/play-enhancer.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar:/Users/rsp04/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-ebean_2.11/jars/play-ebean_2.11-1.0.0.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.11/jars/play-java-jdbc_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.javassist/javassist/3.19.0-GA/bundles/javassist.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.typesafe/config/1.3.0/bundles/config.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/joda-time/joda-time/2.8.1/jars/joda-time.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.joda/joda-convert/1.7/jars/joda-convert.jar:/Users/rsp04/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.6.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.core/jackson-core/2.5.4/bundles/jackson-core.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.core/jackson-annotations/2.5.4/bundles/jackson-annotations.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.core/jackson-databind/2.5.4/bundles/jackson-databind.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.5.4/bundles/jackson-datatype-jdk8.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.5.4/bundles/jackson-datatype-jsr310.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.slf4j/slf4j-api/1.7.12/jars/slf4j-api.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.slf4j/jul-to-slf4j/1.7.12/jars/jul-to-slf4j.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.slf4j/jcl-over-slf4j/1.7.12/jars/jcl-over-slf4j.jar:/Users/rsp04/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/ch.qos.logback/logback-core/1.1.3/jars/logback-core.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/ch.qos.logback/logback-classic/1.1.3/jars/logback-classic.jar:/Users/rsp04/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.13.jar:/Users/rsp04/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.13.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/commons-codec/commons-codec/1.10/jars/commons-codec.jar:/Users/rsp04/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/rsp04/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/rsp04/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.inject/guice/4.0/jars/guice.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/javax.inject/javax.inject/1/jars/javax.inject.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.jolbox/bonecp/0.8.0.RELEASE/bundles/bonecp.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.zaxxer/HikariCP/2.3.7/bundles/HikariCP.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.h2database/h2/1.4.187/jars/h2.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/tyrex/tyrex/1.0.1/jars/tyrex.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.scala-lang.modules/scala-java8-compat_2.11/0.3.0/bundles/scala-java8-compat_2.11.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.yaml/snakeyaml/1.15/bundles/snakeyaml.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.hibernate/hibernate-validator/5.0.3.Final/jars/hibernate-validator.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/javax.validation/validation-api/1.1.0.Final/jars/validation-api.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml/classmate/1.0.0/bundles/classmate.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.jboss.logging/jboss-logging/3.2.1.Final/jars/jboss-logging.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.springframework/spring-context/4.1.6.RELEASE/jars/spring-context.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.springframework/spring-core/4.1.6.RELEASE/jars/spring-core.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.springframework/spring-beans/4.1.6.RELEASE/jars/spring-beans.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.reflections/reflections/0.9.9/jars/reflections.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.guava/guava/18.0/bundles/guava.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.code.findbugs/annotations/2.0.1/jars/annotations.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/net.jodah/typetools/0.4.1/bundles/typetools.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.code.findbugs/jsr305/2.0.3/jars/jsr305.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.apache.tomcat/tomcat-servlet-api/8.0.21/jars/tomcat-servlet-api.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.11/jars/play-jdbc-evolutions_2.11-2.4.0.jar:/Users/rsp04/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-4.6.2.jar:/Users/rsp04/.ivy2/cache/javax.persistence/persistence-api/jars/persistence-api-1.0.jar:/Users/rsp04/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-4.5.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/io.netty/netty/bundles/netty-3.10.4.Final.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.typesafe.netty/netty-http-pipelining/1.1.4/jars/netty-http-pipelining.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-java-ws_2.11/jars/play-java-ws_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.ning/async-http-client/1.9.21/jars/async-http-client.jar:/Users/rsp04/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/rsp04/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/rsp04/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/rsp04/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.18.jar
+Read from stdout: /Users/rsp04/Websites/thursday/BSkyBProject/Website/app/views/viewallorders.scala.html:26: not found: value product
+/Users/rsp04/Websites/thursday/BSkyBProject/Website/app/views/viewallorders.scala.html:26: not found: value product
+Read from stdout: <td>@product.customer_id</td>
+        <td>@product.customer_id</td>
+Read from stdout: ^
+             ^
+Read from stdout: /Users/rsp04/Websites/thursday/BSkyBProject/Website/app/views/viewallorders.scala.html:27: not found: value product
+/Users/rsp04/Websites/thursday/BSkyBProject/Website/app/views/viewallorders.scala.html:27: not found: value product
+Read from stdout: <td>@product.date</td>
+        <td>@product.date</td>
+Read from stdout: ^
+             ^
+Read from stdout: /Users/rsp04/Websites/thursday/BSkyBProject/Website/app/views/viewallorders.scala.html:28: not found: value product
+/Users/rsp04/Websites/thursday/BSkyBProject/Website/app/views/viewallorders.scala.html:28: not found: value product
+Read from stdout: <td>@product.price</td>
+        <td>@product.price</td>
+Read from stdout: ^
+             ^
+Read from stdout: /Users/rsp04/Websites/thursday/BSkyBProject/Website/app/views/viewallorders.scala.html:29: not found: value product
+/Users/rsp04/Websites/thursday/BSkyBProject/Website/app/views/viewallorders.scala.html:29: not found: value product
+Read from stdout: <td>@product.order_status_id</td>
+        <td>@product.order_status_id</td>
+Read from stdout: ^
+             ^
+Read from stdout: four errors found
+four errors found
+Compilation failed (CompilerInterface)
+Total time: 1 s, completed Oct 1, 2015 11:03:34 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/rsp04/Websites/thursday/BSkyBProject/Website/}myProject/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@6e50523e, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set(/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/viewallorders.template.scala)
+	modified: Set(/Users/rsp04/Websites/thursday/BSkyBProject/Website/app/controllers/Application.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/rsp04/Websites/thursday/BSkyBProject/Website/app/controllers/Application.java, /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/viewallorders.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/rsp04/Websites/thursday/BSkyBProject/Website/app/controllers/Application.java, /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/viewallorders.template.scala)
+
+Read from stdout: Compiling 1 Scala source and 1 Java source to /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes...
+Compiling 1 Scala source and 1 Java source to /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler c527bf9, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.scala-lang/scala-library/2.11.6/jars/scala-library.jar
+	-classpath
+	/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.typesafe.play/play-enhancer/1.1.0/jars/play-enhancer.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar:/Users/rsp04/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-ebean_2.11/jars/play-ebean_2.11-1.0.0.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.11/jars/play-java-jdbc_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.javassist/javassist/3.19.0-GA/bundles/javassist.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.typesafe/config/1.3.0/bundles/config.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/joda-time/joda-time/2.8.1/jars/joda-time.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.joda/joda-convert/1.7/jars/joda-convert.jar:/Users/rsp04/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.6.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.core/jackson-core/2.5.4/bundles/jackson-core.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.core/jackson-annotations/2.5.4/bundles/jackson-annotations.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.core/jackson-databind/2.5.4/bundles/jackson-databind.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.5.4/bundles/jackson-datatype-jdk8.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.5.4/bundles/jackson-datatype-jsr310.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.slf4j/slf4j-api/1.7.12/jars/slf4j-api.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.slf4j/jul-to-slf4j/1.7.12/jars/jul-to-slf4j.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.slf4j/jcl-over-slf4j/1.7.12/jars/jcl-over-slf4j.jar:/Users/rsp04/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/ch.qos.logback/logback-core/1.1.3/jars/logback-core.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/ch.qos.logback/logback-classic/1.1.3/jars/logback-classic.jar:/Users/rsp04/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.13.jar:/Users/rsp04/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.13.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/commons-codec/commons-codec/1.10/jars/commons-codec.jar:/Users/rsp04/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/rsp04/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/rsp04/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.inject/guice/4.0/jars/guice.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/javax.inject/javax.inject/1/jars/javax.inject.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.jolbox/bonecp/0.8.0.RELEASE/bundles/bonecp.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.zaxxer/HikariCP/2.3.7/bundles/HikariCP.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.h2database/h2/1.4.187/jars/h2.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/tyrex/tyrex/1.0.1/jars/tyrex.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.scala-lang.modules/scala-java8-compat_2.11/0.3.0/bundles/scala-java8-compat_2.11.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.yaml/snakeyaml/1.15/bundles/snakeyaml.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.hibernate/hibernate-validator/5.0.3.Final/jars/hibernate-validator.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/javax.validation/validation-api/1.1.0.Final/jars/validation-api.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml/classmate/1.0.0/bundles/classmate.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.jboss.logging/jboss-logging/3.2.1.Final/jars/jboss-logging.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.springframework/spring-context/4.1.6.RELEASE/jars/spring-context.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.springframework/spring-core/4.1.6.RELEASE/jars/spring-core.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.springframework/spring-beans/4.1.6.RELEASE/jars/spring-beans.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.reflections/reflections/0.9.9/jars/reflections.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.guava/guava/18.0/bundles/guava.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.code.findbugs/annotations/2.0.1/jars/annotations.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/net.jodah/typetools/0.4.1/bundles/typetools.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.code.findbugs/jsr305/2.0.3/jars/jsr305.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.apache.tomcat/tomcat-servlet-api/8.0.21/jars/tomcat-servlet-api.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.11/jars/play-jdbc-evolutions_2.11-2.4.0.jar:/Users/rsp04/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-4.6.2.jar:/Users/rsp04/.ivy2/cache/javax.persistence/persistence-api/jars/persistence-api-1.0.jar:/Users/rsp04/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-4.5.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/io.netty/netty/bundles/netty-3.10.4.Final.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.typesafe.netty/netty-http-pipelining/1.1.4/jars/netty-http-pipelining.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-java-ws_2.11/jars/play-java-ws_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.ning/async-http-client/1.9.21/jars/async-http-client.jar:/Users/rsp04/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/rsp04/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/rsp04/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/rsp04/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.18.jar
+Read from stdout: /Users/rsp04/Websites/thursday/BSkyBProject/Website/app/views/viewallorders.scala.html:26: not found: value product
+/Users/rsp04/Websites/thursday/BSkyBProject/Website/app/views/viewallorders.scala.html:26: not found: value product
+Read from stdout: <td>@product.customer_id</td>
+        <td>@product.customer_id</td>
+Read from stdout: ^
+             ^
+Read from stdout: /Users/rsp04/Websites/thursday/BSkyBProject/Website/app/views/viewallorders.scala.html:27: not found: value product
+/Users/rsp04/Websites/thursday/BSkyBProject/Website/app/views/viewallorders.scala.html:27: not found: value product
+Read from stdout: <td>@product.date</td>
+        <td>@product.date</td>
+Read from stdout: ^
+             ^
+Read from stdout: /Users/rsp04/Websites/thursday/BSkyBProject/Website/app/views/viewallorders.scala.html:28: not found: value product
+/Users/rsp04/Websites/thursday/BSkyBProject/Website/app/views/viewallorders.scala.html:28: not found: value product
+Read from stdout: <td>@product.price</td>
+        <td>@product.price</td>
+Read from stdout: ^
+             ^
+Read from stdout: /Users/rsp04/Websites/thursday/BSkyBProject/Website/app/views/viewallorders.scala.html:29: not found: value product
+/Users/rsp04/Websites/thursday/BSkyBProject/Website/app/views/viewallorders.scala.html:29: not found: value product
+Read from stdout: <td>@product.order_status_id</td>
+        <td>@product.order_status_id</td>
+Read from stdout: ^
+             ^
+Read from stdout: four errors found
+four errors found
+Compilation failed (CompilerInterface)
+Total time: 1 s, completed Oct 1, 2015 11:03:36 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/rsp04/Websites/thursday/BSkyBProject/Website/}myProject/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@2fbfe3d5, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set(/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/viewallorders.template.scala)
+	modified: Set(/Users/rsp04/Websites/thursday/BSkyBProject/Website/app/controllers/Application.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/rsp04/Websites/thursday/BSkyBProject/Website/app/controllers/Application.java, /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/viewallorders.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/rsp04/Websites/thursday/BSkyBProject/Website/app/controllers/Application.java, /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/viewallorders.template.scala)
+
+Read from stdout: Compiling 1 Scala source and 1 Java source to /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes...
+Compiling 1 Scala source and 1 Java source to /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 23c181, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.scala-lang/scala-library/2.11.6/jars/scala-library.jar
+	-classpath
+	/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.typesafe.play/play-enhancer/1.1.0/jars/play-enhancer.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar:/Users/rsp04/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-ebean_2.11/jars/play-ebean_2.11-1.0.0.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.11/jars/play-java-jdbc_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.javassist/javassist/3.19.0-GA/bundles/javassist.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.typesafe/config/1.3.0/bundles/config.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/joda-time/joda-time/2.8.1/jars/joda-time.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.joda/joda-convert/1.7/jars/joda-convert.jar:/Users/rsp04/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.6.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.core/jackson-core/2.5.4/bundles/jackson-core.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.core/jackson-annotations/2.5.4/bundles/jackson-annotations.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.core/jackson-databind/2.5.4/bundles/jackson-databind.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.5.4/bundles/jackson-datatype-jdk8.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.5.4/bundles/jackson-datatype-jsr310.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.slf4j/slf4j-api/1.7.12/jars/slf4j-api.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.slf4j/jul-to-slf4j/1.7.12/jars/jul-to-slf4j.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.slf4j/jcl-over-slf4j/1.7.12/jars/jcl-over-slf4j.jar:/Users/rsp04/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/ch.qos.logback/logback-core/1.1.3/jars/logback-core.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/ch.qos.logback/logback-classic/1.1.3/jars/logback-classic.jar:/Users/rsp04/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.13.jar:/Users/rsp04/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.13.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/commons-codec/commons-codec/1.10/jars/commons-codec.jar:/Users/rsp04/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/rsp04/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/rsp04/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.inject/guice/4.0/jars/guice.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/javax.inject/javax.inject/1/jars/javax.inject.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.jolbox/bonecp/0.8.0.RELEASE/bundles/bonecp.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.zaxxer/HikariCP/2.3.7/bundles/HikariCP.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.h2database/h2/1.4.187/jars/h2.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/tyrex/tyrex/1.0.1/jars/tyrex.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.scala-lang.modules/scala-java8-compat_2.11/0.3.0/bundles/scala-java8-compat_2.11.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.yaml/snakeyaml/1.15/bundles/snakeyaml.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.hibernate/hibernate-validator/5.0.3.Final/jars/hibernate-validator.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/javax.validation/validation-api/1.1.0.Final/jars/validation-api.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml/classmate/1.0.0/bundles/classmate.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.jboss.logging/jboss-logging/3.2.1.Final/jars/jboss-logging.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.springframework/spring-context/4.1.6.RELEASE/jars/spring-context.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.springframework/spring-core/4.1.6.RELEASE/jars/spring-core.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.springframework/spring-beans/4.1.6.RELEASE/jars/spring-beans.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.reflections/reflections/0.9.9/jars/reflections.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.guava/guava/18.0/bundles/guava.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.code.findbugs/annotations/2.0.1/jars/annotations.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/net.jodah/typetools/0.4.1/bundles/typetools.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.code.findbugs/jsr305/2.0.3/jars/jsr305.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.apache.tomcat/tomcat-servlet-api/8.0.21/jars/tomcat-servlet-api.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.11/jars/play-jdbc-evolutions_2.11-2.4.0.jar:/Users/rsp04/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-4.6.2.jar:/Users/rsp04/.ivy2/cache/javax.persistence/persistence-api/jars/persistence-api-1.0.jar:/Users/rsp04/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-4.5.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/io.netty/netty/bundles/netty-3.10.4.Final.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.typesafe.netty/netty-http-pipelining/1.1.4/jars/netty-http-pipelining.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-java-ws_2.11/jars/play-java-ws_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.ning/async-http-client/1.9.21/jars/async-http-client.jar:/Users/rsp04/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/rsp04/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/rsp04/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/rsp04/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.18.jar
+Scala compilation took 0.786353643 s
+Attempting to call com.sun.tools.javac.api.JavacTool@cabb616 directly...
+Java compilation took 0.493175986 s
+Java analysis took 0.102778899 s
+Java compile + analysis took 0.603903855 s
+Invalidating /Users/rsp04/Websites/thursday/BSkyBProject/Website/app/controllers/Application.java...
+Invalidating (transitively) by inheritance from /Users/rsp04/Websites/thursday/BSkyBProject/Website/app/controllers/Application.java...
+Initial set of included nodes: Set(/Users/rsp04/Websites/thursday/BSkyBProject/Website/app/controllers/Application.java)
+Invalidated by transitive inheritance dependency: Set(/Users/rsp04/Websites/thursday/BSkyBProject/Website/app/controllers/Application.java)
+The /Users/rsp04/Websites/thursday/BSkyBProject/Website/app/controllers/Application.java source file has the following regular definitions changed:
+	viewallorders.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: /Users/rsp04/Websites/thursday/BSkyBProject/Website/app/controllers/Application.java
+None of the modified names appears in /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/routes/main/router/Routes.scala. This dependency is not being considered for invalidation.
+Invalidating /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/viewallorders.template.scala...
+Invalidating (transitively) by inheritance from /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/viewallorders.template.scala...
+Initial set of included nodes: Set(/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/viewallorders.template.scala)
+Invalidated by transitive inheritance dependency: Set(/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/viewallorders.template.scala)
+The /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/viewallorders.template.scala source file has the following regular definitions changed:
+	notify, format, wait, $asInstanceOf, productArity, equals, asInstanceOf, f, synchronized, _display_, $isInstanceOf, viewallorders_Scope0, ref, canEqual, productPrefix, notifyAll, readResolve, isInstanceOf, <init>, apply, ==, clone, viewallorders, copy, toString, !=, getClass, copy$default$1, render, ne, eq, productIterator, ##, finalize, productElement, hashCode.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: /Users/rsp04/Websites/thursday/BSkyBProject/Website/app/controllers/Application.java
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+ebean-enhance> transform> pkg: models
+ebean-enhance> cls: models/Address  msg: no detection so enhancing entity
+ebean-enhance> cls: play/db/ebean/Model  msg: read ClassMeta
+ebean-enhance> cls: com/avaje/ebean/Model  msg: read ClassMeta
+ebean-enhance> cls: models/Address  msg: Skip intercepting static field find
+ebean-enhance> cls: models/Address  msg: Found ebean marker field _EBEAN_MARKER models.Address
+ebean-enhance> cls: models/Address  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/Address  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/Address  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/Address  msg: skipping... no enhancement required
+ebean-enhance> cls: models/Customer  msg: no detection so enhancing entity
+ebean-enhance> cls: models/Customer  msg: Skip intercepting static field find
+ebean-enhance> cls: models/Customer  msg: Found ebean marker field _EBEAN_MARKER models.Customer
+ebean-enhance> cls: models/Customer  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/Customer  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/Customer  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/Customer  msg: skipping... no enhancement required
+ebean-enhance> cls: models/CustomerLoyalty  msg: no detection so enhancing entity
+ebean-enhance> cls: models/CustomerLoyalty  msg: Skip intercepting static field find
+ebean-enhance> cls: models/CustomerLoyalty  msg: Found ebean marker field _EBEAN_MARKER models.CustomerLoyalty
+ebean-enhance> cls: models/CustomerLoyalty  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/CustomerLoyalty  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/CustomerLoyalty  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/CustomerLoyalty  msg: skipping... no enhancement required
+ebean-enhance> cls: models/ItemCategory  msg: no detection so enhancing entity
+ebean-enhance> cls: models/ItemCategory  msg: Skip intercepting static field find
+ebean-enhance> cls: models/ItemCategory  msg: Found ebean marker field _EBEAN_MARKER models.ItemCategory
+ebean-enhance> cls: models/ItemCategory  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/ItemCategory  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/ItemCategory  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/ItemCategory  msg: skipping... no enhancement required
+ebean-enhance> cls: models/LoyaltyPoints  msg: no detection so enhancing entity
+ebean-enhance> cls: models/LoyaltyPoints  msg: Skip intercepting static field find
+ebean-enhance> cls: models/LoyaltyPoints  msg: Found ebean marker field _EBEAN_MARKER models.LoyaltyPoints
+ebean-enhance> cls: models/LoyaltyPoints  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/LoyaltyPoints  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/LoyaltyPoints  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/LoyaltyPoints  msg: skipping... no enhancement required
+ebean-enhance> cls: models/OrderedItems  msg: no detection so enhancing entity
+ebean-enhance> cls: models/OrderedItems  msg: Skip intercepting static field find
+ebean-enhance> cls: models/OrderedItems  msg: Found ebean marker field _EBEAN_MARKER models.OrderedItems
+ebean-enhance> cls: models/OrderedItems  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/OrderedItems  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/OrderedItems  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/OrderedItems  msg: skipping... no enhancement required
+ebean-enhance> cls: models/Orders  msg: no detection so enhancing entity
+ebean-enhance> cls: models/Orders  msg: Skip intercepting static field find
+ebean-enhance> cls: models/Orders  msg: Found ebean marker field _EBEAN_MARKER models.Orders
+ebean-enhance> cls: models/Orders  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/Orders  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/Orders  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/Orders  msg: skipping... no enhancement required
+ebean-enhance> cls: models/OrderStatus  msg: no detection so enhancing entity
+ebean-enhance> cls: models/OrderStatus  msg: Skip intercepting static field find
+ebean-enhance> cls: models/OrderStatus  msg: Found ebean marker field _EBEAN_MARKER models.OrderStatus
+ebean-enhance> cls: models/OrderStatus  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/OrderStatus  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/OrderStatus  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/OrderStatus  msg: skipping... no enhancement required
+ebean-enhance> cls: models/Stock  msg: no detection so enhancing entity
+ebean-enhance> cls: models/Stock  msg: Skip intercepting static field find
+ebean-enhance> cls: models/Stock  msg: Found ebean marker field _EBEAN_MARKER models.Stock
+ebean-enhance> cls: models/Stock  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/Stock  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/Stock  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/Stock  msg: skipping... no enhancement required
+ebean-enhance> cls: models/Users  msg: no detection so enhancing entity
+ebean-enhance> cls: models/Users  msg: Skip intercepting static field find
+ebean-enhance> cls: models/Users  msg: Found ebean marker field _EBEAN_MARKER models.Users
+ebean-enhance> cls: models/Users  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/Users  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/Users  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/Users  msg: skipping... no enhancement required
+Copy resource mappings: 
+	(/Users/rsp04/Websites/thursday/BSkyBProject/Website/conf/application.conf,/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes/application.conf)
+	(/Users/rsp04/Websites/thursday/BSkyBProject/Website/conf/evolutions,/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes/evolutions)
+	(/Users/rsp04/Websites/thursday/BSkyBProject/Website/conf/logback.xml,/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes/logback.xml)
+	(/Users/rsp04/Websites/thursday/BSkyBProject/Website/conf/routes,/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes/routes)
+	(/Users/rsp04/Websites/thursday/BSkyBProject/Website/conf/evolutions/default,/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes/evolutions/default)
+	(/Users/rsp04/Websites/thursday/BSkyBProject/Website/conf/evolutions/default/1.sql,/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes/evolutions/default/1.sql)
+Total time: 2 s, completed Oct 1, 2015 11:08:25 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/rsp04/Websites/thursday/BSkyBProject/Website/}myProject/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@63ad6d05, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/routes/main/router/RoutesPrefix.scala, /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/routes/main/router/Routes.scala, /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/routes/main/controllers/routes.java, /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala, /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/routes/main/router/RoutesPrefix.scala, /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/routes/main/router/Routes.scala, /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/routes/main/controllers/routes.java, /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala, /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/routes/main/router/RoutesPrefix.scala, /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/routes/main/router/Routes.scala, /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/routes/main/controllers/routes.java, /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala, /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala)
+
+Read from stdout: Compiling 4 Scala sources and 1 Java source to /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes...
+Compiling 4 Scala sources and 1 Java source to /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler e47b557, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.scala-lang/scala-library/2.11.6/jars/scala-library.jar
+	-classpath
+	/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.typesafe.play/play-enhancer/1.1.0/jars/play-enhancer.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar:/Users/rsp04/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-ebean_2.11/jars/play-ebean_2.11-1.0.0.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.11/jars/play-java-jdbc_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.javassist/javassist/3.19.0-GA/bundles/javassist.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.typesafe/config/1.3.0/bundles/config.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/joda-time/joda-time/2.8.1/jars/joda-time.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.joda/joda-convert/1.7/jars/joda-convert.jar:/Users/rsp04/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.6.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.core/jackson-core/2.5.4/bundles/jackson-core.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.core/jackson-annotations/2.5.4/bundles/jackson-annotations.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.core/jackson-databind/2.5.4/bundles/jackson-databind.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.5.4/bundles/jackson-datatype-jdk8.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.5.4/bundles/jackson-datatype-jsr310.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.slf4j/slf4j-api/1.7.12/jars/slf4j-api.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.slf4j/jul-to-slf4j/1.7.12/jars/jul-to-slf4j.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.slf4j/jcl-over-slf4j/1.7.12/jars/jcl-over-slf4j.jar:/Users/rsp04/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/ch.qos.logback/logback-core/1.1.3/jars/logback-core.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/ch.qos.logback/logback-classic/1.1.3/jars/logback-classic.jar:/Users/rsp04/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.13.jar:/Users/rsp04/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.13.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/commons-codec/commons-codec/1.10/jars/commons-codec.jar:/Users/rsp04/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/rsp04/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/rsp04/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.inject/guice/4.0/jars/guice.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/javax.inject/javax.inject/1/jars/javax.inject.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.jolbox/bonecp/0.8.0.RELEASE/bundles/bonecp.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.zaxxer/HikariCP/2.3.7/bundles/HikariCP.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.h2database/h2/1.4.187/jars/h2.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/tyrex/tyrex/1.0.1/jars/tyrex.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.scala-lang.modules/scala-java8-compat_2.11/0.3.0/bundles/scala-java8-compat_2.11.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.yaml/snakeyaml/1.15/bundles/snakeyaml.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.hibernate/hibernate-validator/5.0.3.Final/jars/hibernate-validator.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/javax.validation/validation-api/1.1.0.Final/jars/validation-api.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml/classmate/1.0.0/bundles/classmate.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.jboss.logging/jboss-logging/3.2.1.Final/jars/jboss-logging.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.springframework/spring-context/4.1.6.RELEASE/jars/spring-context.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.springframework/spring-core/4.1.6.RELEASE/jars/spring-core.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.springframework/spring-beans/4.1.6.RELEASE/jars/spring-beans.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.reflections/reflections/0.9.9/jars/reflections.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.guava/guava/18.0/bundles/guava.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.code.findbugs/annotations/2.0.1/jars/annotations.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/net.jodah/typetools/0.4.1/bundles/typetools.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.code.findbugs/jsr305/2.0.3/jars/jsr305.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.apache.tomcat/tomcat-servlet-api/8.0.21/jars/tomcat-servlet-api.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.11/jars/play-jdbc-evolutions_2.11-2.4.0.jar:/Users/rsp04/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-4.6.2.jar:/Users/rsp04/.ivy2/cache/javax.persistence/persistence-api/jars/persistence-api-1.0.jar:/Users/rsp04/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-4.5.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/io.netty/netty/bundles/netty-3.10.4.Final.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.typesafe.netty/netty-http-pipelining/1.1.4/jars/netty-http-pipelining.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-java-ws_2.11/jars/play-java-ws_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.ning/async-http-client/1.9.21/jars/async-http-client.jar:/Users/rsp04/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/rsp04/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/rsp04/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/rsp04/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.18.jar
+Scala compilation took 3.099595777 s
+Attempting to call com.sun.tools.javac.api.JavacTool@773973bd directly...
+Java compilation took 0.048774964 s
+Java analysis took 0.009454698 s
+Java compile + analysis took 0.061702037 s
+Invalidating /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala...
+Invalidating (transitively) by inheritance from /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala...
+Initial set of included nodes: Set(/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala)
+Invalidated by transitive inheritance dependency: Set(/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala)
+The /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala source file has the following regular definitions changed:
+	viewallorders.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/routes/main/controllers/routes.java
+Invalidating /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala...
+Invalidating (transitively) by inheritance from /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala...
+Initial set of included nodes: Set(/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala)
+Invalidated by transitive inheritance dependency: Set(/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala)
+The /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala source file has the following regular definitions changed:
+	viewallorders.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/routes/main/controllers/routes.java
+None of the modified names appears in /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/checkout.template.scala. This dependency is not being considered for invalidation.
+None of the modified names appears in /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/tshirts.template.scala. This dependency is not being considered for invalidation.
+None of the modified names appears in /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/phones.template.scala. This dependency is not being considered for invalidation.
+None of the modified names appears in /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/create_item.template.scala. This dependency is not being considered for invalidation.
+None of the modified names appears in /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/gnomes.template.scala. This dependency is not being considered for invalidation.
+None of the modified names appears in /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/main.template.scala. This dependency is not being considered for invalidation.
+Name hashing optimization doesn't apply to non-Scala dependency: /Users/rsp04/Websites/thursday/BSkyBProject/Website/app/controllers/Application.java
+None of the modified names appears in /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/home.template.scala. This dependency is not being considered for invalidation.
+New invalidations:
+	Set(/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/routes/main/controllers/routes.java, /Users/rsp04/Websites/thursday/BSkyBProject/Website/app/controllers/Application.java)
+Initial set of included nodes: Set(/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/routes/main/controllers/routes.java, /Users/rsp04/Websites/thursday/BSkyBProject/Website/app/controllers/Application.java)
+Including /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/checkout.template.scala by /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/routes/main/controllers/routes.java
+Including /Users/rsp04/Websites/thursday/BSkyBProject/Website/app/controllers/Application.java by /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/checkout.template.scala
+Including /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/routes/main/router/Routes.scala by /Users/rsp04/Websites/thursday/BSkyBProject/Website/app/controllers/Application.java
+Including /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/tshirts.template.scala by /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/routes/main/controllers/routes.java
+Including /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/phones.template.scala by /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/routes/main/controllers/routes.java
+Including /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/create_item.template.scala by /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/routes/main/controllers/routes.java
+Including /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/gnomes.template.scala by /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/routes/main/controllers/routes.java
+Including /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/main.template.scala by /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/routes/main/controllers/routes.java
+Including /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/item.template.scala by /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/main.template.scala
+Including /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/index.template.scala by /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/main.template.scala
+Including /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/backofhouse.template.scala by /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/main.template.scala
+Including /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/allstock.template.scala by /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/main.template.scala
+Including /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/faq.template.scala by /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/main.template.scala
+Including /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/viewallorders.template.scala by /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/main.template.scala
+Including /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/shoppingBag.template.scala by /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/main.template.scala
+Including /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/products.template.scala by /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/main.template.scala
+Including /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/home.template.scala by /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/main.template.scala
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set(/Users/rsp04/Websites/thursday/BSkyBProject/Website/app/controllers/Application.java)
+Read from stdout: Compiling 2 Java sources to /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes...
+Compiling 2 Java sources to /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@773973bd directly...
+Java compilation took 0.12951674 s
+Java analysis took 0.053059872 s
+Java compile + analysis took 0.187666223 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+ebean-enhance> transform> pkg: models
+ebean-enhance> cls: models/Address  msg: no detection so enhancing entity
+ebean-enhance> cls: play/db/ebean/Model  msg: read ClassMeta
+ebean-enhance> cls: com/avaje/ebean/Model  msg: read ClassMeta
+ebean-enhance> cls: models/Address  msg: Skip intercepting static field find
+ebean-enhance> cls: models/Address  msg: Found ebean marker field _EBEAN_MARKER models.Address
+ebean-enhance> cls: models/Address  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/Address  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/Address  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/Address  msg: skipping... no enhancement required
+ebean-enhance> cls: models/Customer  msg: no detection so enhancing entity
+ebean-enhance> cls: models/Customer  msg: Skip intercepting static field find
+ebean-enhance> cls: models/Customer  msg: Found ebean marker field _EBEAN_MARKER models.Customer
+ebean-enhance> cls: models/Customer  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/Customer  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/Customer  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/Customer  msg: skipping... no enhancement required
+ebean-enhance> cls: models/CustomerLoyalty  msg: no detection so enhancing entity
+ebean-enhance> cls: models/CustomerLoyalty  msg: Skip intercepting static field find
+ebean-enhance> cls: models/CustomerLoyalty  msg: Found ebean marker field _EBEAN_MARKER models.CustomerLoyalty
+ebean-enhance> cls: models/CustomerLoyalty  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/CustomerLoyalty  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/CustomerLoyalty  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/CustomerLoyalty  msg: skipping... no enhancement required
+ebean-enhance> cls: models/ItemCategory  msg: no detection so enhancing entity
+ebean-enhance> cls: models/ItemCategory  msg: Skip intercepting static field find
+ebean-enhance> cls: models/ItemCategory  msg: Found ebean marker field _EBEAN_MARKER models.ItemCategory
+ebean-enhance> cls: models/ItemCategory  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/ItemCategory  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/ItemCategory  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/ItemCategory  msg: skipping... no enhancement required
+ebean-enhance> cls: models/LoyaltyPoints  msg: no detection so enhancing entity
+ebean-enhance> cls: models/LoyaltyPoints  msg: Skip intercepting static field find
+ebean-enhance> cls: models/LoyaltyPoints  msg: Found ebean marker field _EBEAN_MARKER models.LoyaltyPoints
+ebean-enhance> cls: models/LoyaltyPoints  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/LoyaltyPoints  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/LoyaltyPoints  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/LoyaltyPoints  msg: skipping... no enhancement required
+ebean-enhance> cls: models/OrderedItems  msg: no detection so enhancing entity
+ebean-enhance> cls: models/OrderedItems  msg: Skip intercepting static field find
+ebean-enhance> cls: models/OrderedItems  msg: Found ebean marker field _EBEAN_MARKER models.OrderedItems
+ebean-enhance> cls: models/OrderedItems  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/OrderedItems  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/OrderedItems  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/OrderedItems  msg: skipping... no enhancement required
+ebean-enhance> cls: models/Orders  msg: no detection so enhancing entity
+ebean-enhance> cls: models/Orders  msg: Skip intercepting static field find
+ebean-enhance> cls: models/Orders  msg: Found ebean marker field _EBEAN_MARKER models.Orders
+ebean-enhance> cls: models/Orders  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/Orders  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/Orders  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/Orders  msg: skipping... no enhancement required
+ebean-enhance> cls: models/OrderStatus  msg: no detection so enhancing entity
+ebean-enhance> cls: models/OrderStatus  msg: Skip intercepting static field find
+ebean-enhance> cls: models/OrderStatus  msg: Found ebean marker field _EBEAN_MARKER models.OrderStatus
+ebean-enhance> cls: models/OrderStatus  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/OrderStatus  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/OrderStatus  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/OrderStatus  msg: skipping... no enhancement required
+ebean-enhance> cls: models/Stock  msg: no detection so enhancing entity
+ebean-enhance> cls: models/Stock  msg: Skip intercepting static field find
+ebean-enhance> cls: models/Stock  msg: Found ebean marker field _EBEAN_MARKER models.Stock
+ebean-enhance> cls: models/Stock  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/Stock  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/Stock  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/Stock  msg: skipping... no enhancement required
+ebean-enhance> cls: models/Users  msg: no detection so enhancing entity
+ebean-enhance> cls: models/Users  msg: Skip intercepting static field find
+ebean-enhance> cls: models/Users  msg: Found ebean marker field _EBEAN_MARKER models.Users
+ebean-enhance> cls: models/Users  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/Users  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/Users  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/Users  msg: skipping... no enhancement required
+Copy resource mappings: 
+	(/Users/rsp04/Websites/thursday/BSkyBProject/Website/conf/application.conf,/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes/application.conf)
+	(/Users/rsp04/Websites/thursday/BSkyBProject/Website/conf/evolutions,/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes/evolutions)
+	(/Users/rsp04/Websites/thursday/BSkyBProject/Website/conf/logback.xml,/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes/logback.xml)
+	(/Users/rsp04/Websites/thursday/BSkyBProject/Website/conf/routes,/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes/routes)
+	(/Users/rsp04/Websites/thursday/BSkyBProject/Website/conf/evolutions/default,/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes/evolutions/default)
+	(/Users/rsp04/Websites/thursday/BSkyBProject/Website/conf/evolutions/default/1.sql,/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes/evolutions/default/1.sql)
+Total time: 5 s, completed Oct 1, 2015 11:09:58 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/rsp04/Websites/thursday/BSkyBProject/Website/}myProject/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@5c96777d, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/viewallorders.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/viewallorders.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/viewallorders.template.scala)
+
+Read from stdout: Compiling 1 Scala source to /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes...
+Compiling 1 Scala source to /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 23626f66, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.scala-lang/scala-library/2.11.6/jars/scala-library.jar
+	-classpath
+	/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.typesafe.play/play-enhancer/1.1.0/jars/play-enhancer.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar:/Users/rsp04/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-ebean_2.11/jars/play-ebean_2.11-1.0.0.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.11/jars/play-java-jdbc_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.javassist/javassist/3.19.0-GA/bundles/javassist.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.typesafe/config/1.3.0/bundles/config.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/joda-time/joda-time/2.8.1/jars/joda-time.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.joda/joda-convert/1.7/jars/joda-convert.jar:/Users/rsp04/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.6.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.core/jackson-core/2.5.4/bundles/jackson-core.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.core/jackson-annotations/2.5.4/bundles/jackson-annotations.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.core/jackson-databind/2.5.4/bundles/jackson-databind.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.5.4/bundles/jackson-datatype-jdk8.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.5.4/bundles/jackson-datatype-jsr310.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.slf4j/slf4j-api/1.7.12/jars/slf4j-api.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.slf4j/jul-to-slf4j/1.7.12/jars/jul-to-slf4j.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.slf4j/jcl-over-slf4j/1.7.12/jars/jcl-over-slf4j.jar:/Users/rsp04/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/ch.qos.logback/logback-core/1.1.3/jars/logback-core.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/ch.qos.logback/logback-classic/1.1.3/jars/logback-classic.jar:/Users/rsp04/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.13.jar:/Users/rsp04/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.13.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/commons-codec/commons-codec/1.10/jars/commons-codec.jar:/Users/rsp04/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/rsp04/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/rsp04/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.inject/guice/4.0/jars/guice.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/javax.inject/javax.inject/1/jars/javax.inject.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.jolbox/bonecp/0.8.0.RELEASE/bundles/bonecp.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.zaxxer/HikariCP/2.3.7/bundles/HikariCP.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.h2database/h2/1.4.187/jars/h2.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/tyrex/tyrex/1.0.1/jars/tyrex.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.scala-lang.modules/scala-java8-compat_2.11/0.3.0/bundles/scala-java8-compat_2.11.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.yaml/snakeyaml/1.15/bundles/snakeyaml.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.hibernate/hibernate-validator/5.0.3.Final/jars/hibernate-validator.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/javax.validation/validation-api/1.1.0.Final/jars/validation-api.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml/classmate/1.0.0/bundles/classmate.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.jboss.logging/jboss-logging/3.2.1.Final/jars/jboss-logging.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.springframework/spring-context/4.1.6.RELEASE/jars/spring-context.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.springframework/spring-core/4.1.6.RELEASE/jars/spring-core.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.springframework/spring-beans/4.1.6.RELEASE/jars/spring-beans.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.reflections/reflections/0.9.9/jars/reflections.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.guava/guava/18.0/bundles/guava.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.code.findbugs/annotations/2.0.1/jars/annotations.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/net.jodah/typetools/0.4.1/bundles/typetools.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.code.findbugs/jsr305/2.0.3/jars/jsr305.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.apache.tomcat/tomcat-servlet-api/8.0.21/jars/tomcat-servlet-api.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.11/jars/play-jdbc-evolutions_2.11-2.4.0.jar:/Users/rsp04/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-4.6.2.jar:/Users/rsp04/.ivy2/cache/javax.persistence/persistence-api/jars/persistence-api-1.0.jar:/Users/rsp04/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-4.5.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/io.netty/netty/bundles/netty-3.10.4.Final.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.typesafe.netty/netty-http-pipelining/1.1.4/jars/netty-http-pipelining.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-java-ws_2.11/jars/play-java-ws_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.ning/async-http-client/1.9.21/jars/async-http-client.jar:/Users/rsp04/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/rsp04/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/rsp04/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/rsp04/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.18.jar
+Read from stdout: /Users/rsp04/Websites/thursday/BSkyBProject/Website/app/views/viewallorders.scala.html:30: illegal start of simple expression
+/Users/rsp04/Websites/thursday/BSkyBProject/Website/app/views/viewallorders.scala.html:30: illegal start of simple expression
+Read from stdout: @if(@order.order_status_id == 1) {
+        @if(@order.order_status_id == 1) {
+Read from stdout: ^
+            ^
+Read from stdout: /Users/rsp04/Websites/thursday/BSkyBProject/Website/app/views/viewallorders.scala.html:44: ')' expected but '}' found.
+/Users/rsp04/Websites/thursday/BSkyBProject/Website/app/views/viewallorders.scala.html:44: ')' expected but '}' found.
+Read from stdout: </table>
+</table>
+Read from stdout: ^
+        ^
+Read from stdout: two errors found
+two errors found
+Compilation failed (CompilerInterface)
+Total time: 0 s, completed Oct 1, 2015 11:23:51 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/rsp04/Websites/thursday/BSkyBProject/Website/}myProject/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@3f701680, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/viewallorders.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/viewallorders.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/viewallorders.template.scala)
+
+Read from stdout: Compiling 1 Scala source to /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes...
+Compiling 1 Scala source to /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 159d0145, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.scala-lang/scala-library/2.11.6/jars/scala-library.jar
+	-classpath
+	/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.typesafe.play/play-enhancer/1.1.0/jars/play-enhancer.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar:/Users/rsp04/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-ebean_2.11/jars/play-ebean_2.11-1.0.0.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.11/jars/play-java-jdbc_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.javassist/javassist/3.19.0-GA/bundles/javassist.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.typesafe/config/1.3.0/bundles/config.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/joda-time/joda-time/2.8.1/jars/joda-time.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.joda/joda-convert/1.7/jars/joda-convert.jar:/Users/rsp04/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.6.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.core/jackson-core/2.5.4/bundles/jackson-core.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.core/jackson-annotations/2.5.4/bundles/jackson-annotations.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.core/jackson-databind/2.5.4/bundles/jackson-databind.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.5.4/bundles/jackson-datatype-jdk8.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.5.4/bundles/jackson-datatype-jsr310.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.slf4j/slf4j-api/1.7.12/jars/slf4j-api.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.slf4j/jul-to-slf4j/1.7.12/jars/jul-to-slf4j.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.slf4j/jcl-over-slf4j/1.7.12/jars/jcl-over-slf4j.jar:/Users/rsp04/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/ch.qos.logback/logback-core/1.1.3/jars/logback-core.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/ch.qos.logback/logback-classic/1.1.3/jars/logback-classic.jar:/Users/rsp04/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.13.jar:/Users/rsp04/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.13.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/commons-codec/commons-codec/1.10/jars/commons-codec.jar:/Users/rsp04/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/rsp04/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/rsp04/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.inject/guice/4.0/jars/guice.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/javax.inject/javax.inject/1/jars/javax.inject.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.jolbox/bonecp/0.8.0.RELEASE/bundles/bonecp.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.zaxxer/HikariCP/2.3.7/bundles/HikariCP.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.h2database/h2/1.4.187/jars/h2.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/tyrex/tyrex/1.0.1/jars/tyrex.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.scala-lang.modules/scala-java8-compat_2.11/0.3.0/bundles/scala-java8-compat_2.11.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.yaml/snakeyaml/1.15/bundles/snakeyaml.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.hibernate/hibernate-validator/5.0.3.Final/jars/hibernate-validator.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/javax.validation/validation-api/1.1.0.Final/jars/validation-api.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml/classmate/1.0.0/bundles/classmate.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.jboss.logging/jboss-logging/3.2.1.Final/jars/jboss-logging.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.springframework/spring-context/4.1.6.RELEASE/jars/spring-context.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.springframework/spring-core/4.1.6.RELEASE/jars/spring-core.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.springframework/spring-beans/4.1.6.RELEASE/jars/spring-beans.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.reflections/reflections/0.9.9/jars/reflections.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.guava/guava/18.0/bundles/guava.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.code.findbugs/annotations/2.0.1/jars/annotations.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/net.jodah/typetools/0.4.1/bundles/typetools.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.code.findbugs/jsr305/2.0.3/jars/jsr305.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.apache.tomcat/tomcat-servlet-api/8.0.21/jars/tomcat-servlet-api.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.11/jars/play-jdbc-evolutions_2.11-2.4.0.jar:/Users/rsp04/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-4.6.2.jar:/Users/rsp04/.ivy2/cache/javax.persistence/persistence-api/jars/persistence-api-1.0.jar:/Users/rsp04/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-4.5.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/io.netty/netty/bundles/netty-3.10.4.Final.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.typesafe.netty/netty-http-pipelining/1.1.4/jars/netty-http-pipelining.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-java-ws_2.11/jars/play-java-ws_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.ning/async-http-client/1.9.21/jars/async-http-client.jar:/Users/rsp04/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/rsp04/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/rsp04/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/rsp04/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.18.jar
+Read from stdout: /Users/rsp04/Websites/thursday/BSkyBProject/Website/app/views/viewallorders.scala.html:30: illegal start of simple expression
+/Users/rsp04/Websites/thursday/BSkyBProject/Website/app/views/viewallorders.scala.html:30: illegal start of simple expression
+Read from stdout: @if(@order.order_status_id == 1) {
+        @if(@order.order_status_id == 1) {
+Read from stdout: ^
+            ^
+Read from stdout: /Users/rsp04/Websites/thursday/BSkyBProject/Website/app/views/viewallorders.scala.html:44: ')' expected but '}' found.
+/Users/rsp04/Websites/thursday/BSkyBProject/Website/app/views/viewallorders.scala.html:44: ')' expected but '}' found.
+Read from stdout: </table>
+</table>
+Read from stdout: ^
+        ^
+Read from stdout: two errors found
+two errors found
+Compilation failed (CompilerInterface)
+Total time: 0 s, completed Oct 1, 2015 11:23:56 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/rsp04/Websites/thursday/BSkyBProject/Website/}myProject/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@7df7f90a, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/viewallorders.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/viewallorders.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/viewallorders.template.scala)
+
+Read from stdout: Compiling 1 Scala source to /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes...
+Compiling 1 Scala source to /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 63c3bd96, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.scala-lang/scala-library/2.11.6/jars/scala-library.jar
+	-classpath
+	/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.typesafe.play/play-enhancer/1.1.0/jars/play-enhancer.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar:/Users/rsp04/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-ebean_2.11/jars/play-ebean_2.11-1.0.0.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.11/jars/play-java-jdbc_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.javassist/javassist/3.19.0-GA/bundles/javassist.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.typesafe/config/1.3.0/bundles/config.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/joda-time/joda-time/2.8.1/jars/joda-time.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.joda/joda-convert/1.7/jars/joda-convert.jar:/Users/rsp04/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.6.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.core/jackson-core/2.5.4/bundles/jackson-core.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.core/jackson-annotations/2.5.4/bundles/jackson-annotations.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.core/jackson-databind/2.5.4/bundles/jackson-databind.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.5.4/bundles/jackson-datatype-jdk8.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.5.4/bundles/jackson-datatype-jsr310.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.slf4j/slf4j-api/1.7.12/jars/slf4j-api.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.slf4j/jul-to-slf4j/1.7.12/jars/jul-to-slf4j.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.slf4j/jcl-over-slf4j/1.7.12/jars/jcl-over-slf4j.jar:/Users/rsp04/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/ch.qos.logback/logback-core/1.1.3/jars/logback-core.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/ch.qos.logback/logback-classic/1.1.3/jars/logback-classic.jar:/Users/rsp04/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.13.jar:/Users/rsp04/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.13.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/commons-codec/commons-codec/1.10/jars/commons-codec.jar:/Users/rsp04/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/rsp04/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/rsp04/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.inject/guice/4.0/jars/guice.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/javax.inject/javax.inject/1/jars/javax.inject.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.jolbox/bonecp/0.8.0.RELEASE/bundles/bonecp.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.zaxxer/HikariCP/2.3.7/bundles/HikariCP.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.h2database/h2/1.4.187/jars/h2.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/tyrex/tyrex/1.0.1/jars/tyrex.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.scala-lang.modules/scala-java8-compat_2.11/0.3.0/bundles/scala-java8-compat_2.11.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.yaml/snakeyaml/1.15/bundles/snakeyaml.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.hibernate/hibernate-validator/5.0.3.Final/jars/hibernate-validator.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/javax.validation/validation-api/1.1.0.Final/jars/validation-api.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml/classmate/1.0.0/bundles/classmate.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.jboss.logging/jboss-logging/3.2.1.Final/jars/jboss-logging.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.springframework/spring-context/4.1.6.RELEASE/jars/spring-context.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.springframework/spring-core/4.1.6.RELEASE/jars/spring-core.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.springframework/spring-beans/4.1.6.RELEASE/jars/spring-beans.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.reflections/reflections/0.9.9/jars/reflections.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.guava/guava/18.0/bundles/guava.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.code.findbugs/annotations/2.0.1/jars/annotations.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/net.jodah/typetools/0.4.1/bundles/typetools.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.code.findbugs/jsr305/2.0.3/jars/jsr305.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.apache.tomcat/tomcat-servlet-api/8.0.21/jars/tomcat-servlet-api.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.11/jars/play-jdbc-evolutions_2.11-2.4.0.jar:/Users/rsp04/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-4.6.2.jar:/Users/rsp04/.ivy2/cache/javax.persistence/persistence-api/jars/persistence-api-1.0.jar:/Users/rsp04/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-4.5.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/io.netty/netty/bundles/netty-3.10.4.Final.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.typesafe.netty/netty-http-pipelining/1.1.4/jars/netty-http-pipelining.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-java-ws_2.11/jars/play-java-ws_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.ning/async-http-client/1.9.21/jars/async-http-client.jar:/Users/rsp04/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/rsp04/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/rsp04/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/rsp04/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.18.jar
+Read from stdout: /Users/rsp04/Websites/thursday/BSkyBProject/Website/app/views/viewallorders.scala.html:38: illegal start of simple expression
+/Users/rsp04/Websites/thursday/BSkyBProject/Website/app/views/viewallorders.scala.html:38: illegal start of simple expression
+Read from stdout: @else {
+        @else {
+Read from stdout: ^
+         ^
+Read from stdout: /Users/rsp04/Websites/thursday/BSkyBProject/Website/app/views/viewallorders.scala.html:44: ')' expected but '}' found.
+/Users/rsp04/Websites/thursday/BSkyBProject/Website/app/views/viewallorders.scala.html:44: ')' expected but '}' found.
+Read from stdout: </table>
+</table>
+Read from stdout: ^
+        ^
+Read from stdout: two errors found
+two errors found
+Compilation failed (CompilerInterface)
+Total time: 0 s, completed Oct 1, 2015 11:24:35 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/rsp04/Websites/thursday/BSkyBProject/Website/}myProject/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@37472360, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/viewallorders.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/viewallorders.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/viewallorders.template.scala)
+
+Read from stdout: Compiling 1 Scala source to /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes...
+Compiling 1 Scala source to /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 4d9bc9d7, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.scala-lang/scala-library/2.11.6/jars/scala-library.jar
+	-classpath
+	/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.typesafe.play/play-enhancer/1.1.0/jars/play-enhancer.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar:/Users/rsp04/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-ebean_2.11/jars/play-ebean_2.11-1.0.0.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.11/jars/play-java-jdbc_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.javassist/javassist/3.19.0-GA/bundles/javassist.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.typesafe/config/1.3.0/bundles/config.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/joda-time/joda-time/2.8.1/jars/joda-time.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.joda/joda-convert/1.7/jars/joda-convert.jar:/Users/rsp04/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.6.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.core/jackson-core/2.5.4/bundles/jackson-core.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.core/jackson-annotations/2.5.4/bundles/jackson-annotations.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.core/jackson-databind/2.5.4/bundles/jackson-databind.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.5.4/bundles/jackson-datatype-jdk8.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.5.4/bundles/jackson-datatype-jsr310.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.slf4j/slf4j-api/1.7.12/jars/slf4j-api.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.slf4j/jul-to-slf4j/1.7.12/jars/jul-to-slf4j.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.slf4j/jcl-over-slf4j/1.7.12/jars/jcl-over-slf4j.jar:/Users/rsp04/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/ch.qos.logback/logback-core/1.1.3/jars/logback-core.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/ch.qos.logback/logback-classic/1.1.3/jars/logback-classic.jar:/Users/rsp04/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.13.jar:/Users/rsp04/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.13.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/commons-codec/commons-codec/1.10/jars/commons-codec.jar:/Users/rsp04/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/rsp04/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/rsp04/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.inject/guice/4.0/jars/guice.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/javax.inject/javax.inject/1/jars/javax.inject.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.jolbox/bonecp/0.8.0.RELEASE/bundles/bonecp.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.zaxxer/HikariCP/2.3.7/bundles/HikariCP.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.h2database/h2/1.4.187/jars/h2.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/tyrex/tyrex/1.0.1/jars/tyrex.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.scala-lang.modules/scala-java8-compat_2.11/0.3.0/bundles/scala-java8-compat_2.11.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.yaml/snakeyaml/1.15/bundles/snakeyaml.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.hibernate/hibernate-validator/5.0.3.Final/jars/hibernate-validator.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/javax.validation/validation-api/1.1.0.Final/jars/validation-api.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml/classmate/1.0.0/bundles/classmate.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.jboss.logging/jboss-logging/3.2.1.Final/jars/jboss-logging.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.springframework/spring-context/4.1.6.RELEASE/jars/spring-context.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.springframework/spring-core/4.1.6.RELEASE/jars/spring-core.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.springframework/spring-beans/4.1.6.RELEASE/jars/spring-beans.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.reflections/reflections/0.9.9/jars/reflections.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.guava/guava/18.0/bundles/guava.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.code.findbugs/annotations/2.0.1/jars/annotations.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/net.jodah/typetools/0.4.1/bundles/typetools.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.code.findbugs/jsr305/2.0.3/jars/jsr305.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.apache.tomcat/tomcat-servlet-api/8.0.21/jars/tomcat-servlet-api.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.11/jars/play-jdbc-evolutions_2.11-2.4.0.jar:/Users/rsp04/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-4.6.2.jar:/Users/rsp04/.ivy2/cache/javax.persistence/persistence-api/jars/persistence-api-1.0.jar:/Users/rsp04/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-4.5.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/io.netty/netty/bundles/netty-3.10.4.Final.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.typesafe.netty/netty-http-pipelining/1.1.4/jars/netty-http-pipelining.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-java-ws_2.11/jars/play-java-ws_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.ning/async-http-client/1.9.21/jars/async-http-client.jar:/Users/rsp04/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/rsp04/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/rsp04/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/rsp04/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.18.jar
+Read from stdout: /Users/rsp04/Websites/thursday/BSkyBProject/Website/app/views/viewallorders.scala.html:36: ')' expected but 'else' found.
+/Users/rsp04/Websites/thursday/BSkyBProject/Website/app/views/viewallorders.scala.html:36: ')' expected but 'else' found.
+Read from stdout: } else {
+        } else {
+Read from stdout: ^
+          ^
+Read from stdout: /Users/rsp04/Websites/thursday/BSkyBProject/Website/app/views/viewallorders.scala.html:42: ')' expected but '}' found.
+/Users/rsp04/Websites/thursday/BSkyBProject/Website/app/views/viewallorders.scala.html:42: ')' expected but '}' found.
+Read from stdout: </table>
+</table>
+Read from stdout: ^
+        ^
+Read from stdout: two errors found
+two errors found
+Compilation failed (CompilerInterface)
+Total time: 0 s, completed Oct 1, 2015 11:24:47 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/rsp04/Websites/thursday/BSkyBProject/Website/}myProject/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@61d47d17, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/viewallorders.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/viewallorders.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/twirl/main/views/html/viewallorders.template.scala)
+
+Read from stdout: Compiling 1 Scala source to /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes...
+Compiling 1 Scala source to /Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 1c4b6a4f, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.scala-lang/scala-library/2.11.6/jars/scala-library.jar
+	-classpath
+	/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.typesafe.play/play-enhancer/1.1.0/jars/play-enhancer.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar:/Users/rsp04/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-ebean_2.11/jars/play-ebean_2.11-1.0.0.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.11/jars/play-java-jdbc_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.javassist/javassist/3.19.0-GA/bundles/javassist.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.typesafe/config/1.3.0/bundles/config.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/joda-time/joda-time/2.8.1/jars/joda-time.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.joda/joda-convert/1.7/jars/joda-convert.jar:/Users/rsp04/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.6.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.core/jackson-core/2.5.4/bundles/jackson-core.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.core/jackson-annotations/2.5.4/bundles/jackson-annotations.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.core/jackson-databind/2.5.4/bundles/jackson-databind.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.5.4/bundles/jackson-datatype-jdk8.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.5.4/bundles/jackson-datatype-jsr310.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.slf4j/slf4j-api/1.7.12/jars/slf4j-api.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.slf4j/jul-to-slf4j/1.7.12/jars/jul-to-slf4j.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.slf4j/jcl-over-slf4j/1.7.12/jars/jcl-over-slf4j.jar:/Users/rsp04/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/ch.qos.logback/logback-core/1.1.3/jars/logback-core.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/ch.qos.logback/logback-classic/1.1.3/jars/logback-classic.jar:/Users/rsp04/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.13.jar:/Users/rsp04/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.13.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/commons-codec/commons-codec/1.10/jars/commons-codec.jar:/Users/rsp04/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/rsp04/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/rsp04/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.inject/guice/4.0/jars/guice.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/javax.inject/javax.inject/1/jars/javax.inject.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.jolbox/bonecp/0.8.0.RELEASE/bundles/bonecp.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.zaxxer/HikariCP/2.3.7/bundles/HikariCP.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.h2database/h2/1.4.187/jars/h2.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/tyrex/tyrex/1.0.1/jars/tyrex.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.scala-lang.modules/scala-java8-compat_2.11/0.3.0/bundles/scala-java8-compat_2.11.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.yaml/snakeyaml/1.15/bundles/snakeyaml.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.hibernate/hibernate-validator/5.0.3.Final/jars/hibernate-validator.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/javax.validation/validation-api/1.1.0.Final/jars/validation-api.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.fasterxml/classmate/1.0.0/bundles/classmate.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.jboss.logging/jboss-logging/3.2.1.Final/jars/jboss-logging.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.springframework/spring-context/4.1.6.RELEASE/jars/spring-context.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.springframework/spring-core/4.1.6.RELEASE/jars/spring-core.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.springframework/spring-beans/4.1.6.RELEASE/jars/spring-beans.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.reflections/reflections/0.9.9/jars/reflections.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.guava/guava/18.0/bundles/guava.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.code.findbugs/annotations/2.0.1/jars/annotations.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/net.jodah/typetools/0.4.1/bundles/typetools.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.google.code.findbugs/jsr305/2.0.3/jars/jsr305.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.apache.tomcat/tomcat-servlet-api/8.0.21/jars/tomcat-servlet-api.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.11/jars/play-jdbc-evolutions_2.11-2.4.0.jar:/Users/rsp04/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-4.6.2.jar:/Users/rsp04/.ivy2/cache/javax.persistence/persistence-api/jars/persistence-api-1.0.jar:/Users/rsp04/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-4.5.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/io.netty/netty/bundles/netty-3.10.4.Final.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.typesafe.netty/netty-http-pipelining/1.1.4/jars/netty-http-pipelining.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-java-ws_2.11/jars/play-java-ws_2.11-2.4.3.jar:/Users/rsp04/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.4.3.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/com.ning/async-http-client/1.9.21/jars/async-http-client.jar:/Users/rsp04/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/rsp04/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/rsp04/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/rsp04/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/rsp04/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.18.jar
+Scala compilation took 0.664995797 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+ebean-enhance> transform> pkg: models
+ebean-enhance> cls: models/Address  msg: no detection so enhancing entity
+ebean-enhance> cls: play/db/ebean/Model  msg: read ClassMeta
+ebean-enhance> cls: com/avaje/ebean/Model  msg: read ClassMeta
+ebean-enhance> cls: models/Address  msg: Skip intercepting static field find
+ebean-enhance> cls: models/Address  msg: Found ebean marker field _EBEAN_MARKER models.Address
+ebean-enhance> cls: models/Address  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/Address  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/Address  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/Address  msg: skipping... no enhancement required
+ebean-enhance> cls: models/Customer  msg: no detection so enhancing entity
+ebean-enhance> cls: models/Customer  msg: Skip intercepting static field find
+ebean-enhance> cls: models/Customer  msg: Found ebean marker field _EBEAN_MARKER models.Customer
+ebean-enhance> cls: models/Customer  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/Customer  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/Customer  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/Customer  msg: skipping... no enhancement required
+ebean-enhance> cls: models/CustomerLoyalty  msg: no detection so enhancing entity
+ebean-enhance> cls: models/CustomerLoyalty  msg: Skip intercepting static field find
+ebean-enhance> cls: models/CustomerLoyalty  msg: Found ebean marker field _EBEAN_MARKER models.CustomerLoyalty
+ebean-enhance> cls: models/CustomerLoyalty  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/CustomerLoyalty  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/CustomerLoyalty  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/CustomerLoyalty  msg: skipping... no enhancement required
+ebean-enhance> cls: models/ItemCategory  msg: no detection so enhancing entity
+ebean-enhance> cls: models/ItemCategory  msg: Skip intercepting static field find
+ebean-enhance> cls: models/ItemCategory  msg: Found ebean marker field _EBEAN_MARKER models.ItemCategory
+ebean-enhance> cls: models/ItemCategory  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/ItemCategory  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/ItemCategory  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/ItemCategory  msg: skipping... no enhancement required
+ebean-enhance> cls: models/LoyaltyPoints  msg: no detection so enhancing entity
+ebean-enhance> cls: models/LoyaltyPoints  msg: Skip intercepting static field find
+ebean-enhance> cls: models/LoyaltyPoints  msg: Found ebean marker field _EBEAN_MARKER models.LoyaltyPoints
+ebean-enhance> cls: models/LoyaltyPoints  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/LoyaltyPoints  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/LoyaltyPoints  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/LoyaltyPoints  msg: skipping... no enhancement required
+ebean-enhance> cls: models/OrderedItems  msg: no detection so enhancing entity
+ebean-enhance> cls: models/OrderedItems  msg: Skip intercepting static field find
+ebean-enhance> cls: models/OrderedItems  msg: Found ebean marker field _EBEAN_MARKER models.OrderedItems
+ebean-enhance> cls: models/OrderedItems  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/OrderedItems  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/OrderedItems  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/OrderedItems  msg: skipping... no enhancement required
+ebean-enhance> cls: models/Orders  msg: no detection so enhancing entity
+ebean-enhance> cls: models/Orders  msg: Skip intercepting static field find
+ebean-enhance> cls: models/Orders  msg: Found ebean marker field _EBEAN_MARKER models.Orders
+ebean-enhance> cls: models/Orders  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/Orders  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/Orders  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/Orders  msg: skipping... no enhancement required
+ebean-enhance> cls: models/OrderStatus  msg: no detection so enhancing entity
+ebean-enhance> cls: models/OrderStatus  msg: Skip intercepting static field find
+ebean-enhance> cls: models/OrderStatus  msg: Found ebean marker field _EBEAN_MARKER models.OrderStatus
+ebean-enhance> cls: models/OrderStatus  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/OrderStatus  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/OrderStatus  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/OrderStatus  msg: skipping... no enhancement required
+ebean-enhance> cls: models/Stock  msg: no detection so enhancing entity
+ebean-enhance> cls: models/Stock  msg: Skip intercepting static field find
+ebean-enhance> cls: models/Stock  msg: Found ebean marker field _EBEAN_MARKER models.Stock
+ebean-enhance> cls: models/Stock  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/Stock  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/Stock  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/Stock  msg: skipping... no enhancement required
+ebean-enhance> cls: models/Users  msg: no detection so enhancing entity
+ebean-enhance> cls: models/Users  msg: Skip intercepting static field find
+ebean-enhance> cls: models/Users  msg: Found ebean marker field _EBEAN_MARKER models.Users
+ebean-enhance> cls: models/Users  msg: Skip intercepting static field _ebean_props
+ebean-enhance> cls: models/Users  msg: ... ignore field _ebean_intercept
+ebean-enhance> cls: models/Users  msg: Skip intercepting transient field _ebean_identity
+ebean-enhance> cls: models/Users  msg: skipping... no enhancement required
+Copy resource mappings: 
+	(/Users/rsp04/Websites/thursday/BSkyBProject/Website/conf/application.conf,/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes/application.conf)
+	(/Users/rsp04/Websites/thursday/BSkyBProject/Website/conf/evolutions,/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes/evolutions)
+	(/Users/rsp04/Websites/thursday/BSkyBProject/Website/conf/logback.xml,/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes/logback.xml)
+	(/Users/rsp04/Websites/thursday/BSkyBProject/Website/conf/routes,/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes/routes)
+	(/Users/rsp04/Websites/thursday/BSkyBProject/Website/conf/evolutions/default,/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes/evolutions/default)
+	(/Users/rsp04/Websites/thursday/BSkyBProject/Website/conf/evolutions/default/1.sql,/Users/rsp04/Websites/thursday/BSkyBProject/Website/target/scala-2.11/classes/evolutions/default/1.sql)
+Total time: 1 s, completed Oct 1, 2015 11:25:14 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
