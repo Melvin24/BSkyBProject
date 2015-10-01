@@ -36,6 +36,8 @@ GET     /stock/delete/:id             controllers.Application.deleteItem(id: Lon
 GET     /stock                        controllers.Application.allstock()
 POST    /stock                        controllers.Application.save()
 
+GET     /manage/orders                controllers.Application.viewallorders()
+
 # JSON
 GET     /orders                       controllers.Application.getActiveOrders()
 

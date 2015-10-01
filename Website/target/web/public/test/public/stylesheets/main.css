@@ -1,0 +1,10 @@
+#skylogo {
+    width: 55px;
+    height: 35px;
+    display: block;
+}
+
+body {
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
