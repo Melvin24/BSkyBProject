@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/rsp04/Websites/thursday/BSkyBProject/Website/conf/routes
-// @DATE:Thu Oct 01 12:33:10 BST 2015
+// @DATE:Thu Oct 01 16:27:59 BST 2015
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -71,6 +71,12 @@ package controllers {
       Call("GET", _prefix + { _defaultPrefix } + "stock")
     }
   
+    // @LINE:7
+    def sendsms(): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "sendsms")
+    }
+  
     // @LINE:42
     def getActiveOrders(): Call = {
       import ReverseRouteContext.empty
@@ -127,12 +133,12 @@ package controllers {
       Call("GET", _prefix + { _defaultPrefix } + "checkout")
     }
   
-    // @LINE:7
+    // @LINE:9
     def index(): Call = {
     
       () match {
       
-        // @LINE:7
+        // @LINE:9
         case ()  =>
           import ReverseRouteContext.empty
           Call("GET", _prefix)

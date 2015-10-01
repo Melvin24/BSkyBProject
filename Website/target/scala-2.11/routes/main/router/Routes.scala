@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/rsp04/Websites/thursday/BSkyBProject/Website/conf/routes
-// @DATE:Thu Oct 01 12:33:10 BST 2015
+// @DATE:Thu Oct 01 16:27:59 BST 2015
 
 package router
 
@@ -43,8 +43,8 @@ class Routes(
   }
 
   def documentation = List(
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """sendsms""", """controllers.Application.sendsms()"""),
     ("""GET""", this.prefix, """controllers.Application.index()"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """home""", """controllers.Application.index()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """tshirts""", """controllers.Application.tshirts()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """tshirts/$id<[^/]+>""", """controllers.Application.item(id:Long)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """phones""", """controllers.Application.phones()"""),
@@ -72,25 +72,25 @@ class Routes(
 
 
   // @LINE:7
-  private[this] lazy val controllers_Application_index0_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix)))
+  private[this] lazy val controllers_Application_sendsms0_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("sendsms")))
   )
-  private[this] lazy val controllers_Application_index0_invoker = createInvoker(
-    Application_1.index(),
+  private[this] lazy val controllers_Application_sendsms0_invoker = createInvoker(
+    Application_1.sendsms(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.Application",
-      "index",
+      "sendsms",
       Nil,
       "GET",
       """""",
-      this.prefix + """"""
+      this.prefix + """sendsms"""
     )
   )
 
   // @LINE:9
   private[this] lazy val controllers_Application_index1_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("home")))
+    PathPattern(List(StaticPart(this.prefix)))
   )
   private[this] lazy val controllers_Application_index1_invoker = createInvoker(
     Application_1.index(),
@@ -101,7 +101,7 @@ class Routes(
       Nil,
       "GET",
       """""",
-      this.prefix + """home"""
+      this.prefix + """"""
     )
   )
 
@@ -432,9 +432,9 @@ class Routes(
   def routes: PartialFunction[RequestHeader, Handler] = {
   
     // @LINE:7
-    case controllers_Application_index0_route(params) =>
+    case controllers_Application_sendsms0_route(params) =>
       call { 
-        controllers_Application_index0_invoker.call(Application_1.index())
+        controllers_Application_sendsms0_invoker.call(Application_1.sendsms())
       }
   
     // @LINE:9

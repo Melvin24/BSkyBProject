@@ -4,7 +4,7 @@
 		module="play-java_2.11"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20151001123310"
+		publication="20151001161011"
 	>
 		<description>
 		play-java
@@ -47,6 +47,7 @@
 		<dependency org="com.typesafe.play" name="play-java-jdbc_2.11" rev="2.4.3" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-cache_2.11" rev="2.4.3" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-java-ws_2.11" rev="2.4.3" conf="compile->default(compile)"/>
+		<dependency org="com.twilio.sdk" name="twilio-java-sdk" rev="3.4.5" conf="compile->default(compile)"/>
 		<dependency org="mysql" name="mysql-connector-java" rev="5.1.18" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>
