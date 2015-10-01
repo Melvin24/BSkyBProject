@@ -3,9 +3,30 @@
 # ~~~~
 
 # Home page
-GET     /                           controllers.Application.index()
-GET     /products                   controllers.Application.products()
-GET     /products/:id               controllers.Application.item(id: Long)
+GET     /                             controllers.Application.index()
+
+# Display products - shop front
+
+GET     /products                     controllers.Application.products()
+GET     /products/:id                 controllers.Application.item(id: Long)
+
+# Manage products - back end of shop front
+
+GET     /backofhouse                  controllers.Application.backofhouse()
+
+GET     /stock/new                    controllers.Application.createItem()
+POST    /stock/update                 controllers.Application.addItem()
+GET     /stock/delete/:id             controllers.Application.deleteItem(id: Long)    
+GET     /stock                        controllers.Application.allstock()
+POST    /stock                        controllers.Application.save()
+
+# JSON
+GET     /orders                       controllers.Application.getActiveOrders()
+
+# View cart, edit cart
+
+GET     /checkout                     controllers.Application.checkout()
+#POST    /checkout                     controllers.Application.checkOutCart()
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)

@@ -1,0 +1,40 @@
+@(create_item: Form[Stock])
+
+@import helper._
+
+@main("Create a new product for the catalogue.") {
+
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+  <div class="container">
+      <h1>Add a product.</h1>
+      <p>Blah blah blah.</p>
+  </div>
+</div>
+<div class="container">
+@helper.form(action = routes.Application.save() ){
+            <div class="row">
+                <div class="col-xs-12">
+                @helper.inputText(create_item("name"), '_label -> "Product Title:")
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                @helper.inputText(create_item("category_id"), '_label -> "Category ID:")
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                @helper.inputText(create_item("unit_price"), '_label -> "Price:")
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                 <input type="submit" value="Create New Item" class="btn primary">
+                </div>
+            </div>
+        }
+</div>
+
+}

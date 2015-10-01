@@ -1,0 +1,42 @@
+@(products: List[Stock])
+
+@main("Stock page") {
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+  <div class="container">
+    <h1>Stock</h1>
+    <p>View stock levels, order more or remove from the product catalogue.</p>
+  </div>
+</div>
+
+<div class="container">
+  <table class="table table-condensed">
+    <tr>
+        <th>Stock ID</th>
+        <th>Category ID</th>
+        <th>Name</th>
+        <th>Total Stock</th>
+        <th>Unit Price</th>
+        <th></th>
+    </tr>
+@for(product <- products){
+    <tr>
+        <td>@product.stock_id</td>
+        <td>@product.category_id</td>
+        <td>@product.name</td>
+        <td>@product.total_stock</td>
+        <td>@product.unit_price</td>
+        <td>
+        <a href="#" onclick="$.post('/stock/update', { id: '@product.stock_id', amount: '10' } );" type="button" class="btn btn-primary">Order More</a>
+        <a href="/stock/delete/@product.stock_id" type="button" class="btn btn-danger">Delete</a>
+        </td>
+    </tr>
+}
+</table>
+
+<a href="/stock/new"><input type="button" class="btn btn-primary" value="Add new items"></a>
+
+</div>
+
+}

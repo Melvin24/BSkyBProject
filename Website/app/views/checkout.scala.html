@@ -1,0 +1,50 @@
+@(checkout: Form[Customer])
+
+@import helper._
+
+@main("Checkout from the Sky Store.") {
+
+<h1>Checkout</h1>
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+  <div class="container">
+      You are signed in, please checkout using the form below...
+  </div>
+</div>
+
+<div class="container">
+@helper.form(action = routes.Application.save() ){
+            <div class="row">
+            @helper.inputText(checkout("forename"))
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                @helper.inputText(checkout("surname"))
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                @helper.inputText(checkout("sky_customer_id"))
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                @helper.inputText(checkout("address_id"))
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                @helper.inputText(checkout("customer_id"))
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                 <input type="submit" value="SHIP" class="btn primary">
+                </div>
+            </div>
+            
+            <!-- update database order status. send email notification/sms from twillo -->
+        }
+</div>
+
+}

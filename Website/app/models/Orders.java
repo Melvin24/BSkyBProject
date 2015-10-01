@@ -1,7 +1,11 @@
 package models;
 
-import play.db.ebean.Model;
+import java.util.*;
 import javax.persistence.*;
+
+import play.db.ebean.*;
+import play.data.format.*;
+import play.data.validation.*;
 
 
 @Entity
@@ -13,5 +17,7 @@ public class Orders extends Model {
   public String date;
   public Long price;
   public Long order_status_id;
+
+  public static Finder<Long,Orders> find = new Finder<Long,Orders>(Long.class,Orders.class);
  
 }

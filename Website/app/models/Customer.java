@@ -1,7 +1,11 @@
 package models;
 
-import play.db.ebean.Model;
+import java.util.*;
 import javax.persistence.*;
+
+import play.db.ebean.*;
+import play.data.format.*;
+import play.data.validation.*;
 
 @Entity
 public class Customer extends Model {
@@ -12,5 +16,7 @@ public class Customer extends Model {
   public Long skyCustomer_id;
   public String surname;
   public String forename;
+  
+  public static Finder<Long,Customer > find = new Finder<Long,Customer >(Long.class,Customer.class);
   
 }

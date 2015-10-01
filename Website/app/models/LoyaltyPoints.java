@@ -1,7 +1,11 @@
 package models;
 
-import play.db.ebean.Model;
+import java.util.*;
 import javax.persistence.*;
+
+import play.db.ebean.*;
+import play.data.format.*;
+import play.data.validation.*;
 
 
 @Entity
@@ -12,5 +16,7 @@ public class LoyaltyPoints extends Model {
   public String name;
   public Long points;
   public String is_percent;
+  
+  public static Finder<Long,LoyaltyPoints > find = new Finder<Long,LoyaltyPoints >(Long.class,LoyaltyPoints.class);
 
 }
